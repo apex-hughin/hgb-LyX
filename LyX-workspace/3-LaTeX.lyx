@@ -1,0 +1,11557 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass hgbthesis
+\use_default_options true
+\master !3-Masterarbeit.lyx
+\maintain_unincluded_children false
+\language german
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command biber
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style numerical-comp
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Zum Arbeiten mit 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+latex
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:ArbeitenMitLatex"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Start
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:latex"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ ist eine in den Naturwissenschaften sehr verbreitete und mittlerweile klassisch
+e Textverarbeitungssoftware für das Erstellen großer und komplizierter Dokumente
+ mit professionellem Anspruch.
+ Das Arbeiten mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ erscheint -- zumindest für den ungeübten Benutzer -- zunächst schwieriger
+ als mit herkömmlichen Werkzeugen für die Textverarbeitung.
+\end_layout
+
+\begin_layout Standard
+Zum Ersten ist -- im Unterschied zu den meisten gängigen Text\SpecialChar \-
+ver\SpecialChar \-
+arbei\SpecialChar \-
+tungs\SpecialChar \-
+prog\SpecialChar \-
+ra
+m\SpecialChar \-
+men -- 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ nicht 
+\shape smallcaps
+Wysiwyg
+\shape default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes gld
+\end_inset
+
+What You See Is What You Get.
+\begin_inset Quotes grd
+\end_inset
+
+ Es gibt auch 
+\shape smallcaps
+Wysiwyg
+\shape default
+-Implementierungen für 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\emph on
+Scientific WorkPlace
+\emph default
+ (
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www.mackichan.com
+\end_layout
+
+\end_inset
+
+) oder 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+LyX
+\end_layout
+
+\end_inset
+
+
+\emph default
+ (
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www.lyx.org
+\end_layout
+
+\end_inset
+
+), die aber teuer 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bzw
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+relativ langsam sind.
+\end_layout
+
+\end_inset
+
+, sondern es handelt sich um eine 
+\emph on
+Markup Lang\SpecialChar \-
+uage
+\emph default
+ (wie HTML) -- noch dazu eine für den Anfänger recht komplizierte -- und
+ zugehörige Werkzeuge.
+ Ungewohnt erscheinen sicher auch die vermeintlich starken Einschränkungen
+ von 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+, insbesondere in Bezug auf die Wahl der Schriften und das Layout.
+ Während man anfangs meint, dass diese Rigidität die eigene Kreativität
+ beschränkt, bemerkt man mit der Zeit, dass es gerade dadurch gelingt, sich
+ stärker auf die Inhalte der Arbeit zu konzentrieren als auf deren äußere
+ Form.
+ Dass am Ende die Form dennoch stimmt, ist allerdings nur dann gewährleistet,
+ wenn man sich bei den eigenen Modifikationen der Formate und Parameter
+ äußerste Zurückhaltung auferlegt, es sei denn, man ist in der Zwischenzeit
+ bereits selbst zum 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-
+\emph on
+Guru
+\emph default
+ avanciert.
+\end_layout
+
+\begin_layout Standard
+Insgesamt lohnt sich der Aufwand, wie viele meinen, zumal die Diplomarbeit
+ in jedem Fall (mit oder ohne 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+) ein substantielles Stück Arbeit ist.
+ Allerdings sollte mithilfe von 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ ein professionell aussehendes Ergebnis einfacher zu erreichen sein und
+ man wird sich wohl auch einigen Ärger mit Fehlern und Einschränkungen gängiger
+ Software ersparen.
+ Zudem könnte es durchaus sein, dass man nebenbei auch sein Auge für die
+ Feinheiten des Buchsatzes (weiter-)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+optbreaknh
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+entwickelt.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Dieses abschließende Textelement wurde übrigens zur Ermöglichung eines Zeilenumb
+ruchs nach der Klammer so gesetzt: 
+\family typewriter
+\SpecialChar \ldots{}
+(weiter-){
+\backslash
+optbreaknh}entwickelt.
+
+\family default
+ Das Makro 
+\family typewriter
+
+\backslash
+optbreaknh
+\family default
+ (
+\begin_inset Quotes gld
+\end_inset
+
+optional break with no hyphen
+\begin_inset Quotes grd
+\end_inset
+
+) ist in 
+\family typewriter
+hgb.sty
+\family default
+ definiert.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Software
+\end_layout
+
+\begin_layout Standard
+Zum Arbeiten mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ benötigt man -- neben einem Computer -- natürlich Software.
+ Musste man sich früher oft die einzelnen Komponenten von 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ mühevoll zusammensuchen und für die eigene Umgebung konfigurieren, gibt
+ es mittlerweile für die wichtigsten Plattformen (Windows, Mac
+\begin_inset space ~
+\end_inset
+
+Os, Linux) fertige 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-Installationen, die ohne weiteres Zutun laufen.
+ Die aktuelle Version von 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+ist LaTeX2e
+\begin_inset space \space{}
+\end_inset
+
+(sprich „
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+LaTeX
+\end_layout
+
+\end_inset
+
+ zwei e“).
+ Zum Arbeiten mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+benötigt man zwei Dinge: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-Installation (Distribution) 
+\end_layout
+
+\begin_layout Itemize
+Texteditor oder Autorenumgebung (Frontend) 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+item PostScript/PDF-Software 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sämtliche Komponenten sind kostenlos und für alle gängigen Plattformen verfügbar.
+\end_layout
+
+\begin_layout Subsubsection
+Windows
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Windows"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Unter 
+\emph on
+Windows
+\emph default
+ (XP, Win7) hat sich folgendes Setup bewährt, mit dem 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ua
+\end_layout
+
+\end_inset
+
+ auch dieses Dokument erstellt wurde: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-Distribution
+\series default
+: 
+\emph on
+Mik
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+ 2.9
+\emph default
+ oder höher.
+ Mik
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www.miktex.org
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ enthält auch alle notwendigen Hilfsprogramme, wie beispielsweise 
+\family typewriter
+bibtex
+\family default
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+PDF-Viewer
+\series default
+: 
+\emph on
+SumatraPDF
+\emph default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://blog.kowalczyk.info/software/sumatrapdf/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Frontend
+\series default
+: 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicCenter
+\emph default
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www.texniccenter.org
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Grundsätzlich kann man jeden Text-Edi\SpecialChar \-
+tor
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Unter Windows 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\emph on
+Ultra\SpecialChar \-
+Edit
+\emph default
+ (
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www.ultraedit.com
+\end_layout
+
+\end_inset
+
+) oder 
+\emph on
+WinEdit
+\emph default
+ (
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www.winedit.com
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+ verwenden, praktischer ist jedoch eine integrierte 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-Um\SpecialChar \-
+geb\SpecialChar \-
+ung wie 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicCenter, die einen auch bei der Dateiverwaltung, der Verarbeitung der
+ Dokumente und der Fehlerbehandlung unterstützt.
+ Eine interessante Alternative ist die Verwendung von 
+\emph on
+Eclipse
+\emph default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www.eclipse.org
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ als plattformunabhängiges Frontend (mit dem 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+lipse
+\emph default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://texlipse.sourceforge.net/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Plugin).
+ 
+\end_layout
+
+\begin_layout Standard
+Beim erstem Mal sollten 
+\emph on
+Mik
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+
+\emph default
+, 
+\emph on
+SumatraPDF
+\emph default
+ und 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicCenter
+\emph default
+ in genau dieser Reihenfolge installiert werden.
+\end_layout
+
+\begin_layout Subsubsection
+Mac
+\begin_inset space ~
+\end_inset
+
+OS
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:MacOs"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Unter Mac
+\begin_inset space ~
+\end_inset
+
+OS
+\begin_inset space ~
+\end_inset
+
+X ist die Referenzdistribution 
+\emph on
+Mac
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+
+\emph default
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.tug.org/mactex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Sie enthält neben der 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+-Distribution 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+ Live
+\emph default
+ auch gängige Editoren wie 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+Works
+\emph default
+ oder 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+shop
+\emph default
+.
+ Mit dem 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+ Live Utility
+\emph default
+ können Pakete verwaltet und die Distribution auf den neuesten Stand gebracht
+ werden.
+ Als Alternative zu den beiden genannten Editoren steht 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicle
+\emph default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.bobsoft-mac.de/texnicle/texnicle.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ zur Verfügung.
+ Er bietet -- ähnlich wie 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicCenter
+\emph default
+ unter Windows -- einen projektbasierten Workflow an.
+ Ein PDF-Viewer muss unter Mac
+\begin_inset space ~
+\end_inset
+
+OS
+\begin_inset space ~
+\end_inset
+
+X übrigens nicht extra installiert werden.
+ Alle genannten Editoren beinhalten eine eigene PDF-Vorschau.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%ALT:
+\end_layout
+
+\begin_layout Plain Layout
+
+%Bewährte und weit verbreitete Frontends für den Mac sind 
+\backslash
+emph{MacTeX}%
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+footnote{
+\backslash
+url{www.tug.org/mactex} -- enthält eine komplette und fertig konfigurierte
+ LaTeX-Installation 
+\end_layout
+
+\begin_layout Plain Layout
+
+%für Mac~OS (ca.
+\backslash
+ 1.15 GB download).}
+\end_layout
+
+\begin_layout Plain Layout
+
+%und 
+\backslash
+emph{TeXShop},%
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+footnote{
+\backslash
+url{www.uoregon.edu/~koch/texshop/}}
+\end_layout
+
+\begin_layout Plain Layout
+
+%das üblicherweise zusammen mit der TeX-Distribution 
+\backslash
+emph{TeX Live} verwendet wird.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+%Weit verbreitet ist auch der 
+\backslash
+emph{TeXworks} Editor, der ebenfalls im MacTeX Package enthalten ist und
+ auch MiKTeX unter Windows beigefügt ist.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Linux
+\end_layout
+
+\begin_layout Standard
+Auch unter Linux ist 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+ Live
+\emph default
+ (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+so
+\end_layout
+
+\end_inset
+
+) eine häufig verwendete 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+-Distri\SpecialChar \-
+bution.
+ Als Frontend sind beispielsweise 
+\emph on
+Lyx
+\emph default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+http://www.lyx.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, 
+\emph on
+Kile
+\emph default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://kile.sourceforge.net/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ und 
+\emph on
+Texmaker
+\emph default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www.xm1math.net/texmaker/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ verbreitet.
+ In manchen gängigen Linux-Versionen ist bereits eine komplette 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-Distribution enthalten, sodass im besten Fall überhaupt keine zusätzliche
+ Installation notwendig ist.
+\end_layout
+
+\begin_layout Subsection
+Literatur
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:literatur"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es ist müßig, ohne geeignete Literatur mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ zu beginnen, selbst als fortgeschrittener Benutzer wird man immer wieder
+ auf Hilfe angewiesen sein.
+ Erfreulicherweise ist sehr viel Nützliches auch online verfügbar.
+ Gute Startpunkte sind 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\backslash
+rm
+\end_layout
+
+\end_inset
+
+LaTeX2e
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\emph on
+-Kurzbeschreibung
+\emph default
+ von Schmidt et al.
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Schmidt01"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+The Not So Short Introduction to 
+\emph default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\backslash
+rm
+\end_layout
+
+\end_inset
+
+LaTeX2e
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ von Oetiker et al.
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Oetiker01"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Als mittlerweile bereits klassisches Handbuch zu 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ ist 
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+A Guide to 
+\emph default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\backslash
+rm
+\end_layout
+
+\end_inset
+
+LaTeX2e
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ von H.
+\begin_inset space ~
+\end_inset
+
+Kopka und P.
+\begin_inset space ~
+\end_inset
+
+Daly 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kopka98"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+zu empfehlen, zu dem es für Interessierte auch zwei vertiefende Zusatzbände
+ in Deutsch gibt.
+ Zahlreiche weitere Dokumente zu 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ und verwandten Themen finden sich 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ua
+\end_layout
+
+\end_inset
+
+ im Rahmen des 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Comprehensive 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+ Archive Network
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ (CTAN) auf 
+\end_layout
+
+\begin_layout Quote
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www.ctan.org
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www.ctan.org/tex-archive/help/Catalogue/bytopic.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://dante.ctan.org
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://dante.ctan.org/tex-archive/help/Catalogue/bytopic.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www.tex.ac.uk
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Besonders nützlich sind auch die 
+\emph on
+Comprehensive List of 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\backslash
+rm 
+\backslash
+latex}
+\end_layout
+
+\end_inset
+
+ Symbols
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pakin01"
+
+\end_inset
+
+ und die Beschreibungen wichtiger 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+latex{}
+\end_layout
+
+\end_inset
+
+-Pakete, wie 
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+babel
+\family default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Braams2008"
+
+\end_inset
+
+,
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+grahics
+\family default
+, 
+\family typewriter
+graphicx
+\family default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Carlisle99"
+
+\end_inset
+
+,
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+fancyhdr
+\family default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Oostrum97"
+
+\end_inset
+
+,
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+caption
+\family default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sommerfeldt07"
+
+\end_inset
+
+,
+\begin_inset Newline newline
+\end_inset
+
+
+\family typewriter
+subfigure
+\family default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cochran95"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+Schrift
+\end_layout
+
+\begin_layout Subsection
+Schriftarten
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ verwendet normalerweise die Schriften der 
+\emph on
+Computer Modern
+\emph default
+ (CM) Serie, die so wie die 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+
+\emph default
+-Software selbst von Donald Knuth
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www-cs-staff.stanford.edu/~knuth/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ entwickelt wurden.
+ Die drei Basis-Schrifttypen der CM-Serie in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ sind 
+\end_layout
+
+\begin_layout Quote
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+textrm{
+\end_layout
+
+\end_inset
+
+Roman
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+verb!
+\backslash
+textrm{Roman}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family sans
+Sans Serif
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+verb!
+\backslash
+textsf{Sans Serif}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Typewriter
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+verb!
+\backslash
+texttt{Typewriter}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+In den Augen vieler Benutzer ist allein die Qualität und Zeitlosigkeit dieser
+ Schriften ein Grund, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ für seriöse Zwecke zu verwenden.
+ Ein weiterer Vorteil der 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+
+\emph default
+-Schriften ist, dass die unterschiedlichen Schriftfamilien und Schnitte
+ bezüglich der Größe sehr gut aufeinander abgestimmt sind.
+\end_layout
+
+\begin_layout Standard
+Darüber hinaus können aber in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ auch beliebige 
+\emph on
+PostScript
+\emph default
+-Schrif\SpecialChar \-
+ten (Type 1) verwendet werden, was allerdings in der Praxis einiges
+ an „Tuning“-Arbeit verlangt.
+ Häufig verwendet werden 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\emph on
+Times
+\emph default
+ und 
+\emph on
+Palatino
+\emph default
+, derzeit ist aber ein Trend zurück zu den klassischen CM-Schriften zu beobachte
+n.
+\end_layout
+
+\begin_layout Subsection
+Texte hervorheben
+\end_layout
+
+\begin_layout Standard
+Texte können auf unterschiedliche Weise aus dem Fließtext hervorgehoben
+ werden.
+ 
+\end_layout
+
+\begin_layout Itemize
+Die Auszeichnung in 
+\shape italic
+Kursivschrift
+\shape default
+ oder „italic“ (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+textit{..}!
+\end_layout
+
+\end_inset
+
+) ist 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+va
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+zum Hervorheben von Betonungen und Zitaten geeignet, aber auch für Produktbezeic
+hnungen, Fremdwörter und Variablen im Text, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+textit{Variable}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\shape italic
+Variable
+\shape default
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\shape slanted
+Slanted
+\shape default
+ (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+textsl{..}!
+\end_layout
+
+\end_inset
+
+) bedeutet eine geneigte Schrift und unterscheidet sich damit deutlich von
+ 
+\shape italic
+Italic
+\shape default
+.
+ Wird beispielsweise verwendet für die laufenden Kopfzeilen, Produktbezeichnunge
+n und Markennamen -- zum Vergleich: 
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+textrm{Daimler-Chrysler}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ Daimler-Chrysler 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+textsl{Daimler-Chrysler}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\shape slanted
+Daimler-Chrysler
+\shape default
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+textit{Daimler-Chrysler}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\shape italic
+Daimler-Chrysler
+\shape default
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Boldface
+\series default
+ (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+textbf{..}!
+\end_layout
+
+\end_inset
+
+) wird 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ia
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+verwendet für 
+\series bold
+Überschriften
+\series default
+, Bezeichnungen von 
+\series bold
+Abbildungen
+\series default
+ und 
+\series bold
+Tabellen
+\series default
+, im Fließtext aber selten: 
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+textbf{Überschriften}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\series bold
+Überschriften
+\series default
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\emph on
+Emphasize
+\emph default
+ (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+emph!
+\end_layout
+
+\end_inset
+
+) ist normalerweise gleichbedeutend mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+textit!
+\end_layout
+
+\end_inset
+
+, wobei 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+emph{..}!
+\end_layout
+
+\end_inset
+
+ allerdings auch bei geschachtelten Hervorhebungen und im Bereich anderer
+ Schriftschnitte das „Richtige“ tut: 
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+tabcolsep}{0pt}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+textrm{Du 
+\backslash
+emph{auch} hier?}!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\;\rightarrow\;$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Du 
+\emph on
+auch
+\emph default
+ hier? 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+textit{Du 
+\backslash
+emph{auch} hier?}!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\;\rightarrow\;$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape italic
+Du 
+\emph on
+auch
+\emph default
+ hier?
+\shape default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+textsl{Du 
+\backslash
+emph{auch} hier?}!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\;\rightarrow\;$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\shape slanted
+Du 
+\emph on
+auch
+\emph default
+ hier?
+\shape default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+textbf{Du 
+\backslash
+emph{auch} hier?}!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\;\rightarrow\;$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Du 
+\emph on
+auch
+\emph default
+ hier?
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+texttt{Du 
+\backslash
+emph{auch} hier?}!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\;\rightarrow\;$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+Du 
+\emph on
+auch
+\emph default
+ hier?
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{Unterstreichungen}
+\end_layout
+
+\end_inset
+
+ sind ein Relikt aus der Schreibmaschinenära und im modernen Schriftsatz
+ eigentlich 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{überflüssig}
+\end_layout
+
+\end_inset
+
+.
+ Sie sollten daher nur in Ausnahmefällen verwendet werden, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+underline{überflüssig}!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Unterstrichene Texte werden zudem nicht automatisch abgeteilt.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Textstruktur
+\end_layout
+
+\begin_layout Subsection
+Absatztrennung
+\end_layout
+
+\begin_layout Standard
+Absätze werden in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+-Quelltext ausschließlich durch das Einfügen einer oder mehrerer 
+\series bold
+Leerzeilen
+\series default
+ voneinander getrennt, es sind also 
+\emph on
+keinerlei sonstige Steueranweisungen
+\emph default
+ notwendig! 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+fboxrule}{0.2mm}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+fboxsep}{2mm}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Box Boxed
+position "c"
+hor_pos "c"
+has_inner_box 0
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "c"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "90text%"
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+ Besonders die Verwendung von 
+\family typewriter
+
+\backslash
+
+\backslash
+
+\family default
+ und 
+\family typewriter
+
+\backslash
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+newline
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\family default
+ Anweisungen zur Absatztrennung ist ein häufig zu beobachtender 
+\series bold
+Fehler
+\series default
+.
+ Vor normalen Absätzen auch 
+\emph on
+nichts
+\emph default
+ verloren hat die Anweisung 
+\family typewriter
+
+\backslash
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+paragraph
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+{}
+\family default
+ -- sie ist in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+(im Unterschied zu HTML) eine Markierung für Überschriften mit Titel (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+su
+\end_layout
+
+\end_inset
+
+)! 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Üblicherweise wird durch 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ zwischen aufeinanderfolgenden Ab\SpecialChar \-
+sätzen 
+\emph on
+kein
+\emph default
+ zusätzlicher vertikaler Abstand eingefügt.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Das ist die Standardeinstellung in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ und natürlich abhängig von der verwendeten Dokumentenklasse, Style etc.
+\end_layout
+
+\end_inset
+
+ Allerdings wird die 
+\emph on
+erste
+\emph default
+ Zeile jedes Absatzes (mit Ausnahme des ersten Absatzes eines Abschnitts)
+ eingerückt, um so die Absatzgrenzen deutlich zu machen.
+ Dieses Schema hat sich nicht nur im traditionellen Buchsatz bewährt
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Wer es nicht glaubt, sollte sein Bücherregal (oder notfalls das seiner Eltern)
+ nach Gegenbeispielen durchsuchen.
+\end_layout
+
+\end_inset
+
+ und sollte auch beibehalten werden, es sei denn man hat wirklich 
+\emph on
+sehr
+\emph default
+ gute Gründe dagegen.
+ Für alle übrigen Gliederungen im vertikalen Textfluss sind Überschriften
+ (s.
+\begin_inset space \space{}
+\end_inset
+
+unten) vorgesehen.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SuperPar
+\end_layout
+
+\end_inset
+
+ Manchmal besteht allerdings der Wunsch, etwa zur Verdeutlichung eines inhaltlic
+hen Sprungs 
+\emph on
+zwischen
+\emph default
+ zwei Absätzen einen zusätzlichen Abstand einzufügen, ohne dabei eine neue
+ Überschrift zu setzen.
+ Das kann man gegebenenfalls (wie vor dem aktuellen Absatz passiert) durch
+ 
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+SuperPar
+\family default
+ 
+\emph on
+Manchmal besteht allerdings der Wunsch, \SpecialChar \ldots{}
+
+\emph default
+ 
+\end_layout
+
+\begin_layout Standard
+erreichen, sollte jedoch sehr sparsam und wirklich 
+\series bold
+nur in begründbaren Einzelfällen
+\series default
+ verwendet werden.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Das Makro 
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+SuperPar
+\family default
+ ist in 
+\family typewriter
+hgb.sty
+\family default
+ definiert.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Überschriften
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:ueberschriften"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+bietet -- abhängig von der verwendeten Dokumentenklasse -- einen Satz vordefinie
+rter Überschriftformate in folgender Ordnung: 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+part{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Titel
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\family typewriter
+part
+\family default
+ ist für die Gliederung eines größeren Werks in mehrere Teile vorgesehen
+ und wird üblicherweise bei einer Diplomarbeit (und auch in diesem Dokument)
+ nicht verwendet.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+chapter{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Titel
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+section{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Titel
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+subsection{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Titel
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+subsubsection{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Titel
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+paragraph{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Titel
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+subparagraph{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Titel
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+Häufiger Fehler:
+\end_layout
+
+\begin_layout Standard
+Bei 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+paragraph{}!
+\end_layout
+
+\end_inset
+
+ und 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+subparagraph{}!
+\end_layout
+
+\end_inset
+
+ läuft -- wie in diesem Absatz zu sehen -- der dem Titel folgende Text ohne
+ Umbruch in der selben Zeile weiter, weshalb man im Titel auf eine passende
+ Punktuation (hier 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{
+\backslash
+texttt{:}}
+\end_layout
+
+\end_inset
+
+) achten sollte.
+ Der horizontale Abstand nach dem Titel allein würde diesen als Überschrift
+ nicht erkennbar machen.
+\end_layout
+
+\begin_layout Subsection
+Listen
+\end_layout
+
+\begin_layout Standard
+Listen sind ein beliebtes Mittel zur Textstrukturierung.
+ In 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+sind -- ähnlich wie in HTML -- drei Arten von formatierten Listen verfügbar:
+ ungeordnete Auflistung („Knödelliste“), geordnete Auflistung (Aufzählung)
+ und Beschreibungsliste (Description): 
+\end_layout
+
+\begin_layout Verbatim
+
+    
+\backslash
+begin{itemize}     ...
+ 
+\backslash
+end{itemize}
+\end_layout
+
+\begin_layout Verbatim
+
+    
+\backslash
+begin{enumerate}   ...
+ 
+\backslash
+end{enumerate}
+\end_layout
+
+\begin_layout Verbatim
+
+    
+\backslash
+begin{description} ...
+ 
+\backslash
+end{description}
+\end_layout
+
+\begin_layout Standard
+Listeneinträge werden jeweils mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+item!
+\end_layout
+
+\end_inset
+
+ markiert, bei 
+\family typewriter
+description
+\family default
+-Listen mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+item[!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ titel
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!]!
+\end_layout
+
+\end_inset
+
+.
+ Listen können ineinander verschachtelt werden, wobei sich bei 
+\family typewriter
+itemize
+\family default
+- und 
+\family typewriter
+enumerate
+\family default
+-Listen die Aufzählungszeichen mit der Schachtelungstiefe ändern (Details
+ dazu in der 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-Dokumentation).
+\end_layout
+
+\begin_layout Subsection
+Absatzformatierung und Zeilenabstand
+\end_layout
+
+\begin_layout Standard
+Diplomarbeiten werden -- wie Bücher -- in der Regel einspaltig und im Blocksatz
+ formatiert, was für den Fließtext wegen der großen Zeilenlänge vorteilhaft
+ ist.
+ Innerhalb von Tabellen kommt es wegen der geringen Spaltenbreite jedoch
+ häufig zu Problemen mit Abteilungen und Blocksatz, weshalb man dort ohne
+ schlechtes Gewissen zum Flattersatz („ragged right“) greifen sollte (wie
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+in Tab.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:synthesis-techniques"
+
+\end_inset
+
+ auf Seite 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "tab:synthesis-techniques"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%Bei Diplomarbeiten und Dissertationen wird in der Erstellungsphase
+\end_layout
+
+\begin_layout Plain Layout
+
+%bisweilen ein gegenüber dem Buchsatz vergrößerter Zeilenabstand (
+\backslash
+zB
+\end_layout
+
+\begin_layout Plain Layout
+
+%$1
+\backslash
+fraction1/2$
+\backslash
+,-fach) verwendet, um das Korrekturlesen zu
+\end_layout
+
+\begin_layout Plain Layout
+
+%erleichtern.
+ In der endgültigen Version sollte jedoch -- wie in
+\end_layout
+
+\begin_layout Plain Layout
+
+%diesem Dokument -- ein einfacher Zeilenabstand verwendet werden.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Fußnoten
+\end_layout
+
+\begin_layout Standard
+Fußnoten können in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+an beinahe jeder beliebigen Stelle, jedenfalls aber in normalen Absätzen,
+ durch die Anweisung 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+footnote{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Fußnotentext
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+gesetzt werden.
+ Zwischen der 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+footnote!
+\end_layout
+
+\end_inset
+
+-Marke und dem davor liegenden Text sollte grundsätzlich 
+\emph on
+kein Leerzeichen
+\emph default
+ entstehen (eventuelle Zeilen\SpecialChar \-
+um\SpecialChar \-
+brüche mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!%!
+\end_layout
+
+\end_inset
+
+ auskommentieren).
+ Die Nummerierung und Platzierung der Fußnoten erfolgt automatisch, sehr
+ große Fußnoten werden notfalls sogar auf zwei aufeinanderfolgende Seiten
+ umgebrochen.
+\end_layout
+
+\begin_layout Subsubsection
+Fußnoten in Überschriften
+\end_layout
+
+\begin_layout Standard
+Auch das braucht man ab und zu, ist aber 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+va
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+deshalb kein so einfacher Fall, weil die Fußnote in einer Überschrift nur
+ an Ort und Stelle aufscheinen darf, nicht aber im 
+\emph on
+Inhaltsverzeichnis
+\emph default
+! Ein konkretes Beispiel dafür ist die Überschrift zu Kapitel
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cha:Schluss"
+
+\end_inset
+
+, die folgendermaßen definiert ist: 
+\end_layout
+
+\begin_layout Quote
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+chapter[Schlussbemerkungen]%
+\end_layout
+
+\begin_layout Plain Layout
+
+        {Schlussbemerkungen%
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+protect
+\backslash
+footnote{Diese Anmerkung ....}}%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dabei ist der erste (optionale) Titel 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb![Schlussbemerkungen]!
+\end_layout
+
+\end_inset
+
+ der Eintrag im Inhaltsverzeichnis und im Seitenkopf.
+ Der zweite (identische) Titel 
+\family typewriter
+{Hinweise für ...}
+\family default
+ erscheint auf der aktuellen Seite und enthält auch den 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+footnote{}!
+\end_layout
+
+\end_inset
+
+ Eintrag, der allerdings an dieser Stelle durch die Direktive 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+protect!
+\end_layout
+
+\end_inset
+
+ „geschützt“ werden muss.
+ Die 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!%!
+\end_layout
+
+\end_inset
+
+-Zeichen sind hier übrigens notwendig, um eventuelle Leerzeichen, die durch
+ Zeilenumbrüche im Quelltext entstehen, zu eliminieren (diesen Trick braucht
+ man in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+häufig, s.
+\begin_inset space \space{}
+\end_inset
+
+Abschn.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:kommentare"
+
+\end_inset
+
+).
+ Ziemlich kompliziert also, und damit ein weiterer Grund, Fußnoten an solchen
+ Stellen überhaupt zu vermeiden.
+\end_layout
+
+\begin_layout Standard
+Generell sollte man mit Fußnoten sparsam umgehen, da sie den Textfluss unterbrec
+hen und den Leser ablenken.
+ Insbesondere sollten Fußnoten nicht (wie 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+va
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+in manchen sozialwissenschaftlichen Werken gepflegt) derart lang werden,
+ dass sie einen Großteil der Seite einnehmen und damit praktisch ein zweites
+ Dokument bilden.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Das führt bei Dokumenten mit vielen Fußnoten bei manchen Lesern angeblich
+ so weit, dass sie aus Neugier (oder Versehen) regelmäßig bei den Fußnoten
+ zu lesen beginnen und dann mühevoll die zugehörigen, kleingedruckten Verweise
+ im Fließtext suchen.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Querverweise
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:querverweise"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Zur Verwaltung von Querverweisen innerhalb eines Dokuments stellt 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+einen sehr einfachen Mechanismus zur Verfügung.
+ Zunächst muss jede Stelle (Kapitel, Abschnitt, Abbildung, Tabelle etc.)
+ durch 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+label{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ key
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+markiert werden, wobei 
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ key
+\family default
+ ein gültiges 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-Symbol sein muss.
+ Damit Labels (die nur Zahlen sind) nicht verwechselt werden, ist es üblich,
+ sie je nach Bedeutung mit einer unterschiedlichen Prefix zu versehen, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+tabcolsep
+\end_layout
+
+\end_inset
+
+0pt 
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!cha:!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ kapitel
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+\SpecialChar \ldots{}
+
+\begin_inset space \space{}
+\end_inset
+
+für Kapitel 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!sec:!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ abschnitt
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+\SpecialChar \ldots{}
+
+\begin_inset space \space{}
+\end_inset
+
+für Abschnitte (Sections) und Unterabschnitte 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!fig:!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ abbildung
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+\SpecialChar \ldots{}
+
+\begin_inset space \space{}
+\end_inset
+
+für Abbildungen 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!tab:!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ tabelle
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+\SpecialChar \ldots{}
+
+\begin_inset space \space{}
+\end_inset
+
+für Tabellen 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!equ:!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ gleichung
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \space{}
+\end_inset
+
+\SpecialChar \ldots{}
+
+\begin_inset space \space{}
+\end_inset
+
+für Formeln und Gleichungen
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Beispiele:
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+label{cha:Einleitung}!
+\end_layout
+
+\end_inset
+
+ oder 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+label{fig:Screen-1}!
+\end_layout
+
+\end_inset
+
+.
+ Mit den Anweisungen 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+ref{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ key
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space \hspace{}
+\length 1em
+\end_inset
+
+ oder 
+\begin_inset space \hspace{}
+\length 1em
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+pageref{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ key
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+kann an beliebiger Stelle im Dokument die zu 
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ key
+\family default
+ gehörige Nummer bzw.
+\begin_inset space \space{}
+\end_inset
+
+Seitennummer eingesetzt werden, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!..
+ wie in Kap.~
+\backslash
+ref{cha:Einleitung} erwähnt ..!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!..
+ der Screenshot auf Seite 
+\backslash
+pageref{fig:Screen-1} ..!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Übrigens werden die Bezeichnungen 
+\emph on
+Kapitel
+\emph default
+ und 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Abschnitt
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ auffallend oft falsch verwendet -- Kapitel haben ausschließlich „ungebrochene“
+ Nummern: 
+\end_layout
+
+\begin_layout Quote
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Richtig:
+\begin_inset space \space{}
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kapitel 7 oder Abschnitt 2.3.4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Falsch:
+\begin_inset space \space{}
+\end_inset
+
+
+\series default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kapitel 7.2 oder Abschnitt 5 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Wortabstand und Punktuation
+\end_layout
+
+\begin_layout Subsection
+
+\emph on
+French Spacing
+\end_layout
+
+\begin_layout Standard
+Im englischsprachigen Schriftsatz ist es üblich, nach jedem Satzende einen
+ gegenüber dem normalen Wortzwischenraum vergrößerten Abstand einzusetzen.
+ Obwohl dies im Deutschen und Französischen traditionell nicht so ist, wird
+ es wegen der verbesserten Lesbarkeit auch hier manchmal verwendet (nicht
+ in diesem Dokument).
+ Falls man die englische („nicht-französische“) Satztrennung mit zusätzlichem
+ Abstand bevorzugt, ist lediglich die Zeile 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+nonfrenchspacing!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+am Beginn des Dokuments einzusetzen.
+ In diesem Fall sollte man aber die Interpunktion innerhalb von Sätzen (nach
+ .
+\begin_inset space \space{}
+\end_inset
+
+und :) sorgfältig beachten.
+ Beispielsweise schreibt man „Dr.
+\begin_inset space \space{}
+\end_inset
+
+Mabuse“ in der Form 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!Dr.
+\backslash
+ Mabuse!
+\end_layout
+
+\end_inset
+
+ oder 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!Dr.~Mabuse!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Im zweiten Beispiel wird mit dem 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!~!
+\end_layout
+
+\end_inset
+
+ Zeichen zudem ein Zeilenumbruch am Leerzeichen verhindert.
+\end_layout
+
+\begin_layout Subsection
+Gedanken- und Bindestriche
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:gedankenstrich"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Verwendung der falschen Strichlängen (mit und ohne Zwischenraum) ist
+ ganz allgemein eine häufige Fehlerquelle.
+ Bewusst unterscheiden sollte man zwischen 
+\end_layout
+
+\begin_layout Itemize
+kurzen Bindestrichen (wie in „Wagner-Jauregg“), 
+\end_layout
+
+\begin_layout Itemize
+Minus-Zeichen, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Formula $-7$
+\end_inset
+
+ (erzeugt mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!$-7$!
+\end_layout
+
+\end_inset
+
+), und 
+\end_layout
+
+\begin_layout Itemize
+echten Gedankenstrichen -- wie hier (erzeugt mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!--!
+\end_layout
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Für das Setzen von Gedankenstrichen
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Für alle drei gibt es übrigens auch in 
+\emph on
+Word
+\emph default
+ entsprechende Sonderzeichen.
+\end_layout
+
+\end_inset
+
+ gibt es eindeutige Konventionen: 
+\end_layout
+
+\begin_layout Enumerate
+Im 
+\emph on
+Deutschen
+\emph default
+ setzt man üblicherweise einen von zwei Leerzeichen umgebenen Gedankenstrich
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Halbgeviertstrich (
+\emph on
+En Dash
+\emph default
+).
+\end_layout
+
+\end_inset
+
+ -- wie hier (in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb*! -- !}).
+ Dieser wird auch für die Angabe von
+\end_layout
+
+\begin_layout Plain Layout
+
+Zahlenintervallen (Seiten 12--19) benutzt.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item In 
+\backslash
+emph{englischen} Texten verwendet man einen noch längeren
+\end_layout
+
+\begin_layout Plain Layout
+
+Gedankenstrich
+\backslash
+footnote{Geviertstrich (
+\backslash
+emph{Em Dash}).} 
+\backslash
+emph{ohne}
+\end_layout
+
+\begin_layout Plain Layout
+
+zusätzliche Leerzeichen---
+\backslash
+emph{as we should be knowing by now}
+\end_layout
+
+\begin_layout Plain Layout
+
+(in 
+\backslash
+latex
+\backslash
+ mit {
+\backslash
+verb*
+\end_layout
+
+\end_inset
+
+!---!
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Subsection
+Kommentare
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:kommentare"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Textteile können in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+zeilenweise mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!%!
+\end_layout
+
+\end_inset
+
+ auskommentiert werden.
+ Der einem 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!%!
+\end_layout
+
+\end_inset
+
+-Zeichen nachfolgenden Text wird bis zum nächsten Zeilenende überlesen:
+ 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!Das wird gedruckt.
+ %Dieser Text wird ignoriert.!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Häufig verwendet werden Kommentarzeichen aber auch zum Ausblenden von 
+\emph on
+white space
+\emph default
+, also Leerzeichen und Zeilenumbrüchen.
+ Folgendes Beispiel zeigt etwa, wie man mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!%!
+\end_layout
+
+\end_inset
+
+ am Zeilendende das Entstehen eines Leerzeichens vor einer nachfolgenden
+ Fußnotenmarke vermeiden kann: 
+\end_layout
+
+\begin_layout Verbatim
+
+In Österreich isst man sonntags Schnitzel.%
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+footnote{Was die allgemein gute Kondition erklärt.}
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{sloppypar}
+\end_layout
+
+\end_inset
+
+ Auf ähnliche Weise kann man das Entstehen von ungewolltem Absatz\SpecialChar \-
+zwischenraum
+ durch gezielten Einsatz von Kommentarzeilen vermeiden, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+vor und nach einem zentrierten Textabschnitt: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{sloppypar}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Quote
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+...
+ normaler Text.
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+   Dieser Test ist zentriert.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\end_layout
+
+\begin_layout Plain Layout
+
+Und jetzt geht es normal weiter ...
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Darüber hinaus bietet die 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!comment!
+\end_layout
+
+\end_inset
+
+-Umgebung die Möglichkeit, größere Text\SpecialChar \-
+blöcke in einem Stück auszublenden:
+ 
+\end_layout
+
+\begin_layout Quote
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{comment}
+\end_layout
+
+\begin_layout Plain Layout
+
+Dieser Text ...
+\end_layout
+
+\begin_layout Plain Layout
+
+   ...
+ wird ignoriert.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{comment}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Anführungszeichen
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:anfuehrungszeichen"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mit Anführungszeichen geht man aus Gewohnheit meist etwas nachlässig um;
+ auch dabei sind aber die Unterschiede zwischen Deutsch und Englisch zu
+ beachten.
+ Hier die richtige 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-Notation für beide Sprachen: 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!``English''!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\lang english
+``English
+\begin_inset Quotes erd
+\end_inset
+
+
+\lang german
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!"`Deutsch"'!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\begin_inset Quotes gld
+\end_inset
+
+Deutsch
+\begin_inset Quotes grd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Bei richtiger Einstellung werden beispielsweise im 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicCenter-Editor die entsprechenden Zeichenfolgen automatisch eingesetzt.
+ 
+\emph on
+Einfache
+\emph default
+ Anführungszeichen erzeugt man im Englischen analog, im Deutschen benötigt
+ man dafür die Makros 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+glq!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bzw
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+grq!
+\end_layout
+
+\end_inset
+
+ (German left/right quote): 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!`English'!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ `English' 
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!{
+\backslash
+glq}Deutsch{
+\backslash
+grq}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+glq{}
+\end_layout
+
+\end_inset
+
+Deutsch
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+grq{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Abteilen
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:layout-abteilen"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Um ein sauberes Schriftbild zu erreichen sind -- speziell im Deutschen wegen
+ der großen Wortlängen -- Abteilungen (Silbentrennung, Hyphenation) unerlässlich
+, entweder manuell durch Einfügen von optionalen Trennzeichen oder automatisch.
+ In 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ wird grundsätzlich automatisch abgeteilt, wobei die Sprache am Beginn des
+ Dokuments festgelegt und entsprechende Abteilungsregeln für den gesamten
+ Text verwendet werden.
+\end_layout
+
+\begin_layout Standard
+Besonders bei schmalen Textspalten kann es vorkommen, dass 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ keine geeignete Stelle für den Zeilenumbruch findet und den Text über den
+ rechten Rand hinaus laufen lässt.
+ Das ist durchaus beabsichtigt und soll anzeigen, dass an dieser Stelle
+ ein Problem besteht, das man durch manuelles Eingreifen reparieren muss.
+\end_layout
+
+\begin_layout Standard
+Generell sollte man gegenüber der automatischen Abteilung misstrauisch sein
+ und das Endergebnis stets sorgfältig überprüfen.
+ Vor allem Wörter mit Umlauten oder Bindestrichen werden in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+oft unrichtig abgeteilt.
+ Bei Bedarf kann man mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+-!
+\end_layout
+
+\end_inset
+
+ gezielt zulässige Abteilungspunkte definieren, wie 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+in 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!Fach
+\backslash
+-hoch
+\backslash
+-schul
+\backslash
+-kon
+\backslash
+-fe
+\backslash
+-renz!
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+In echten Problemfällen -- etwa bei Schwierigkeiten mit Textelementen, die
+ nicht umgebrochen werden dürfen oder können -- kann man 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+dazu veranlassen, in einzelnen Absätzen etwas weniger pingelig zu formatieren.
+ Das erreicht man durch 
+\end_layout
+
+\begin_layout Quote
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{verbatim}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{sloppypar}
+\end_layout
+
+\begin_layout Plain Layout
+
+    Dieser Absatz wird ``schlampig'' (sloppy) gesetzt ...
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{sloppypar}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{verbatim}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Der letzte Rettungsanker ist, den betreffenden Absatz so umzuschreiben,
+ dass sich ein passabler Zeilenumbruch ergibt (schließlich ist man ja selbst
+ der Autor und niemandem eine Rechtfertigung schuldig).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Angeblich waren eigenständige Textänderungen in solchen Fällen auch beim
+ früheren Bleisatz durchaus üblich.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Das 
+\family typewriter
+hagenberg
+\family default
+-Paket
+\end_layout
+
+\begin_layout Standard
+Diesem Dokument angeschlossen sind zwei Dateien, die beide zum Erstellen
+ dieses Dokuments erforderlich sind: 
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+nolinkurl{hgbthesis.cls} (class file):
+\end_layout
+
+\end_inset
+
+ definiert die Dokumentenstruktur, Layout und den gesamten Vorspann des
+ Dokuments (Titelseite etc.).
+ 
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+nolinkurl{hgb.sty} (style file):
+\end_layout
+
+\end_inset
+
+ enthält nützliche Definitionen.
+ Diese Datei wird von 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+nolinkurl
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+hgbthesis.cls
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ automatisch geladen, kann aber grundsätzlich auch für andere Dokumente
+ verwendet werden.
+ 
+\end_layout
+
+\begin_layout Subsection
+Einstellungen
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:HagenbergEinstellungen"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Alle (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!.tex!
+\end_layout
+
+\end_inset
+
+) Dokumente dieser Klasse beginnen mit der Anweisung 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+documentclass[!
+\backslash
+texttt{
+\backslash
+emph{type}},
+\backslash
+texttt{
+\backslash
+emph{language}}
+\backslash
+verb!]{hgbthesis}!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Dabei sind die möglichen Optionen für 
+\family typewriter
+\emph on
+type
+\family default
+\emph default
+ 
+\end_layout
+
+\begin_layout Itemize
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!master!
+\end_layout
+
+\end_inset
+
+ (Masterarbeit = 
+\emph on
+default
+\emph default
+) 
+\end_layout
+
+\begin_layout Itemize
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!diplom!
+\end_layout
+
+\end_inset
+
+ (Diplomarbeit) 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!bachelor!
+\end_layout
+
+\end_inset
+
+ (Bachelorarbeit) 
+\end_layout
+
+\begin_layout Itemize
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!praktikum!
+\end_layout
+
+\end_inset
+
+ (Praktikumsbericht) 
+\end_layout
+
+\begin_layout Standard
+Mit der Option 
+\family typewriter
+\emph on
+language
+\family default
+\emph default
+ kann die Hauptsprache des Dokuments spezifiziert werden, die möglichen
+ Werte dafür sind 
+\end_layout
+
+\begin_layout Itemize
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!german!
+\end_layout
+
+\end_inset
+
+ (
+\emph on
+default
+\emph default
+) 
+\end_layout
+
+\begin_layout Itemize
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!english!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Wird überhaupt keine Option angegeben, dann wird als Default-Einstellung
+ 
+\family typewriter
+[diplom, german]
+\family default
+ verwendet.
+ Der vollständige Quelltext für eine entsprechende 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!.tex!
+\end_layout
+
+\end_inset
+
+ Hauptdatei ist in Anhang 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Quelltext"
+
+\end_inset
+
+ gelistet.
+\end_layout
+
+\begin_layout Subsubsection
+Angaben zur Arbeit
+\end_layout
+
+\begin_layout Standard
+Die Dokumentenklasse ist für verschiedene Arten von Arbeiten vorgesehen,
+ die sich nur im Aufbau der Titelseiten unterscheiden.
+ Abhängig vom gewählten Dokumententyp sind unterschiedliche Elemente für
+ die Titelseiten erforderlich (siehe Tabelle 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:TitelElemente"
+
+\end_inset
+
+).
+ Folgende Basisangaben sind für 
+\series bold
+alle
+\series default
+ Arten von Arbeiten erforderlich: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+title{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Titel der Arbeit
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+author{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Autor
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+studiengang{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Studiengang
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+studienort{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Studienort
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+abgabedatum{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ yyyy
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ mm
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ dd
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Für 
+\series bold
+Bachelorarbeiten
+\series default
+ werden zusätzlich zu den Basisangaben folgende Elemente verwendet (bei
+ Diplom- und Masterarbeiten nicht relevant): 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+nummer{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ laufende Nummer der Arbeit
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Wird normalerweise von der Institution vergeben.
+ An der FH-Hagenberg ist dies bei einer Bachelorarbeit die (10-stellige)
+ Studenten-ID des Autors, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\family sans
+0310238045-A
+\family default
+ für die erste Bachelorarbeit.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+gegenstand{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Gegenstand oder Projektlehrveranstaltung
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+semester{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Semester der Lehrveranstaltung
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+betreuer{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Name
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+oder
+\series default
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+betreuerin{..}!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+Für 
+\series bold
+Praktikumsberichte
+\series default
+ werden zusätzlich zu den Basisangaben folgende Elemente berücksichtigt:
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+nummer{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ laufende Nummer der Arbeit
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+footnote{Wird normalerweise von der Institution vergeben.
+ An der
+\end_layout
+
+\begin_layout Plain Layout
+
+%FH-Hagenberg ist dies bei einer Bachelorarbeit üblicherweise die Matrikelnummer
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+%des Autors,
+\end_layout
+
+\begin_layout Plain Layout
+
+%gefolgt von der Kennzeichnung 
+\backslash
+textbf{A} (fachbezogene Arbeit) 
+\end_layout
+
+\begin_layout Plain Layout
+
+%oder 
+\backslash
+textbf{B} (Praktikumsbericht),
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+zB
+\backslash
+ 
+\backslash
+textsf{238-003-045}.} 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+betreuer{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Betreuer im Unternehmen
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+oder
+\series default
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+betreuerin{..}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+firma{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ name und Adresse der Firma
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+firmenTel{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Telefonnummer der Firma
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+firmenUrl{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+em
+\end_layout
+
+\end_inset
+
+ Web-Site der Firma
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Elemente in Titelseiten für verschiedene Dokumentenoptionen.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:TitelElemente"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+small{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="5">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Element
+\emph default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+diplom
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+master
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+bachelor
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+praktikum
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+title!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+author!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+studiengang!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+studienort!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+abgabedatum!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+nummer!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+gegenstand!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+betreuer!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+firma!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+firmenTel!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+firmenUrl!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Titelseiten
+\end_layout
+
+\begin_layout Standard
+Die ersten Seiten der Arbeit, einschließlich der Titelseite, werden durch
+ die Anweisung 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+maketitle!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+automatisch generiert, abhängig vom Typ der Arbeit und den obigen Einstellungen:
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Seite
+\emph default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Master-/Diplomarbeit
+\emph default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Bachelorarbeit
+\emph default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+i 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Titelseite 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Titelseite 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ii 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Copyright-Seite 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Betreuerseite 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+iii 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Eidesstattliche Erklärung 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Eidesstattliche Erklärung 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Auf der Copyright-Seite werden auch die Bedingungen für die Nutzung und
+ Weitergabe der Arbeit vermerkt.
+ Der zugehörige Text kann durch folgenden Einstellungen am Beginn des Dokuments
+ bestimmt werden: 
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+normalfont
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\backslash
+cclicense
+\family default
+ 
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Veröffentlichung unter einer Creative Commons
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://creativecommons.org/licenses/by-nc-nd/3.0/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Lizenz, die die freie Weitergabe der Arbeit unter Nennung des Autors, jedoch
+ keine kommerzielle Nutzung oder Bearbeitung erlaubt (Standardeinstellung).
+ 
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+normalfont
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\backslash
+strictlicense
+\family default
+ 
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Traditionelle Einschränkung der Nutzungsrechte (
+\emph on
+Alle Rechte vorbehalten
+\emph default
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bzw
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\emph on
+All Rights Reserved
+\emph default
+).
+ 
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+normalfont
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+
+\backslash
+license{
+\emph on
+Lizenztext
+\emph default
+}
+\family default
+ 
+\begin_inset space ~
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+Damit kann alternativ ein eigener 
+\family typewriter
+\emph on
+Lizenztext
+\family default
+\emph default
+ angegeben werden, falls notwendig.
+ Solche Änderungen sollte man natürlich unbedingt mit seiner Hochschule
+ abstimmen.
+ 
+\end_layout
+
+\begin_layout Subsection
+Definierte Abkürzungen
+\end_layout
+
+\begin_layout Standard
+Es wird im 
+\family typewriter
+hagenberg
+\family default
+-Paket weiters eine Reihe von Abkürzungsmakros
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+In Anlehnung an den 
+\family typewriter
+jkthesis
+\family default
+-Style von Jochen Küpper (
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www.jochen-kuepper.de
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+ definiert, die das Schreiben vereinfachen und für konsistente Zwisch\SpecialChar \-
+en\SpecialChar \-
+ab\SpecialChar \-
+stän\SpecialChar \-
+de
+ sorgen (Tab.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:abkuerzungen"
+
+\end_inset
+
+).
+ Bei der Verwendung von Makros ist allgemein zu beachten, dass sie nachfolgende
+ Leerzeichen bisweilen „auffressen“, sodass vor dem nachfolgenden Text kein
+ Abstand erzeugt wird.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Bei den meisten der in 
+\family typewriter
+hgb.sty
+\family default
+ definierten Makros wird dies allerdings durch den Einsatz von 
+\family typewriter
+
+\backslash
+xspace
+\family default
+ verhindert.
+\end_layout
+
+\end_inset
+
+ Dagegen kann man sich mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+!
+\end_layout
+
+\end_inset
+
+-Zeichen oder 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!{}!
+\end_layout
+
+\end_inset
+
+ behelfen, wie in folgendem (nicht sehr schönen) Beispiel: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!Mopeds und Autos haben 
+\backslash
+ia
+\backslash
+ zwei {
+\backslash
+bzw} vier Räder.!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ Mopeds und Autos haben 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ia
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+zwei 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bzw
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ vier Räder.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In 
+\family typewriter
+hgb.sty
+\family default
+ definierte Abkürzungsmakros.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:abkuerzungen"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="5">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="none" valignment="top" width="2cm">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+bzw+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bzw
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+ua+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ua
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+bzgl+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bzgl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+Ua+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Ua
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+ca+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ca
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+uae+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+uae
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+dah+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+dah
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+usw+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+usw
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+Dah+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Dah
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+uva+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+uva
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+ds+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ds
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+uvm+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+uvm
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+evtl+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+evtl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+va+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+va
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+ia+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ia
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+vgl+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vgl
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+sa+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+sa
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+zB+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+so+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+so
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+ZB+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ZB
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb+
+\backslash
+su+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+su
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Sprachumschaltung
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:sprachumschaltung"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Für englischsprachige Abschnitte (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+das Abstract oder englische Zitate) sollte die 
+\emph on
+Sprache
+\emph default
+ von Deutsch auf Englisch umgeschaltet werden, um die richtige Form der
+ Silbentrennung zu erhalten.
+ Damit man nicht versehentlich auf das Rückstellen der Sprache vergisst,
+ sind dafür im 
+\family typewriter
+hagenberg
+\family default
+-Paket zwei spezielle 
+\emph on
+Environments
+\emph default
+ vorgesehen: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+begin{english}!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!    This is a 1-page (maximum) summary!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!    of your work in English.!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+end{english}!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Argument item:1
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+begin{german}!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!    Text in Deutsch (wenn die Hauptsprache!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!    auf Englisch gesetzt ist).!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+end{german}!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Zur Kontrolle lässt sich aktuelle Spracheinstellung übrigens mit dem Makro
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+languagename!
+\end_layout
+
+\end_inset
+
+ anzeigen.
+ An dieser Stelle ergibt das beispielsweise „
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+languagename
+\end_layout
+
+\end_inset
+
+
+\family default
+“ (
+\emph on
+new german
+\emph default
+, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+dah
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+neue deutsche Rechtschreibung).
+\end_layout
+
+\begin_layout Subsection
+Zusätzliche 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+-Pakete
+\end_layout
+
+\begin_layout Standard
+Für die Verwendung dieses Dokuments ist eine Reihe von zusätzlichen 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-Paketen erforderlich (Tab.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:packages"
+
+\end_inset
+
+).
+ Diese Pakete werden am Anfang durch das 
+\family typewriter
+hagenberg
+\family default
+-Paket automatisch geladen.
+ Alle verwendeten Pakete sind Teil der 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+Standard-Installation, wie 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+ in Mik
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+, wo man auch entsprechende Dokumentation findet (meist als DVI-Dateien).
+ Die aktuellen Versionen der Pakete sind online verfügbar, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ua
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+auf den in Abschn.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:literatur"
+
+\end_inset
+
+ angegebenen CTAN-Sites.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Im 
+\family typewriter
+hagenberg
+\family default
+-Paket verwendeten 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-Ergänzungen.
+ Alle sind in gängigen 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+Standardinstallationen (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+ Mik
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+) bereits enthalten.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:packages"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\size small
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+tabcolsep2pt
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+small{
+\end_layout
+
+\end_inset
+
+
+\size default
+ 
+\begin_inset Tabular
+<lyxtabular version="3" rows="22" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Paket
+\emph default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Funktion
+\emph default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+algorithmicx
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Beschreibung von Algorithmen 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+amsfonts
+\family default
+, 
+\family typewriter
+amsbsy
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mathematische Symbole 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+amsmath
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mathematischer Schriftsatz 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+babel
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sprachumschaltung 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+biblatex
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Literaturverwaltung 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+caption
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Flexiblere Captions 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+cite
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sortierte Literaturverweise 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+color
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Farbige Textelemente und Hintergrundfarben 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+marvosym
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+euro
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+-Symbol (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+euro!
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+exscale
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Korrekte Schriftgrößen im Math-Modus 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+fancyhdr
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+zur Gestaltung Kopfzeilen (header) 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+float
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Verbessertes Float-Handling 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+fontenc
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+zur Verwendung der cm-super Type1 Postscript Schriften 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+graphicx
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Einbindung von EPS-Grafiken 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+hyperref
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+erzeugt aktive Querverweise im PDF-Dokument 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+ifthen
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+für logische Entscheidungen in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+inputenc
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Erweiterter Eingabezeichensatz 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+listings
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Auflistung von Programmcode 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+upquote
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gerade Hochkommas in 
+\family typewriter
+verbatim
+\family default
+-Texten 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+url
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Behandlung von URLs im Text 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+verbatim
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Verbesserte 
+\family typewriter
+verbatim
+\family default
+-Umgebung 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+latex-Fehlermeldungen und Warnungen
+\end_layout
+
+\begin_layout Standard
+Während des Durchlaufs gibt 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+Unmengen von Meldungen aus, die einen in ihrer Fülle zunächst nicht verwirren
+ sollten, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{scriptsize}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Verbatim
+
+...
+\end_layout
+
+\begin_layout Verbatim
+
+Overfull 
+\backslash
+hbox (14.43593pt too wide) in paragraph at lines 105--109
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+OT1/cmr/m/n/10.95 F[]ur die Ein-bin-dung von Gra-phi-ken in L[]T[]X wird
+ die V
+\end_layout
+
+\begin_layout Verbatim
+
+er-wen-dung des Standard-
+\end_layout
+
+\begin_layout Verbatim
+
+[10] [11]
+\end_layout
+
+\begin_layout Verbatim
+
+Overfull 
+\backslash
+hbox (5.01222pt too wide) in paragraph at lines 148--154
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+OT1/cmr/m/n/10.95 wen-di-gen Ras-te-rung kei-nen Sinn, auch bei 1200 dpi-Druck
+\end_layout
+
+\begin_layout Verbatim
+
+ern.
+ Spe-zi-ell 
+\backslash
+OT1/cmr/m/it/10.95 Screen-
+\end_layout
+
+\begin_layout Verbatim
+
+...
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{scriptsize}
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+Errors
+\emph default
+ (Fehler) müssen korrigiert werden, wobei einem 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+diese Arbeit nicht leicht macht, da manchmal (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+wenn eine schließende Klammer 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}!
+\end_layout
+
+\end_inset
+
+ vergessen wurde) das Problem erst viel später im Text lokalisiert wird.
+ In solchen Fällen kann es nützlich sein, das erzeugte Ausgabedokument zu
+ inspizieren um festzustellen, ab welcher Stelle die Ergebnisse aus dem
+ Ruder laufen.
+ Bei kapitalen Fehlern bleibt der 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-Prozessor überhaupt stehen und erzeugt keine Ausgabe (in Verbindung mit
+ einer meist kryptischen Fehlermeldung) -- hier hilft meist nur eine genaue
+ Analyse des Quelltexts oder der gerade zuvor durchgeführten Schritte.
+ Ein ausführliches Fehlerprotokoll findet man jeweils in der 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!.log!
+\end_layout
+
+\end_inset
+
+-Datei des Hauptdokuments.
+\end_layout
+
+\begin_layout Standard
+Falls keine Fehler mehr angezeigt werden, ist zumindest die syntaktische
+ Struktur des Dokuments in Ordnung.
+ Genauer ansehen sollte man sich die Liste von Meldungen jedoch spätestens
+ beim Abschluss der Arbeit, um übrig gebliebene Probleme, wie überlange
+ Textzeilen, unaufgelöste Verweise und ähnliche zu beseitigen.
+ Am Ende sollte das Ergebnis jedenfalls so ausehen: 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!LaTeX-Result: 0 Error(s), 0 Warning(s), ...!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_body
+\end_document

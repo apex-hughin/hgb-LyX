@@ -1,0 +1,536 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass hgbthesis
+\use_default_options true
+\master !3-Masterarbeit.lyx
+\maintain_unincluded_children false
+\language german
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command biber
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style numerical-comp
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Einleitung
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Einleitung"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Zielsetzung
+\end_layout
+
+\begin_layout Standard
+Dieses Dokument ist als vorwiegend technische Starthilfe für das Erstellen
+ einer Masterarbeit (oder Bachelorarbeit) mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ gedacht und ist die Weiterentwicklung einer früheren Vorlage
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Nicht mehr verfügbar.
+\end_layout
+
+\end_inset
+
+ für das Arbeiten mit Microsoft 
+\emph on
+Word
+\emph default
+.
+ Während ursprünglich daran gedacht war, die bestehende Vorlage einfach
+ in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ zu übernehmen, wurde rasch klar, dass allein aufgrund der großen Unterschiede
+ zum Arbeiten mit 
+\emph on
+Word
+\emph default
+ ein gänzlich anderer Ansatz notwendig wurde.
+ Dazu kamen zahlreiche Erfahrungen mit Diplomarbeiten in den nachfolgenden
+ Jahren, die zu einigen zusätzlichen Hinweisen Anlass gaben.
+\end_layout
+
+\begin_layout Standard
+Das vorliegende Dokument dient einem zweifachen Zweck: 
+\emph on
+erstens
+\emph default
+ als Erläuterung und Anleitung, 
+\emph on
+zweitens
+\emph default
+ als direkter Ausgangspunkt für die eigene Arbeit.
+ Angenommen wird, dass der Leser bereits über elementare Kenntnisse im Umgang
+ mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ verfügt.
+ In diesem Fall sollte -- eine einwandfreie Installation der Software vorausgese
+tzt -- der Arbeit nichts mehr im Wege stehen.
+ Auch sonst ist der Start mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+nicht schwierig, da viele hilfreiche Informationen auf den zugehörigen Webseiten
+ zu finden sind (s.
+\begin_inset space \space{}
+\end_inset
+
+Abschn.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:latex"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Section
+Warum 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+latex
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+Diplomarbeiten, Dissertationen und Bücher im technisch-natur\SpecialChar \-
+wissen\SpecialChar \-
+schaft\SpecialChar \-
+lichen
+ Bereich werden traditionell mithilfe des Textverarbeitungssystems 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lamport94,Lamport95"
+
+\end_inset
+
+ gesetzt.
+ Das hat gute Gründe, denn 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ ist bzgl.
+\begin_inset space \space{}
+\end_inset
+
+der Qualität des Druckbilds, des Umgangs mit mathematischen Elementen, Literatur
+verzeichnissen etc.
+\begin_inset space \space{}
+\end_inset
+
+unübertroffen und ist noch dazu frei verfügbar.
+ Wer mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ bereits vertraut ist, sollte es auch für die Diplomarbeit unbedingt in
+ Betracht ziehen, aber auch für den Anfänger sollte sich die zusätzliche
+ Mühe am Ende durchaus lohnen.
+\end_layout
+
+\begin_layout Standard
+Für den professionellen elektronischen Buchsatz wurde früher häufig 
+\emph on
+Adobe Framemaker
+\emph default
+ verwendet, allerdings ist diese Software teuer und komplex.
+ Eine modernere Alternative dazu ist 
+\emph on
+Adobe InDesign
+\emph default
+, wobei allerdings die Erstellung mathematischer Elemente und die Verwaltung
+ von Literaturverweisen zur Zeit nur rudimentär unterstützt werden.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Angeblich werden aber für den (sehr sauberen) Schriftsatz in 
+\emph on
+InDesign
+\emph default
+ ähnliche Algorithmen wie in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+verwendet.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Microsoft 
+\emph on
+Word
+\emph default
+ gilt im Unterschied zu 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+, 
+\emph on
+Framemaker
+\emph default
+ und 
+\emph on
+InDesign
+\emph default
+ übrigens nicht als professionelle Textverarbeitungssoftware, obwohl es
+ immer häufiger auch von großen Verlagen verwendet wird.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Siehe auch 
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://latex.tugraz.at/mythen.php
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ Das Schriftbild in 
+\emph on
+Word
+\emph default
+ lässt -- zumindest für das geschulte Auge -- einiges zu wünschen übrig
+ und das Erstellen von Büchern und ähnlich großen Dokumenten wird nur unzureiche
+nd unterstützt.
+ Allerdings ist 
+\emph on
+Word
+\emph default
+ sehr verbreitet, flexibel und vielen Benutzern zumindest oberflächlich
+ vertraut, sodass das Erlernen eines speziellen Werkzeugs wie 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+ausschließlich für das Erstellen einer Diplomarbeit manchen verständlicherweise
+ zu mühevoll ist.
+ Man sollte es daher niemandem übel nehmen, wenn er/sie sich auch bei der
+ Diplomarbeit auf 
+\emph on
+Word
+\emph default
+ verlässt.
+ Im Endeffekt lässt sich mit etwas Sorgfalt (und ein paar Tricks) auch damit
+ ein durchaus akzeptables Ergebnis erzielen.
+ 
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Für alle, die so denken, finden sich in Kap.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Word"
+
+\end_inset
+
+ einige spezielle Hinweise zum Arbeiten mit 
+\emph on
+Word
+\emph default
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ansonsten sollten auch für 
+\emph on
+Word
+\emph default
+-Benutzer einige Teile dieses Dokuments von Interesse sein, insbesondere
+ die Abschnitte über Abbildungen und Tabellen (Kap.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Abbildungen"
+
+\end_inset
+
+) und mathematische Elemente (Kap.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Mathematik"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Übrigens, genau hier am Ende des Einleitungskapitels (und nicht etwa in
+ der Kurzfassung) ist der richtige Platz, um die inhaltliche Gliederung
+ der nachfolgenden Arbeit zu beschreiben.
+ Hier soll dargestellt werden, welche Teile (Kapitel) der Arbeit welche
+ Funktion haben und wie sie inhaltlich zusammenhängen.
+ Auch die Inhalte des 
+\emph on
+Anhangs
+\emph default
+ -- sofern vorgesehen -- sollten hier kurz beschrieben werden.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Das geht dann so 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lamport95"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

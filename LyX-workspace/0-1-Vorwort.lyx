@@ -1,0 +1,570 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass hgbthesis
+\use_default_options true
+\master !3-Masterarbeit.lyx
+\maintain_unincluded_children false
+\language german
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command biber
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter (frontmatter)
+Vorwort
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+en: Preface
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dies ist 
+\series bold
+Version 
+\begin_inset Preview
+
+\begin_layout Standard
+
+\series bold
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+hgbthesisDate
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\series default
+ der 
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+-Dokumentenvorlage für verschiedene Abschlussarbeiten an der FH Hagenberg,
+ die mittlerweile auch an anderen Hochschulen im In- und Ausland gerne verwendet
+ wird.
+\end_layout
+
+\begin_layout Standard
+Das Dokument entstand ursprünglich auf Anfragen von Studierenden, nachdem
+ im Studienjahr 2000/01 erstmals ein offizieller 
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+-Grundkurs im Studiengang Medientechnik und -design an der FH Hagenberg
+ angeboten wurde.
+ Eigentlich war die Idee, die bereits bestehende 
+\emph on
+Word
+\emph default
+-Vorlage für Diplomarbeiten 
+\begin_inset Quotes gld
+\end_inset
+
+einfach
+\begin_inset Quotes grd
+\end_inset
+
+ in 
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ zu übersetzen und dazu eventuell einige spezielle Ergänzungen einzubauen.
+ Das erwies sich rasch als wenig zielführend, da 
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+va
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ was den Umgang mit Literatur und Graphiken anbelangt, doch eine wesentlich
+ andere Arbeitsweise verlangt.
+ Das Ergebnis ist -- von Grund auf neu geschrieben und wesentlich umfangreicher
+ als das vorherige Dokument -- letztendlich eine Anleitung für das Schreiben
+ mit 
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, ergänzt mit einigen speziellen (mittlerweile entfernten) Hinweisen für
+ 
+\emph on
+Word
+\emph default
+-Benutzer.
+ Technische Details zur aktuellen Version finden sich in Anhang 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:TechnischeInfos"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Während dieses Dokument anfangs ausschließlich für die Erstellung von Diplomarbe
+iten gedacht war, sind nunmehr auch 
+\emph on
+Masterarbeiten
+\emph default
+, 
+\emph on
+Bachelor\SpecialChar \-
+arbeiten
+\emph default
+ und 
+\emph on
+Praktikumsberichte
+\emph default
+ abgedeckt, wobei die Unterschiede bewusst gering gehalten wurden.
+\end_layout
+
+\begin_layout Standard
+Bei der Zusammenstellung dieser Vorlage wurde versucht, mit der Basisfunktionali
+tät von 
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ das Auslangen zu finden und -- soweit möglich -- auf zusätzliche Pakete
+ zu verzichten.
+ Das ist nur zum Teil gelungen; tat\SpecialChar \-
+säch\SpecialChar \-
+lich ist eine Reihe von ergänzenden
+ 
+\begin_inset Quotes gld
+\end_inset
+
+Paketen
+\begin_inset Quotes grd
+\end_inset
+
+ notwendig, wobei jedoch nur auf gängige Erweiterungen zurückgegriffen wurde.
+ Selbstverständlich gibt es darüber hinaus eine Vielzahl weiterer Pakete,
+ die für weitere Verbesserungen und Finessen nützlich sein können.
+ Damit kann sich aber jeder selbst beschäftigen, sobald das notwendige Selbstver
+trauen und genügend Zeit zum Experimentieren vorhanden sind.
+ Eine Vielzahl von Details und Tricks sind zwar in diesem Dokument nicht
+ explizit angeführt, können aber im zugehörigen Quelltext jederzeit ausgeforscht
+ werden.
+\end_layout
+
+\begin_layout Standard
+Zahlreiche KollegInnen haben durch sorgfältiges Korrekturlesen und konstruktive
+ Verbesserungsvorschläge wertvolle Unterstützung geliefert.
+ Speziell bedanken möchte ich mich bei Heinz Dobler für die konsequente
+ Verbesserung meines 
+\begin_inset Quotes gld
+\end_inset
+
+Computer Slangs
+\begin_inset Quotes grd
+\end_inset
+
+, bei Elisabeth Mitterbauer für das bewährte orthographische Auge und bei
+ Wolfgang Hochleitner für die Tests unter Mac
+\begin_inset space ~
+\end_inset
+
+OS.
+\end_layout
+
+\begin_layout Standard
+Die Verwendung dieser Vorlage ist jedermann freigestellt und an keinerlei
+ Erwähnung gebunden.
+ Allerdings -- wer sie als Grundlage seiner eigenen Arbeit verwenden möchte,
+ sollte nicht einfach (
+\begin_inset Quotes gld
+\end_inset
+
+ung'schaut
+\begin_inset Quotes grd
+\end_inset
+
+) darauf los werken, sondern zumindest die wichtigsten Teile des Dokuments
+ 
+\emph on
+lesen
+\emph default
+ und nach Möglichkeit auch beherzigen.
+ Die Erfahrung zeigt, dass dies die Qualität der Ergebnisse deutlich zu
+ steigern vermag.
+\end_layout
+
+\begin_layout Standard
+Der Quelltext zu diesem Dokument sowie das zugehörige 
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+-Paket sind in der jeweils aktuellen Version online verfügbar unter
+\end_layout
+
+\begin_layout Quote
+\begin_inset CommandInset href
+LatexCommand href
+target "www.fh-hagenberg.at/staff/burger/diplomarbeit/"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+oder auch unter
+\end_layout
+
+\begin_layout Quote
+\begin_inset CommandInset href
+LatexCommand href
+target "http://elearning.fh-hagenberg.at/"
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+im Kurs 
+\begin_inset Quotes gld
+\end_inset
+
+Anleitung/Vorlage für Master-/Bachelor-/Diplomarbeiten
+\begin_inset Quotes grd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Trotz großer Mühe enthält dieses Dokument zweifellos Fehler und Unzulänglichkeit
+en -- Kommentare, Verbesserungsvorschläge und passende Ergänzungen sind
+ daher stets willkommen, am einfachsten per E-Mail direkt an mich:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="1">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+nolinkurl{
+\end_layout
+
+\end_inset
+
+wilhelm.burger@fh-hagenberg.at
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Dr.
+ Wilhelm Burger
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FH Hagenberg -- Digitale Medien
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Austria
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Übrigens, hier im Vorwort (das bei Diplomarbeiten üblich, bei Bachelorarbeiten
+ aber entbehrlich ist) kann man kurz auf die Entstehung des Dokuments eingehen.
+ Hier ist auch der Platz für allfällige Danksagungen (
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ an den Betreuer, den Begutachter, die Familie, den Hund, ...), Widmungen und
+ philosophische Anmerkungen.
+ Das sollte man allerdings auch nicht übertreiben und sich auf einen Umfang
+ von maximal zwei Seiten beschränken.
+ 
+\end_layout
+
+\end_body
+\end_document

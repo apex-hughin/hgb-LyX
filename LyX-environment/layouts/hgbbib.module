@@ -1,0 +1,101 @@
+# \DeclareLyXModule{Hagenberg biblatex}
+# DescriptionBegin
+#   Use the Hagenberg flavour of biblatex.
+# DescriptionEnd
+# Excludes: jurabib | natbib
+# Category: Citation engine
+
+# Hugo Hinterberger 2013
+
+Format 48
+
+Requires hgbbib
+Requires biblatex
+
+# options: default, numerical, authoryear
+CiteEngineType default
+# option: bibliography style name
+DefaultBiblio  numeric-comp
+
+CiteEngine default
+	cite[][]
+	Cite[][]
+	parencite[][]
+	Parencite[][]
+	footcite[][]
+	footcitetext[][]
+	textcite[][]
+	Textcite[][]
+	smartcite[][]
+	Smartcite[][]
+	supercite[][]
+	autocite[][]
+	Autocite[][]
+	citeauthor[][]
+	Citeauthor[][]
+	citetitle[][]
+	citeyear[][]
+	citedate[][]
+	citeurl[][]
+	nocite
+	fullcite[][]
+	footfullcite[][]
+End
+
+CiteFormat default
+	# translatable bits
+	_notcited not cited
+	_addtobib Add to bibliography only.
+
+	# macros
+	!open [
+	!sep ,
+	!close ]
+
+	!startlink {!<a href='#LyXCite-%clean:key%'>!}
+	!endlink {!</a>!}
+
+	!cite %!startlink%{%label%[[%label%]][[{%numericallabel%[[%numericallabel%]][[#%key%]]}]]}%!endlink%%!nextcite%
+
+	!nextcite {%next%[[%!sep% %!cite%]]}
+	!nexthashkey {%next%[[%!sep% #%key%%!nexthashkey%]]}
+	!nextkey {%next%[[%!sep% %key%%!nextkey%]]}
+
+	!textafter {%textafter%[[, %textafter%]]}
+
+	# cite styles
+	cite %!open%{%dialog%[[#ID]][[%!cite%]]}%!textafter%%!close%
+	nocite {%dialog%[[%_addtobib%]][[%key%%!nextkey% (%_notcited%)]]}
+End
+
+InsetLayout "Flex:Bibliography File"
+	LyxType			custom
+	LatexType		command
+	LatexName		AddBibFile
+	LabelString	"Bibliography File: "
+End
+
+Style bibhyphenation
+	Margin					First_Dynamic
+	LatexType				Environment
+	LatexName				bibhyphenation
+	Category				Hagenberg
+	InTitle					0
+	ParIndent				""
+	LabelType				static
+	LabelString			"Bibliography Hyphenation"
+	LabelSep				M
+	LabelBottomSep	0
+End
+
+InsetLayout "Flex:Make Bibliography"
+	LyxType			custom
+	LatexType		command
+	LatexName		MakeBibliography
+	LabelString	"Bibliography"
+	Argument 1
+		Mandatory		0
+		Labelstring	"Optional argument: "
+		Tooltip 		"Do not split the bibliography into categories (set to 'nosplit')."
+	EndArgument
+End

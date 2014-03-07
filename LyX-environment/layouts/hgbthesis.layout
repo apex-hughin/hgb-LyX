@@ -1,0 +1,148 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass{Hagenberg Thesis}
+#  \DeclareCategory{Books}
+# Hugo Hinterberger 2013
+
+Format 48
+Input stdclass.inc
+Input numreport.inc
+
+Provides hyperref 1
+Provides ifthen   1
+Provides hgb      1
+
+Sides    1
+NoStyle  Abstract
+
+Style Chapter_(frontmatter)
+	CopyStyle	Chapter
+	Category	FrontMatter
+	Margin		Static
+	LatexName	chapter
+	LabelType	No_Label
+	LabelCounter	""
+	ResetArgs       1
+End
+
+Style Bibliography
+	TopSep		4
+	LabelString	"Bibliography"
+	LabelFont
+	  Series	Bold
+	  Size		Largest
+	EndFont
+End
+
+Style setupdata
+  Category  "Hagenberg Setup Data"
+  InTitle   true
+  LatexType   Command
+  Margin   static
+  LeftMargin "Firmentelephon:"
+  Align   Left
+  AlignPossible   Left
+  LabelType   static
+  LabelSep   x
+  LabelFont
+    Series   Medium
+    Shape   Italic
+    Size   Small
+    Color   blue
+  EndFont
+End
+
+Style Studiengang
+  CopyStyle   setupdata
+  LatexName   studiengang
+  LabelString   "Studiengang:"
+End
+
+Style Studienort
+  CopyStyle   setupdata
+  LatexName   studienort
+  LabelString   "Studienort:"
+End
+
+Style Abgabedatum
+  CopyStyle   setupdata
+  LatexName   abgabedatum
+  LabelString   "Abgabedatum:"
+  Argument 1
+    Mandatory   1
+    LabelString   "Jahr (JJJJ)"
+    Tooltip   "Abgabejahr"
+  EndArgument
+  Argument 2
+    Mandatory   1
+    LabelString   "Monat (MM)"
+    Tooltip   "Abgabemonat"
+  EndArgument
+  Argument 3
+    Mandatory   1
+    Labelstring   "Tag (TT)"
+    Tooltip   "Abgabetag"
+  EndArgument
+End
+
+Style Arbeitsnummer
+  CopyStyle   setupdata
+  LatexName   nummer
+  LabelString   "Nummer:"
+End
+
+Style Semester
+  CopyStyle   setupdata
+  LatexName   semester
+  LabelString   "Semester:"
+End
+
+Style Gegenstand
+  CopyStyle   setupdata
+  LatexName   gegenstand
+  LabelString   "Gegenstand:"
+End
+
+Style Betreuer
+  CopyStyle   setupdata
+  LatexName   betreuer
+  LabelString   "Betreuer:"
+End
+
+Style Betreuerin
+  CopyStyle   setupdata
+  LatexName   betreuerin
+  LabelString   "Betreuerin:"
+End
+
+Style Firma
+  CopyStyle   setupdata
+  LatexName   firma
+  LabelString   "Firma:"
+End
+
+Style Firmentelefon
+  CopyStyle   setupdata
+  LatexName   firmenTel
+  LabelString   "Firmentelephon:"
+End
+
+Style Firmenwebseite
+  CopyStyle   setupdata
+  LatexName   firmenUrl
+  LabelString   "Firmenwebseite:"
+End
+
+NoStyle setupdata
+
+Style English
+  Margin           First_Dynamic
+  LatexType        Environment
+  LatexName        english
+  Category         Hagenberg
+  InTitle          false
+  ParIndent        ""
+  LabelType        Above
+  LabelString      "Englischer Text:"
+  LabelSep         M
+  LabelBottomSep   0
+End

@@ -1,0 +1,574 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass hgbthesis
+\begin_preamble
+%\graphicspath{{images/}} % wo liegen die Bilder? 
+\bibliography{D:/Workspace/hgb-LyX/!3-Masterarbeit}      % Angabe der BibTeX-Datei, % utf8-change
+\end_preamble
+\options master
+\use_default_options true
+\maintain_unincluded_children false
+\begin_local_layout
+Format 48
+
+InsetLayout "Flex:Make Bibliography"
+LyxType	custom
+LatexType	command
+LatexName	MakeBibliography
+LabelString	"Bibliography"
+Argument 1
+Mandatory	0
+Labelstring	"Optional argument: "
+Tooltip 	"Do not split the bibliography into categories (set to 'nosplit')."
+EndArgument
+End
+\end_local_layout
+\language german
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command biber
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style numeric-comp
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\branch Bachelorarbeit
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch Praktikumsbericht
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch StrictLicense
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+frontmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Parzielle Lösungen zur allgemeinen Problematik
+\end_layout
+
+\begin_layout Author
+Peter A.
+ Schlaumeier
+\end_layout
+
+\begin_layout Studiengang
+Universal Computing
+\end_layout
+
+\begin_layout Studienort
+Hagenberg
+\end_layout
+
+\begin_layout Abgabedatum
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+2013
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+08
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+07
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch Bachelorarbeit
+status collapsed
+
+\begin_layout Arbeitsnummer
+XXXXXXXXXX-A
+\end_layout
+
+\begin_layout Semester
+Sommersemester 2012
+\end_layout
+
+\begin_layout Gegenstand
+Einführung in die Tiefere Problematik 1
+\end_layout
+
+\begin_layout Betreuer
+Alois B.
+\begin_inset space ~
+\end_inset
+
+Treuer, Päd.
+ Phil.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch Praktikumsbericht
+status collapsed
+
+\begin_layout Arbeitsnummer
+XXXXXXXXXX-B
+\end_layout
+
+\begin_layout Betreuer
+Mag.
+\begin_inset space ~
+\end_inset
+
+Pjotr I.
+\begin_inset space ~
+\end_inset
+
+Czar
+\begin_inset Newline newline
+\end_inset
+
+Creative Director
+\end_layout
+
+\begin_layout Firma
+Oligarchic Media International GmbH
+\begin_inset Newline newline
+\end_inset
+
+Online Division
+\begin_inset Newline newline
+\end_inset
+
+1020 Wien, Hubertusgasse 3a
+\end_layout
+
+\begin_layout Firmentelefon
++43 1 2345678-9
+\end_layout
+
+\begin_layout Firmenwebseite
+https://www.mogul.at/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch StrictLicense
+status collapsed
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+strictlicense
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+erzeugt restriktive Lizenzformel
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "0-1-Vorwort.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "0-2-Kurzfassung.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "0-3-Abstract.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+mainmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "1-Einleitung.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "2-Diplomschrift.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "3-LaTeX.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "4-Abbildungen.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "5-Mathematik.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "6-Literatur.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "7-Drucken.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "8-Schluss.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Technische Ergänzungen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Anhang-A.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Inhalt der CD-ROM/DVD
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Anhang-B.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Chronologische Liste der Änderungen
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Anhang-C.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Quelltext dieses Dokuments
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "Anhang-D.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "literatur"
+options "numerical-comp"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Make Bibliography
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+backmatter
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "messbox.tex"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

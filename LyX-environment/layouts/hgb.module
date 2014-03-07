@@ -1,0 +1,42 @@
+# \DeclareLyXModule{Hagenberg biblatex}
+# DescriptionBegin
+#   Use the Hagenberg flavour of biblatex.
+# DescriptionEnd
+# Excludes: jurabib | natbib
+# Category: Citation engine
+
+# Hugo Hinterberger 2013
+
+Format 48
+
+Provides ifthen          1
+Provides ifpdf           1
+Provides cmap            1
+Provides inputenc        1
+Provides lmodern         1
+Provides fontenc         1
+Provides babel           1
+Provides datetime        1
+Provides eurosym         1
+Provides graphicx        1
+Provides url             1
+Provides verbatim        1
+Provides moreverb        1
+Provides float           1
+Provides caption         1
+Provides exscale         1
+Provides upquote         1
+Provides amsmath         1
+Provides amsfonts        1
+Provides amsbsy          1
+Provides xspace          1
+Provides algorithm       1
+Provides algorithmicx    1
+Provides algpseudocode   1
+Provides color           1
+Provides listingsutf8    1
+Provides hyperref        1
+Provides hypcap          1
+Provides epstopdf        1
+Provides breakurl        1
+Provides enumitem        1

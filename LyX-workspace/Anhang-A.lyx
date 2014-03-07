@@ -1,0 +1,3144 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass hgbthesis
+\use_default_options true
+\master !3-Masterarbeit.lyx
+\maintain_unincluded_children false
+\language german
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command biber
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style numerical-comp
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Technische Informationen
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:TechnischeInfos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand*{
+\backslash
+checkbox}{{
+\backslash
+fboxsep 1pt%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+framebox[1.30
+\backslash
+height]{
+\backslash
+vphantom{M}
+\backslash
+checkmark}}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Aktuelle Dateiversionen
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Datum 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Datei 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+hgbthesisDate
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+hgbthesis.cls
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+hgbDate
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family typewriter
+hgb.sty
+\family default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Details zur aktuellen Version
+\end_layout
+
+\begin_layout Standard
+Das ist eine völlig Überarbeitete Version der DA/BA-Vorlage, die 
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 1
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+UTF-8
+\end_layout
+
+\end_inset
+
+ kodierten Dateien vorsieht und ausschließlich im PDF-Modus arbeitet.
+ Der 
+\begin_inset Quotes gld
+\end_inset
+
+klassische
+\begin_inset Quotes grd
+\end_inset
+
+ DVI-PS-PDF-Modus wird somit nicht mehr unterstützt!
+\end_layout
+
+\begin_layout Subsection
+Allgemeine technische Voraussetzungen
+\end_layout
+
+\begin_layout Standard
+Eine aktuelle 
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+-Installation mit 
+\end_layout
+
+\begin_layout Itemize
+Texteditor für 
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 1
+width ""
+special "none"
+height "1in"
+height_special "totalheight"
+status open
+
+\begin_layout Plain Layout
+UTF-8
+\end_layout
+
+\end_inset
+
+ kodierte (Unicode) Dateien, 
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+biber
+\family default
+-Programm (Bib
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+-Ersatz, Version 
+\begin_inset Formula $\geq1.5$
+\end_inset
+
+),
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+biblatex
+\family default
+-Paket (Version 
+\begin_inset Formula $\geq2.5$
+\end_inset
+
+, 2013/01/10),
+\end_layout
+
+\begin_layout Itemize
+Latin Modern Schriften (Paket 
+\family typewriter
+lmodern
+\family default
+).
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.ctan.org/pkg/lm
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.tug.dk/FontCatalogue/lmodern
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Verwendung unter Windows
+\end_layout
+
+\begin_layout Standard
+Eine typische Installation unter Windows sieht folgendermaßen aus (s.
+\begin_inset space \space{}
+\end_inset
+
+auch Abschnitt 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Windows"
+
+\end_inset
+
+): 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Mik
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+ 2.9
+\series default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www.miktex.org
+\end_layout
+
+\end_inset
+
+ -- 
+\series bold
+Achtung:
+\series default
+ Generell wird die 
+\series bold
+Komplett\SpecialChar \-
+installation
+\series default
+ von Mik
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+ („Complete MiK
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+“) empfohlen, da diese bereits alle notwendigen Zusatzpakete und Schriftdateien
+ enthält! Bei der Installation ist darauf zu achten, dass die automatische
+ Installation erforderlicher Packages durch „
+\emph on
+Install missing packages on-the-fly: = Yes
+\emph default
+“ ermöglicht wird (NICHT „
+\emph on
+Ask me first
+\emph default
+“)! Außerdem ist zu empfehlen, unmittelbar nach der Installation von Mik
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+ mit dem Programm 
+\family typewriter
+Mik
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+
+\family default
+ 
+\begin_inset Formula $\to$
+\end_inset
+
+ 
+\family typewriter
+Maintenance
+\family default
+ 
+\begin_inset Formula $\to$
+\end_inset
+
+ 
+\family typewriter
+Update
+\family default
+ und 
+\family typewriter
+Package Manager
+\family default
+ ein Update der installierten Pakete durchzuführen.
+\end_layout
+
+\end_inset
+
+ (zurzeit am einfachsten die 32-Bit Version, da nur diese das Programm 
+\family typewriter
+biber.exe
+\family default
+ bereits enthält), 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicCenter 2.0
+\series default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.texniccenter.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ (Editor-Umgebung, unterstützt UTF-8), 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+SumatraPDF
+\series default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://blog.kowalczyk.info/software/sumatrapdf/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ (PDF-Viewer), 
+\end_layout
+
+\begin_layout Standard
+Ein passendes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicCenter-Profil für Mik
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+, Biber und Sumatra ist in diesem Paket enhalten (Datei 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!_tc_output_profile_sumatra_utf8.tco!
+\end_layout
+
+\end_inset
+
+).
+ Dieses sollte man zuerst über 
+\family typewriter
+Build
+\family default
+ 
+\begin_inset Formula $\to$
+\end_inset
+
+ 
+\family typewriter
+Define Output Profiles
+\family default
+ in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicCenter importieren.
+ 
+\series bold
+Achtung
+\series default
+: Alle neu angelegten 
+\family typewriter
+.tex
+\family default
+-Dateien sollten in UTF-8 Kodierung gespeichert werden!
+\end_layout
+
+\begin_layout Subsection
+Verwendung unter Mac
+\begin_inset space ~
+\end_inset
+
+OS
+\end_layout
+
+\begin_layout Standard
+Diese Version sollte insbesondere mit 
+\emph on
+Mac
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+
+\emph default
+ problemlos laufen (s.
+\begin_inset space \space{}
+\end_inset
+
+auch Abschnitt 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:MacOs"
+
+\end_inset
+
+): 
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+MacTex
+\emph default
+ (2012 oder höher).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Die Zeichenkodierung des Editors sollte auf UTF-8 eingestellt sein.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Als Engine (vergleichbar mit den Ausgabeprofilen in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicCenter) sollte 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+LaTeX
+\end_layout
+
+\end_inset
+
+Mk
+\emph default
+ verwendet werden.
+ Dieses Perl-Skript erkennt automatisch, wie viele Aufrufe von 
+\emph on
+pdf
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+LaTeX
+\end_layout
+
+\end_inset
+
+
+\emph default
+ und 
+\emph on
+Biber
+\emph default
+ nötig sind.
+ Die Ausgabeprofile 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+LaTeX
+\end_layout
+
+\end_inset
+
+
+\emph default
+ oder 
+\emph on
+pdf
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+LaTeX
+\end_layout
+
+\end_inset
+
+
+\emph default
+ hingegen müssen mehrmals aufgerufen werden, zudem werden hierbei auch die
+ Literaturdaten nicht verarbeitet.
+ Dazu müsste extra die 
+\emph on
+Biber
+\emph default
+-Engine aufgerufen werden, die jedoch noch nicht in allen Editoren vorhanden
+ ist.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Subsection
+Vorteile
+\end_layout
+
+\begin_layout Itemize
+PDF wird direkt erzeugt ohne DVI und PS; damit ist angeblich auch die 
+\begin_inset Quotes gld
+\end_inset
+
+Feintypographie
+\begin_inset Quotes grd
+\end_inset
+
+ besser.
+ 
+\end_layout
+
+\begin_layout Itemize
+Die Verwendung von 
+\family typewriter
+SumatraPDF
+\family default
+ erlaubt funktionierende Forward- und Inverse-Suche, womit erstmals ein
+ effektiver PDF-Workflow möglich ist.
+ 
+\end_layout
+
+\begin_layout Itemize
+Preview der vollständigen Manuskripts (inklusive Grafiken) ist in PDF viel
+ schneller als in DVI (mit YAP und Ghostscript für die Grafiken).
+ 
+\end_layout
+
+\begin_layout Itemize
+Grafiken können auch als PDF, PNG oder JPEG direkt eingebunden werden.
+ Bestehende EPS-Grafiken werden automatisch in PDF konvertiert.
+\end_layout
+
+\begin_layout Itemize
+Bei eingebundenen Rasterbildern werden (im Unterschied zu 
+\family typewriter
+ps2pdf
+\family default
+ in der Default-Einstellung) keine zusätzlichen JPEG-Artefakte erzeugt.
+ (Anmerkung: im TC-Ausgabeprofil für 
+\family typewriter
+ps2pdf
+\family default
+ ist dafür jetzt die Option 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!-dPDFSETTINGS=/prepress!
+\end_layout
+
+\end_inset
+
+ eingestellt -- 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!=/printer!
+\end_layout
+
+\end_inset
+
+ ist nicht ausreichend!) 
+\end_layout
+
+\begin_layout Itemize
+Die Erzeugung von aktiven Verweisen mit 
+\family typewriter
+hyperref
+\family default
+ funktioniert problemlos, mit allen Vorteilen (einschließlich der Zeilenumbrüch
+e in URLs).
+ 
+\end_layout
+
+\begin_layout Itemize
+PDF-Metadaten (zur verbesserten Suche) werden direkt aus den Dokumentendaten
+ durch 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+LaTeX
+\end_layout
+
+\end_inset
+
+ generiert.
+ 
+\end_layout
+
+\begin_layout Subsection
+Weitere Neuerungen
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{sloppypar}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Verwendung des 
+\family typewriter
+epstopdf
+\family default
+-Pakets, wodurch vorhandene EPS-Grafiken (mit denen 
+\family typewriter
+pdflatex
+\family default
+ nicht umgehen kann) automatisch in PDF-Dateien konvertiert werden, unter
+ der Annahme, dass 
+\family typewriter
+epstopdf.exe
+\family default
+ vorhanden ist.
+ Das ist bei Rasterbildern allerdings nicht zu enpfehlen, weil mit 
+\family typewriter
+epstopdf
+\family default
+ die Kompressionsqualität nicht gesteuert erden kann.
+ In diesem Fall ist es besser, die EPS-Dateien (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+mit PhotoShop) direkt in PDFs zu konvertieren oder (noch besser) die Original
+ JPEG- oder PNG-Dateien zu verwenden.
+ 
+\end_layout
+
+\begin_layout Itemize
+Unter 
+\family typewriter
+pdflatex
+\family default
+ können nun (mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+includegraphics{}!
+\end_layout
+
+\end_inset
+
+) neben PDFs auch Bilder im JPEG- oder PNG-Format direkt eingebunden werden.
+ Alle Datei-Extensions der Grafikdateien wurden im Quelltext entfernt.
+ 
+\end_layout
+
+\begin_layout Itemize
+Verwendung des 
+\series bold
+SumatraPDF
+\series default
+-Viewers anstelle von Adobe Acrobat, da Acrobat das Überschreiben der Ausgabeda
+tei blockiert (unter Windows) und forward/inverse Suche schlecht 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bzw
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+gar nicht unterstützt.
+ Anweisungen zur Einstellung findet man unter 
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.hehn.biz/Mar/HowtoSumatra.pdf
+\end_layout
+
+\end_inset
+
+ -- diese sind auch im beiliegenden TC-Aus\SpecialChar \-
+gabe\SpecialChar \-
+profil implementiert.
+ 
+\end_layout
+
+\begin_layout Itemize
+Verwendung des 
+\family typewriter
+pdfsync
+\family default
+-Pakets zur Unterstützung der inversen Suche aus PDF-Dateien.
+ 
+\end_layout
+
+\begin_layout Itemize
+Verwendung des 
+\family typewriter
+hyperref
+\family default
+-Pakets zur Aktivierung von Links (Web, Inhaltsverzeichnis, Querverweise,
+ Literatur etc.).
+ Erzeugt auch eine Navigation-Pane.
+ 
+\end_layout
+
+\begin_layout Itemize
+PDF-Metadaten werden automatisch aus den Dokumentendaten generiert (durch
+ 
+\family typewriter
+hyperref
+\family default
+ möglich).
+ 
+\end_layout
+
+\begin_layout Itemize
+Verwendung des 
+\family typewriter
+breakurl
+\family default
+-Pakets, mit dem Zeilenumbrüche trotz 
+\family typewriter
+hy\SpecialChar \-
+per\SpecialChar \-
+ref
+\family default
+ auch bei DVI-PS-PDF-Generierung durchgeführt werden.
+ Dadurch sind jetzt auch URLs in Captions und Fußnoten problemlos möglich
+ und auch 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+urldef{}!
+\end_layout
+
+\end_inset
+
+ ist nicht mehr erforderlich (entspr.
+\begin_inset space \space{}
+\end_inset
+
+Textpassagen in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:QuellenangabenInCaptions"
+
+\end_inset
+
+ entfernen!).
+ 
+\end_layout
+
+\begin_layout Itemize
+Alle bestehenden EPS-Dateien mit Rasterbildern wurden auf Binärkodierung
+ umgestellt, da dies mit der aktuellen Mik
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+-Version keine Probleme mehr verursacht.
+ Zusätzlich wurden PNG-Versionen für 
+\family typewriter
+pdflatex
+\family default
+ angelegt, sodass keine automatische Umwandlung mit 
+\family typewriter
+epstopdf
+\family default
+ erfolgt.
+ 
+\end_layout
+
+\begin_layout Itemize
+Das lästige Problem des übermäßigen vertikalen Abstände in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+LaTeX
+\end_layout
+
+\end_inset
+
+-Aufzählungslisten wurde mit dem 
+\family typewriter
+enumitem
+\family default
+-Paket behoben.
+ Alle 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+itemsep0pt!
+\end_layout
+
+\end_inset
+
+ Anweisungen im Text wurden entfernt.
+ 
+\end_layout
+
+\begin_layout Itemize
+Einbindung des 
+\family typewriter
+cite
+\family default
+-Pakets mit 
+\family typewriter
+noadjust
+\family default
+-Option, womit kein zusätzliches Spacing erzeugt wird.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{sloppypar}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Section
+Einstellungen unter Windows
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:EinstellungAusgabeprofile"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Die folgenden Angaben beziehen sich auf eine bewährte Arbeitsumgebung unter
+ Windows (XP, Win7) mit Mik
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+, Sumatra-PDF und 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicCenter, mit folgenden Installationspfaden: 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!C:
+\backslash
+Program Files (x86)
+\backslash
+MiKTeX 2.9!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!C:
+\backslash
+Program Files (x86)
+\backslash
+SumatraPDF!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!C:
+\backslash
+Program Files (x86)
+\backslash
+TeXnicCenter!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Unter Windows XP liegen die Programme in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!C:
+\backslash
+Program Files!
+\end_layout
+
+\end_inset
+
+.
+ Falls neuere Versionen dieser Komponenten installiert sind, müssen natürlich
+ die nachfolgend angegebenen Pfade entsprechend modifiziert werden.
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Achtung:
+\series default
+ Für Mik
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+ immer die 
+\series bold
+komplette Version
+\series default
+ installieren! Das entsprechende Installationsverzeichnis hat aktuell einen
+ Umfang von ca.
+\begin_inset space \space{}
+\end_inset
+
+1.2 GB und enthält etwa 53.200 Dateien (typischerweise in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+nolinkurl
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+C:
+\begin_inset Newline newline
+\end_inset
+
+Program Files (x86)
+\begin_inset Newline newline
+\end_inset
+
+MiK
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+...
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Subsection
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicCenter-Ausgabeprofile
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:TeXnicCenterUndMikTeX"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicCenter definiert den Verarbeitungsablauf des 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+LaTeX
+\end_layout
+
+\end_inset
+
+-Dokuments anhand von Ausgabeprofilen, wobei die oben genannten Komponenten
+ als externe Programme mit entsprechenden Argumenten aufgerufen werden.
+ Die Einstellung der Ausgabeprofile erfolgt in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicCenter über das Menü 
+\family sans
+Ausgabe
+\family default
+
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\family sans
+Ausgabeprofile definieren...
+
+\family default
+ (Abb.
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:techniccenter-profile-latex"
+
+\end_inset
+
+).
+ Die Profile werden (abhängig von der installierten Software) üblicherweise
+ beim ersten Start von 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicCenter durch den zugehörigen „Wizard“ voreingestellt.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\size small
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+tabcolsep}{0pt}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="none" valignment="top" special="@{~}c">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Graphics
+	filename ../hgb-thesis-utf-20130517/techniccenter-profile-dvi-26
+	width 49text%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Graphics
+	filename ../hgb-thesis-utf-20130517/techniccenter-profile-dvips-26
+	width 49text%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+[4pt] (a) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+(b) 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\size small
+Spezifikation der Ausgabeprofile in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicCenter.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:techniccenter-profile-latex"
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+In der Datei 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!tc_output_profiles_sumatra.tco!
+\end_layout
+
+\end_inset
+
+ sind folgende beiden „maßgeschneiderten“ Ausgabeprofile für TexNicCenter
+ angelegt (Import über 
+\family sans
+Build
+\family default
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\family sans
+Define Output Profiles ...
+\family default
+): 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!LaTeX => PDF (Sumatra)!
+\end_layout
+
+\end_inset
+
+ -- Standard, direkte Erzeugung von PDF, 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!LaTeX => PS => PDF (Sumatra)!
+\end_layout
+
+\end_inset
+
+ -- PDF „klassisch“ via DVI und PS.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Profil „
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+LaTeX
+\end_layout
+
+\end_inset
+
+ => PDF (Sumatra)
+\family default
+“
+\end_layout
+
+\begin_layout Plain Layout
+Das ist das mit diesem Setup normalerweise verwendete Standardprofil.
+\end_layout
+
+\begin_layout Paragraph
+(La)Tex:
+\end_layout
+
+\begin_layout Itemize
+Path to the (La)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+ compiler: 
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{small}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!C:
+\backslash
+Program Files (x86)
+\backslash
+MiKTeX 2.9
+\backslash
+miktex
+\backslash
+bin
+\backslash
+pdflatex.exe!
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{small}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Command line arguments to pass to the compiler:
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{small}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!-synctex=-1 -interaction=nonstopmode "
+\backslash
+end{small}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+paragraph{Postprocessor:} 
+\end_layout
+
+\begin_layout Plain Layout
+
+leer, kein Postprocessor notwendig.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+paragraph{Viewer:}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item Path of executable: 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{small}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+verb!
+\end_layout
+
+\end_inset
+
+C:
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Program
+\end_layout
+
+\end_inset
+
+ Files (x86)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SumatraPDF
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+SumatraPDF
+\end_layout
+
+\end_inset
+
+.exe ! 
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!-inverse-search "
+\backslash
+"C:
+\backslash
+Program Files
+\backslash
+TeXnicCenter
+\backslash
+TEXCNTR.EXE
+\backslash
+" !
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!/ddecmd 
+\backslash
+"[goto('
+\backslash
+end{small}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+item View project's output: 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{small}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+checkbox
+\backslash
+ Command line argument 
+\backslash
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    Command: 
+\backslash
+verb!
+\end_layout
+
+\end_inset
+
+"
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%bm.pdf"!
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{small}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Forward search:
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{small}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkbox
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+DDE command 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ Command: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb![ForwardSearch("    Server: 
+\backslash
+verb!
+\end_layout
+
+\end_inset
+
+SUMATRA! 
+\begin_inset Newline newline
+\end_inset
+
+ Topic: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!Control!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{small}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Close document before running (La)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{small}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+checkbox
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+Do not close 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{small}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Profil „
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+LaTeX
+\end_layout
+
+\end_inset
+
+ => PS => PDF (Sumatra)
+\family default
+“
+\end_layout
+
+\begin_layout Plain Layout
+Profil ausschließlich für den DVI-PS-Workflow (über DVI und PostScript).
+\end_layout
+
+\begin_layout Paragraph
+(La)Tex:
+\end_layout
+
+\begin_layout Itemize
+Path to the (La)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+ compiler: 
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{small}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!C:
+\backslash
+Program Files (x86)
+\backslash
+MiKTeX 2.9
+\backslash
+miktex
+\backslash
+bin
+\backslash
+latex.exe!
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{small}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Command line arguments to pass to the compiler:
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{small}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!-synctex=-1 -interaction=nonstopmode "
+\backslash
+end{small}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+paragraph{Postprocessor:}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{itemize}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+item DviPS (PDF): 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+        
+\backslash
+begin{small} 
+\end_layout
+
+\begin_layout Plain Layout
+
+        Executable: 
+\backslash
+verb!
+\end_layout
+
+\end_inset
+
+C:
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Program
+\end_layout
+
+\end_inset
+
+ Files (x86)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+MiKTeX
+\end_layout
+
+\end_inset
+
+ 2.9
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+miktex
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bin
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+dvips
+\end_layout
+
+\end_inset
+
+.exe! 
+\begin_inset Newline newline
+\end_inset
+
+ Arguments: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!-ta4 -P pdf -R0 "        
+\backslash
+end{small}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+item Ghostscript (ps2pdf):
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  		
+\backslash
+begin{small} 
+\end_layout
+
+\begin_layout Plain Layout
+
+        Executable: 
+\backslash
+verb!
+\end_layout
+
+\end_inset
+
+C:
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+Program
+\end_layout
+
+\end_inset
+
+ Files (x86)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+gs
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+gs
+\end_layout
+
+\end_inset
+
+9.04
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+bin
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+gswin
+\end_layout
+
+\end_inset
+
+32c.exe! 
+\begin_inset Newline newline
+\end_inset
+
+ Arguments: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!-q -dPDFSETTINGS=/prepress -sPAPERSIZE=a4 -dSAFER!
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!-dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile="         
+\backslash
+verb!
+\end_layout
+
+\end_inset
+
+-c save pop -f "
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%bm.ps"!
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{small}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+Viewer:
+\end_layout
+
+\begin_layout Plain Layout
+wie in Profil A.
+ (
+\family typewriter
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+LaTeX
+\end_layout
+
+\end_inset
+
+ => PDF (Sumatra)
+\family default
+).
+\end_layout
+
+\begin_layout Section
+Tipps und offene Probleme:
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+psfrag
+\family default
+ funktioniert nicht mit 
+\family typewriter
+pdflatex
+\family default
+ und es gibt auch leider keine Ersatzlösung.
+ Wenn man 
+\family typewriter
+psfrag
+\family default
+ braucht, dann muss man weiterhin über PostScript (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!LaTeX => PS => PDF!
+\end_layout
+
+\end_inset
+
+) arbeiten (was allerdings nunmehr auch mit 
+\family typewriter
+hyperref
+\family default
+ kein Problem mehr ist).
+ 
+\end_layout
+
+\begin_layout Itemize
+Bei Verwendung des TexWorks-Editors (wird mit Mik
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+ ausgeliefert) sollte man die Standard-Zeichenkodierung von 
+\emph on
+Unicode
+\emph default
+ (utf8) auf 
+\emph on
+Latin-1
+\emph default
+ (ISO 8859-1) umstellen.
+ 
+\end_layout
+
+\begin_layout Itemize
+Adobe Illustrator kann beim Speichern als PDF die Bounding Box nicht setzen.
+ Eine Möglichkeit ist, die Grafik zuerst als EPS zu exportieren und dann
+ mit Acrobat in ein PDF zu konvertieren.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Section
+Einstellungen für YAP (DVI-Viewer) im DVI-PS-Workflow
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:YapEinstellung"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Im Standard-DVI-Viewer YAP lässt sich durch Mausklick auf das DVI-Dokument
+ sehr leicht die zugehörige Stelle im Quelltext finden.
+ Im Normalfall öffnet dann 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicCenter das zugehörige 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-Dokument automatisch an der richtigen Stelle.
+ Das zugehörige „Inverse DVI Search“ Kommando sollte sich bereits bei der
+ Installation richtig einstellen.
+\end_layout
+
+\begin_layout Plain Layout
+Falls dies 
+\emph on
+nicht
+\emph default
+ funktioniert, kann man in YAP diese Einstellung auch manuell über das Menü
+ 
+\family sans
+View
+\family default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\family sans
+Options...
+
+\family default
+ vornehmen, wie in Abb.
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:yap-inverse-search"
+
+\end_inset
+
+ gezeigt.
+ In diesem Fall lautet die vollständige Anweisung in 
+\begin_inset Quotes gld
+\end_inset
+
+Command Line
+\begin_inset Quotes grd
+\end_inset
+
+ folgendermaßen: 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!"C:
+\backslash
+Program Files (x86)
+\backslash
+TeXnicCenter
+\backslash
+TEXCNTR.EXE" /ddecmd "[goto('%f', '%l')]"!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/yap-inverse-search-settings.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Quotes gld
+\end_inset
+
+Inverse DVI Search
+\begin_inset Quotes grd
+\end_inset
+
+ Einstellung in YAP (über das Menü 
+\family sans
+View
+\family default
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+
+\family sans
+
+\begin_inset space \thinspace{}
+\end_inset
+
+Options...
+\family default
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+Latex
+\end_layout
+
+\begin_layout Plain Layout
+
+C:
+\backslash
+Program Files
+\backslash
+MiKTeX 2.6
+\backslash
+miktex
+\backslash
+bin
+\backslash
+latex.exe
+\end_layout
+
+\begin_layout Plain Layout
+
+--src -interaction=nonstopmode "%Wm"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Bibtex
+\end_layout
+
+\begin_layout Plain Layout
+
+C:
+\backslash
+Program Files
+\backslash
+MiKTeX 2.6
+\backslash
+miktex
+\backslash
+bin
+\backslash
+bibtex.exe
+\end_layout
+
+\begin_layout Plain Layout
+
+"%bm"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+---
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+DviPs (PDF)
+\end_layout
+
+\begin_layout Plain Layout
+
+C:
+\backslash
+Program Files
+\backslash
+MiKTeX 2.6
+\backslash
+miktex
+\backslash
+bin
+\backslash
+dvips.exe
+\end_layout
+
+\begin_layout Plain Layout
+
+-ta4 -Ppdf  -R0 "%Bm.dvi"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Ghostscript (ps2pdf)
+\end_layout
+
+\begin_layout Plain Layout
+
+C:
+\backslash
+Program Files
+\backslash
+gs
+\backslash
+gs8.61
+\backslash
+bin
+\backslash
+gswin32c.exe
+\end_layout
+
+\begin_layout Plain Layout
+
+-sPAPERSIZE=a4 -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -dPDFSETTINGS=/prepre
+ss -sOutputFile="%bm.pdf" -c save pop -f "%bm.ps"
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+YAP 
+\end_layout
+
+\begin_layout Plain Layout
+
+Options -> Inverse Search
+\end_layout
+
+\begin_layout Plain Layout
+
+"C:
+\backslash
+Program Files
+\backslash
+TeXnicCenter
+\backslash
+TEXCNTR.EXE" /ddecmd "[goto('%f', '%l')]"
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

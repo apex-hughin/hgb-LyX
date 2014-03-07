@@ -1,0 +1,221 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass hgbthesis
+\use_default_options true
+\master !3-Masterarbeit.lyx
+\maintain_unincluded_children false
+\language german
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command biber
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter (frontmatter)
+Kurzfassung
+\end_layout
+
+\begin_layout Standard
+An dieser Stelle steht eine Zusammenfassung der Arbeit, Umfang max.
+ 1 Seite.
+ Im Unterschied zu anderen Kapiteln ist die Kurzfassung (und das Abstract)
+ üblicherweise nicht in Abschnitte und Unterabschnitte gegliedert.
+ Auch Fußnoten sind hier falsch am Platz.
+\end_layout
+
+\begin_layout Standard
+Kurzfassungen werden übrigens häufig -- zusammen mit Autor und Titel der
+ Arbeit -- in Literaturdatenbanken aufgenommen.
+ Es ist daher darauf zu achten, dass die Information in der Kurzfassung
+ für sich 
+\emph on
+allein
+\emph default
+ (
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+dah
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ ohne weitere Teile der Arbeit) zusammenhängend und abgeschlossen ist.
+ Insbesondere werden an dieser Stelle (wie 
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ua
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ auch im 
+\emph on
+Titel
+\emph default
+ der Arbeit und im 
+\emph on
+Abstract
+\emph default
+) normalerweise 
+\emph on
+keine Literaturverweise
+\emph default
+ verwendet! Falls man unbedingt solche benötigt -- etwa weil die Arbeit
+ eine Weiterentwicklung einer bestimmten, früheren Arbeit darstellt --,
+ dann sind 
+\emph on
+vollständige
+\emph default
+ Quellenangaben in der Kurzfassung selbst notwendig, 
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ [
+\shape smallcaps
+Zobel
+\shape default
+ J.: 
+\shape italic
+Writing for Computer Science -- The Art of Effective Commu\SpecialChar \-
+nica\SpecialChar \-
+tion
+\shape default
+.
+ Springer-Verlag, Singa\SpecialChar \-
+pur, 1997].
+\end_layout
+
+\begin_layout Standard
+Weiters sollte man daran denken, dass bei der Aufnahme in Datenbanken Sonderzeic
+hen oder etwa Aufzählungen mit 
+\begin_inset Quotes gld
+\end_inset
+
+Knödellisten
+\begin_inset Quotes grd
+\end_inset
+
+ in der Regel verloren gehen.
+ Dasselbe gilt natürlich auch für das 
+\emph on
+Abstract
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+Inhaltlich sollte die Kurzfassung 
+\emph on
+keine
+\emph default
+ Auflistung der einzelnen Kapitel sein (dafür ist das Einleitungskapitel
+ vorgesehen), sondern dem Leser einen kompakten, inhaltlichen Überblick
+ über die gesamte Arbeit verschaffen.
+ Der hier verwendete Aufbau ist daher zwangsläufig anders als der in der
+ Einleitung.
+\end_layout
+
+\end_body
+\end_document

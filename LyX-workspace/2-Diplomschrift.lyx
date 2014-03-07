@@ -1,0 +1,411 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass hgbthesis
+\use_default_options true
+\master !3-Masterarbeit.lyx
+\maintain_unincluded_children false
+\language german
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command biber
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style numerical-comp
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language german
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Die Abschlussarbeit
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Diplomschrift"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Jede Abschlussarbeit
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Die meisten der folgenden Bemerkungen gelten gleichsam für Bachelor-, Master-
+ und Diplomarbeiten.
+\end_layout
+
+\end_inset
+
+ ist anders und dennoch sind sich gute Arbeiten in ihrer Struktur meist
+ sehr ähnlich, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+va
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+bei technisch-natur\SpecialChar \-
+wissen\SpecialChar \-
+schaft\SpecialChar \-
+lichen Themen.
+\end_layout
+
+\begin_layout Section
+Elemente der Abschlussarbeit
+\end_layout
+
+\begin_layout Standard
+Als Startpunkt bewährt hat sich die folgender einfacher Grundaufbau, den
+ man natürlich vari\SpecialChar \-
+ieren und beliebig verfeinern kann: 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Einführung und Motivation
+\series default
+: Was ist die Problem- oder Aufgabenstellung und warum sollte man sich dafür
+ interessieren? 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Präzisierung des Themas
+\series default
+: Hier beschreibt man den aktuellen Stand der Technik oder Wissenschaft
+ (
+\begin_inset Quotes gld
+\end_inset
+
+State-Of-The-Art
+\begin_inset Quotes grd
+\end_inset
+
+), zeigt bestehende Defizite oder offene Fragen auf und entwickelt daraus
+ die Stoßrichtung der eigenen Arbeit.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Eigener Ansatz
+\series default
+: Das ist natürlich der Kern der Arbeit.
+ Hier wird gezeigt, wie man die vorher beschriebene Aufgabenstellung löst
+ und -- häufig in Form eines Programms
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+Prototyp
+\emph default
+ ist in diesem Zusammenhang ein gerne benutzter Begriff, der im Deutschen
+ allerdings oft unrichtig dekliniert wird.
+ Richtig ist: der 
+\emph on
+Prototyp
+\emph default
+, des 
+\emph on
+Prototyps
+\emph default
+, dem/den 
+\emph on
+Protototyp
+\emph default
+ -- falsch hingegen 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+: des 
+\emph on
+Prototyp
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+underline{en}
+\end_layout
+
+\end_inset
+
+
+\emph default
+!
+\end_layout
+
+\end_inset
+
+ -- realisiert, ergänzt durch illustrative Beispiele.
+ 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Zusammenfassung
+\series default
+: Was wurde erreicht und welche Ziele sind noch offen geblieben, wo könnte
+ man weiter arbeiten? 
+\end_layout
+
+\begin_layout Standard
+Natürlich ist auch ein gewisser dramaturgischer Aufbau der Arbeit wichtig,
+ wobei man bedenken muss, dass der Leser in der Regel nur wenig Zeit hat
+ und -- anders als etwa bei einem Roman -- seine Geduld nicht auf die lange
+ Folter gespannt werden darf.
+ Erklären Sie bereits in der Einführung (und nicht erst im letzten Kapitel),
+ wie Sie an die Sache herangehen, welche Lösungen Sie vorschlagen und wie
+ erfolgreich Sie damit waren.
+\end_layout
+
+\begin_layout Standard
+Übrigens, auch Fehler und Sackgassen darf (und sollte) man beschreiben;
+ ihre Kenntnis hilft oft doppelte Experimente und weitere Fehler zu vermeiden
+ und ist damit sicher nützlicher als jede Schönfärberei.
+ Und natürlich ist es auch nicht verboten, seine eigene Meinung in sachlicher
+ Form zu äußern.
+\end_layout
+
+\begin_layout Section
+Arbeiten in Englisch
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:englisch"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Diese Vorlage ist zunächst darauf abgestellt, dass die Diplomschrift in
+ deutscher Sprache erstellt wird.
+ Vor allem bei Diplomarbeiten, die in Zusammenarbeit mit größeren Firmen
+ oder internationalen Instituten entstehen, ist es häufig erwünscht, dass
+ die Diplomschrift zu besseren Nutzbarkeit in englischer Sprache verfasst
+ wird, und viele Hochschulen
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Die FH Hagenberg macht hier keine Ausnahme.
+ Der Begriff 
+\begin_inset Quotes gld
+\end_inset
+
+Fachhochschule
+\begin_inset Quotes grd
+\end_inset
+
+ wird dabei entweder gar nicht übersetzt oder -- wie im deutschsprachigen
+ Raum mittlerweile üblich -- mit 
+\emph on
+University of Applied Sciences
+\emph default
+.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Die offizielle englische Übersetzung von 
+\begin_inset Quotes gld
+\end_inset
+
+Medientechnik und -design
+\begin_inset Quotes grd
+\end_inset
+
+ ist übrigens 
+\emph on
+Media Technology and Design
+\emph default
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ lassen dies in der Regel auch zu.
+\end_layout
+
+\begin_layout Standard
+Beachten sollte man allerdings, dass das Schreiben dadurch nicht einfacher
+ wird, auch wenn einem Worte und Sätze im Englischen scheinbar leichter
+ "`aus der Feder"' fließen.
+ Gerade im Bereich der Informatik erscheint durch die Dominanz englischer
+ Fachausdrücke das Schreiben im Deutschen mühsam und das Ausweichen ins
+ Englische daher besonders attraktiv.
+ Das ist jedoch trügerisch, da man die eigene Fertigkeit in der Fremdsprache
+ (trotz der meist langjährigen Schulbildung) häufig überschätzt.
+ Prägnanz und Klarheit gehen leicht verloren und bisweilen ist das Resultat
+ ein peinliches Gefasel ohne Zusammenhang und soliden Inhalt.
+ Sofern man das Englische nicht wirklich gut beherrscht, ist es ratsam,
+ zumindest die wichtigsten Teile der Arbeit zunächst in Deutsch zu verfassen
+ und erst nachträglich zu übersetzen.
+ Besonders vorsichtig sollte man bei der Übersetzung von scheinbar vertrauten
+ Fachausdrücken sein.
+ Zusätzlich ist es immer zu empfehlen, die fertige Arbeit von einem 
+\begin_inset Quotes gld
+\end_inset
+
+native speaker
+\begin_inset Quotes grd
+\end_inset
+
+ korrigieren zu lassen.
+\end_layout
+
+\begin_layout Standard
+Technisch ist, außer der Spracheinstellung und den unterschiedlichen Anführungsz
+eichen (s.
+\begin_inset space \space{}
+\end_inset
+
+Abschn.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:anfuehrungszeichen"
+
+\end_inset
+
+), für eine englische Arbeit nicht viel zu ändern, allerdings sollte man
+ folgendes beachten: 
+\end_layout
+
+\begin_layout Itemize
+Die Titelseite (mit der Bezeichnung 
+\begin_inset Quotes gld
+\end_inset
+
+Diplomarbeit
+\begin_inset Quotes grd
+\end_inset
+
+ oder 
+\begin_inset Quotes gld
+\end_inset
+
+Masterarbeit
+\begin_inset Quotes grd
+\end_inset
+
+) ist für die einzureichenden Exemplare jedenfalls in 
+\emph on
+deutsch
+\emph default
+ zu halten, auch wenn der Titel englisch ist.
+\end_layout
+
+\begin_layout Itemize
+Ebenso muss neben dem englischen 
+\emph on
+Abstract
+\emph default
+ auch eine deutsche 
+\emph on
+Kurzfassung
+\emph default
+ enthalten sein.
+\end_layout
+
+\begin_layout Itemize
+Akademische Titel von Personen haben im Englischen offenbar weniger Bedeutung
+ als im Deutschen und werden daher meist weggelassen.
+\end_layout
+
+\end_body
+\end_document
