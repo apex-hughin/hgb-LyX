@@ -5,7 +5,7 @@
 \textclass hgbthesis
 \begin_preamble
 %\graphicspath{{images/}} % wo liegen die Bilder? 
-\bibliography{D:/Workspace/hgb-LyX/!3-Masterarbeit}      % Angabe der BibTeX-Datei, % utf8-change
+\addbibresource{D:/Workspace/hgb-LyX/LyX-workspace/!3-Masterarbeit.bib}      % Angabe der BibTeX-Datei, % utf8-change
 \end_preamble
 \options master
 \use_default_options true
@@ -142,7 +142,7 @@ Hagenberg
 status open
 
 \begin_layout Plain Layout
-2013
+2014
 \end_layout
 
 \end_inset
@@ -152,7 +152,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-08
+03
 \end_layout
 
 \end_inset
@@ -519,7 +519,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "literatur"
+bibfiles "!3-Masterarbeit"
 options "numerical-comp"
 
 \end_inset
@@ -530,11 +530,21 @@ options "numerical-comp"
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+nocite{*}
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
+
 \begin_inset Flex Make Bibliography
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -550,6 +560,7 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
+
 
 \backslash
 backmatter
