@@ -1,0 +1,12 @@
+# \DeclareLyXModule{Hagenberg headings}
+# DescriptionBegin
+#   Use the Hagenberg flavour of headings.
+# DescriptionEnd
+# Category: headings
+
+# Hugo Hinterberger 2014
+
+Format 48
+
+Requires hgbheadings
+Provides fancyhdr 1
