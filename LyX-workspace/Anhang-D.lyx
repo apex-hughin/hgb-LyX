@@ -81,5 +81,75 @@ name "chap:Quelltext"
 
 \end_layout
 
+\begin_layout Section
+Hauptdatei 
+\family typewriter
+!3-Masterarbeit.lyx
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+begin{footnotesize}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+verbatiminput{!3-Masterarbeit.lyx}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{footnotesize}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hrule
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+hrule
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Anmerkung:
+\end_layout
+
+\begin_layout Standard
+Das sollte nur ein 
+\emph on
+Beispiel
+\emph default
+ für die Einbindung von Quellcode in einem Anhang sein.
+ Der Quelltext der eigenen Diplomarbeit is meist 
+\emph on
+nicht
+\emph default
+ interessant genug, um ihn hier wiederzugeben!
+\end_layout
+
 \end_body
 \end_document

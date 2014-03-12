@@ -1,23 +1,51 @@
-# \DeclareLyXModule{Hagenberg biblatex}
+# \DeclareLyXModule{Hagenberg style}
 # DescriptionBegin
-#   Use the Hagenberg flavour of biblatex.
+#   Use the Hagenberg flavour of formatting theses.
 # DescriptionEnd
-# Excludes: jurabib | natbib
-# Category: Citation engine
 
-# Hugo Hinterberger 2013
+# Hugo Hinterberger 2014
 
 Format 48
 
-Provides ifthen          1
-Provides ifpdf           1
+Requires hgb
+
+Requires cmap
+Requires inputenc
+Requires lmodern
+Requires fontenc
+Requires ifthen
+Requires babel
+Requires datetime
+Requires graphicx
+Requires url
+Requires verbatim
+Requires moreverb
+Requires float
+Requires caption
+Requires exscale
+Requires upquote
+Requires amsmath
+Requires amsfonts
+Requires amsbsy
+Requires xspace
+Requires algorithm
+Requires algorithmicx
+Requires algpseudocode
+Requires pseudocode
+Requires color
+Requires listingsutf8
+Requires hyperref
+Requires hypcap
+Requires ifpdf
+Requires enumitem
+
 Provides cmap            1
 Provides inputenc        1
 Provides lmodern         1
 Provides fontenc         1
+Provides ifthen          1
 Provides babel           1
 Provides datetime        1
-Provides eurosym         1
 Provides graphicx        1
 Provides url             1
 Provides verbatim        1
@@ -33,10 +61,62 @@ Provides xspace          1
 Provides algorithm       1
 Provides algorithmicx    1
 Provides algpseudocode   1
+Provides pseudocode      1
 Provides color           1
 Provides listingsutf8    1
 Provides hyperref        1
 Provides hypcap          1
-Provides epstopdf        1
-Provides breakurl        1
+Provides ifpdf           1
 Provides enumitem        1
+
+Style English
+  Margin           First_Dynamic
+  LatexType        Environment
+  LatexName        english
+  Category         Hagenberg
+  InTitle          false
+  ParIndent        ""
+  LabelType        Above
+  LabelString      "English text:"
+  LabelSep         M
+  LabelBottomSep   0
+End
+
+Style Deutsch
+  Margin           First_Dynamic
+  LatexType        Environment
+  LatexName        german
+  Category         Hagenberg
+  InTitle          false
+  ParIndent        ""
+  LabelType        Above
+  LabelString      "Deutscher Text:"
+  LabelSep         M
+  LabelBottomSep   0
+End
+
+Style "File List"
+  Category   "Hagenberg"
+  LatexType  Item_Environment
+  LatexName   FileList
+  ItemCommand fitem
+  LabelType    No_Label
+  LabelString   "File list"
+  EndLabelType No_Label
+  Argument 1
+    Mandatory   1
+    LabelString   "Path"
+    Tooltip   "The path of the files listed below."
+  EndArgument
+  Argument item:1
+    Mandatory   1
+    LabelString   "File"
+    Tooltip   "The file name."
+  EndArgument
+End
+
+Style "No Widows"
+  LatexType        Environment
+  LatexName        nowidows
+  InTitle          false
+End

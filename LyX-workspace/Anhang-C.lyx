@@ -74,5 +74,14 @@
 Chronologische Liste der Änderungen
 \end_layout
 
+\begin_layout Description
+2014-03-07 Creation of hgb-LyX on GitHub; checkin of previous work.
+\end_layout
+
+\begin_layout Description
+2014-03-12 Updates to the LyX layout and modules; adding commands, environments
+ to match the LaTeX class and styles.
+\end_layout
+
 \end_body
 \end_document

@@ -1,39 +1,23 @@
 #% Do not delete the line below; configure depends on this
-#  \DeclareLaTeXClass{Hagenberg Thesis}
+#  \DeclareLaTeXClass[hgbthesis,hgb.sty,hgbheadings.sty,hgbbib.sty]{Hagenberg Thesis}
 #  \DeclareCategory{Books}
 # Hugo Hinterberger 2013
 
 Format 48
-Input stdclass.inc
-Input numreport.inc
-
-Provides hyperref 1
-Provides ifthen   1
-Provides hgb      1
 
 Sides    1
-NoStyle  Abstract
 
-Style Chapter_(frontmatter)
-	CopyStyle	Chapter
-	Category	FrontMatter
-	Margin		Static
-	LatexName	chapter
-	LabelType	No_Label
-	LabelCounter	""
-	ResetArgs       1
+ClassOptions
+  FontSize "11"
+  PageStyle "plain|fancy"
+  Other "a4paper,oneside"
 End
 
-Style Bibliography
-	TopSep		4
-	LabelString	"Bibliography"
-	LabelFont
-	  Series	Bold
-	  Size		Largest
-	EndFont
-End
+ProvidesModule hgb
+ProvidesModule hgbheadings
+ProvidesModule hgbbib
 
-Style setupdata
+Style SetupData
   Category  "Hagenberg Setup Data"
   InTitle   true
   LatexType   Command
@@ -52,19 +36,19 @@ Style setupdata
 End
 
 Style Studiengang
-  CopyStyle   setupdata
+  CopyStyle   SetupData
   LatexName   studiengang
   LabelString   "Studiengang:"
 End
 
 Style Studienort
-  CopyStyle   setupdata
+  CopyStyle   SetupData
   LatexName   studienort
   LabelString   "Studienort:"
 End
 
 Style Abgabedatum
-  CopyStyle   setupdata
+  CopyStyle   SetupData
   LatexName   abgabedatum
   LabelString   "Abgabedatum:"
   Argument 1
@@ -85,64 +69,85 @@ Style Abgabedatum
 End
 
 Style Arbeitsnummer
-  CopyStyle   setupdata
+  CopyStyle   SetupData
   LatexName   nummer
   LabelString   "Nummer:"
 End
 
 Style Semester
-  CopyStyle   setupdata
+  CopyStyle   SetupData
   LatexName   semester
   LabelString   "Semester:"
 End
 
 Style Gegenstand
-  CopyStyle   setupdata
+  CopyStyle   SetupData
   LatexName   gegenstand
   LabelString   "Gegenstand:"
 End
 
 Style Betreuer
-  CopyStyle   setupdata
+  CopyStyle   SetupData
   LatexName   betreuer
   LabelString   "Betreuer:"
 End
 
 Style Betreuerin
-  CopyStyle   setupdata
+  CopyStyle   SetupData
   LatexName   betreuerin
   LabelString   "Betreuerin:"
 End
 
 Style Firma
-  CopyStyle   setupdata
+  CopyStyle   SetupData
   LatexName   firma
   LabelString   "Firma:"
 End
 
 Style Firmentelefon
-  CopyStyle   setupdata
+  CopyStyle   SetupData
   LatexName   firmenTel
   LabelString   "Firmentelephon:"
 End
 
 Style Firmenwebseite
-  CopyStyle   setupdata
+  CopyStyle   SetupData
   LatexName   firmenUrl
   LabelString   "Firmenwebseite:"
 End
 
-NoStyle setupdata
-
-Style English
-  Margin           First_Dynamic
-  LatexType        Environment
-  LatexName        english
-  Category         Hagenberg
-  InTitle          false
-  ParIndent        ""
-  LabelType        Above
-  LabelString      "Englischer Text:"
-  LabelSep         M
-  LabelBottomSep   0
+Style Lizenztext
+  CopyStyle   SetupData
+  LatexName   license
+  LabelString   "Lizenztext:"
 End
+
+Style Chapter_(frontmatter)
+	CopyStyle	Chapter
+	Category	FrontMatter
+	Margin		Static
+	LatexName	chapter
+	LabelType	No_Label
+	LabelCounter	""
+	ResetArgs       1
+End
+
+Input stdclass.inc
+Input numreport.inc
+
+Style Bibliography
+	TopSep		4
+	Category    BackMatter
+	LabelString	"Bibliography"
+	LabelFont
+	  Series	Bold
+	  Size		Largest
+	EndFont
+End
+
+Input hgb.module
+Input hgbheadings.module
+Input hgbbib.module
+
+NoStyle SetupData
+NoStyle  Abstract

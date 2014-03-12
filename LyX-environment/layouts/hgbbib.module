@@ -2,6 +2,7 @@
 # DescriptionBegin
 #   Use the Hagenberg flavour of biblatex.
 # DescriptionEnd
+# Requires: 
 # Excludes: jurabib | natbib
 # Category: Citation engine
 
@@ -66,6 +67,7 @@ CiteFormat default
 	# cite styles
 	cite %!open%{%dialog%[[#ID]][[%!cite%]]}%!textafter%%!close%
 	nocite {%dialog%[[%_addtobib%]][[%key%%!nextkey% (%_notcited%)]]}
+	online {%author%[[%author%. ]]} {%year%[[%year%. ]]} URL: %url%
 End
 
 InsetLayout "Flex:Bibliography File"
@@ -75,7 +77,7 @@ InsetLayout "Flex:Bibliography File"
 	LabelString	"Bibliography File: "
 End
 
-Style bibhyphenation
+Style "Bibliography Hyphenation"
 	Margin					First_Dynamic
 	LatexType				Environment
 	LatexName				bibhyphenation
