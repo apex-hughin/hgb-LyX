@@ -6,7 +6,7 @@
 \use_default_options true
 \master !3-Masterarbeit.lyx
 \maintain_unincluded_children false
-\language german
+\language ngerman
 \language_package default
 \inputencoding utf8
 \fontencoding global
@@ -79,6 +79,6582 @@ name "chap:Abbildungen"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Allgemeines
+\end_layout
+
+\begin_layout Standard
+Abbildungen (
+\emph on
+figures
+\emph default
+) und Tabellen (
+\emph on
+tables
+\emph default
+) werden üblicherweise zusammen mit einem nummerierten Titel (
+\emph on
+caption
+\emph default
+) zentriert angeordnet (siehe Abb.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CocaCola"
+
+\end_inset
+
+).
+ Im Text 
+\emph on
+muss
+\emph default
+ es zu jeder Abbildung einen Verweis geben und die eigentliche Abbildung
+ sollte erst 
+\emph on
+nach
+\emph default
+ dem ersten Verweis platziert werden.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/cola-public-domain-photo-p.jpg
+	width 95text%
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%{CS0031}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Coca-Cola Werbung 1940 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CocaCola1940"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:CocaCola"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\emph on
+Let Them Float!
+\end_layout
+
+\begin_layout Standard
+Das Platzieren von Abbildungen und Tabellen gehört zu den schwierigsten
+ Aufgaben im Schriftsatz, weil diese meist viel Platz benötigen und häufig
+ nicht auf der aktuellen Seite im laufenden Text untergebracht werden können.
+ Diese Elemente müssen daher an eine geeignete Stelle auf nachfolgenden
+ Seiten verschoben werden, was manuell sehr mühsam (jedoch in 
+\emph on
+Word
+\emph default
+ beispielsweise unerlässlich) ist.
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ funktioniert das weitgehend automatisch, indem Abbildungen, Tabellen und
+ ähnliche als "`Floating Bodies"' behandelt werden.
+ Bei der Positionierung dieser Elemente wird versucht, einerseits im Textfluss
+ möglichst wenig Leer\SpecialChar \-
+raum entstehen zu lassen und andererseits die Abbildungen
+ und Tabellen nicht zu weit von der ursprünglichen Textstelle zu entfernen.
+\end_layout
+
+\begin_layout Standard
+Der Gedanke, dass etwa Abbildungen kaum jemals genau an der ge\SpecialChar \-
+wünsch\SpecialChar \-
+ten
+ Stelle und möglicherweise nicht einmal auf derselben Seite Platz finden,
+ ist für viele Anfänger aber offenbar sehr ungewohnt oder sogar beängstigend.
+ Dennoch sollte man zunächst einmal getrost 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+diese Arbeit überlassen und 
+\emph on
+nicht
+\emph default
+ manuell eingreifen.
+ Erst am Ende, wenn das gesamte Dokument "`steht"' und man mit der automatischen
+ Platzierung wirklich nicht zurande kommt, sollte man (durch gezielte Platzierun
+gsanweisungen 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "S.~33"
+key "Oetiker01"
+
+\end_inset
+
+) 
+\series bold
+in Einzelfällen
+\series default
+ eingreifen.
+\end_layout
+
+\begin_layout Section
+Captions
+\end_layout
+
+\begin_layout Standard
+Bei Abbildungen steht der Titel üblicherweise 
+\emph on
+unten
+\emph default
+, bei Tabellen hingegen -- je nach Konvention -- 
+\emph on
+oben
+\emph default
+ (wie in diesem Dokument) oder ebenfalls 
+\emph on
+unten
+\emph default
+.
+ In 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+erfolgt auch die Nummerierung der Abbildungen automatisch, ebenso der Eintrag
+ in das (optionale) Abbildungsverzeichnis
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Ein eigenes Verzeichnis der Abbildungen am Anfang des Dokuments ist zwar
+ leicht erstellt, in einer Diplomarbeit aber (und eigentlich überall sonst
+ auch) überflüssig.
+ Man sollte es daher weglassen.
+\end_layout
+
+\end_inset
+
+ am Beginn des Dokuments.
+\end_layout
+
+\begin_layout Standard
+Die Markierung der Captions
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Ausnahmsweise wird das Wort "`Caption"' im Folgenden ohne deutsche Übersetzung
+ verwendet.
+\end_layout
+
+\end_inset
+
+ erfolgt in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ mithilfe der 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+label{}!
+\end_layout
+
+\end_inset
+
+ Anweisung, die unmittelbar auf die 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+caption{}!
+\end_layout
+
+\end_inset
+
+ Anweisung folgen muss:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{LaTeXCode}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=0.95
+\backslash
+textwidth]{cola-public-domain-photo-p}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Coca-Cola Werbung 1940 
+\backslash
+cite{CocaCola1940}.}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+label{fig:CocaCola} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{LaTeXCode}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Der Name des Labels (
+\family typewriter
+fig:CocaCola
+\family default
+) kann beliebig gewählt werden.
+ Die Kennzeichnung 
+\family typewriter
+fig:
+\family default
+ ist (wie in Abschn.
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:querverweise"
+
+\end_inset
+
+ erw
+\begin_inset space ~
+\end_inset
+
+hnt) nur eine nützliche Hilfe, um beim Schreiben verschiedene Arten von
+ Labels besser unterscheiden zu können.
+\end_layout
+
+\begin_layout Standard
+Die Länge der Captions kann dabei sehr unterschiedlich sein.
+ Je nach Anwendung und Stil ergibt sich manchmal eine sehr kurze Caption
+ (Abb.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:CocaCola"
+
+\end_inset
+
+) oder eine längere (Abb.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ibm360"
+
+\end_inset
+
+).
+ Man beachte, wie bei kurzen Captions ein zentrierter Satz und bei langen
+ Captions ein Blocksatz verwendet wird (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ macht das automatisch).
+ Captions sollten 
+\emph on
+immer
+\emph default
+ mit einem Punkt abgeschlossen sein.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Kurioserweise verlangen manche Anleitungen genau das Gegenteil, angeblich,
+ weil beim klassischen Bleisatz die abschließenden Punkte im Druck häufig
+ 
+\begin_inset Quotes gld
+\end_inset
+
+weggebrochen
+\begin_inset Quotes grd
+\end_inset
+
+ sind.
+ Das kann man glauben oder nicht, im Digitaldruck spielt es jedenfalls keine
+ Rolle.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Flex FramePic
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ibm-360-color.jpg
+	lyxscale 50
+	width 85text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%{CS1065}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Beispiel für einen langen Caption-Text.
+ 
+\shape smallcaps
+Univac
+\shape default
+ brachte 1961 mit dem Modell 751 den ersten Hochleistungsrechner mit Halbleiters
+peicher auf den Markt.
+ Von diesem Computer wurden in den U.S.A.
+\begin_inset space \space{}
+\end_inset
+
+bereits im ersten Produktionsjahr über fünfzig Exemplare verkauft, vorwiegend
+ an militärische Dienststellen, Versicherungen und Großbanken.
+ Die Ablöse erfolgte zwei Jahre später durch das zusammen mit 
+\shape smallcaps
+Sperry
+\shape default
+ entwickelte Modell 820.
+ Das klingt vielleicht plausibel, ist aber völliger Unsinn, denn das Bild
+ zeigt in Wirklichkeit eine System/360 Anlage von IBM.
+ Bildquelle
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "IBM360"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ibm360"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Abbildungen
+\end_layout
+
+\begin_layout Standard
+Für die Einbindung von Grafiken in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ wird die Verwendung des Stan\SpecialChar \-
+dard-Pakets 
+\family typewriter
+graphicx
+\family default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Carlisle99"
+
+\end_inset
+
+ empfohlen (wird durch das 
+\family typewriter
+hagenberg
+\family default
+-Paket bereits eingebunden).
+ Mit dem aktuell verwendeten Workflow (
+\family typewriter
+pdflatex
+\family default
+) können Bild- bzw.
+\begin_inset space \space{}
+\end_inset
+
+Gradikformate ausschließlich in folgenden Formaten einbunden werden: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+PNG
+\series default
+: für Grau-, S/W- und Farb-Rasterbilder (bevorzugt), 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+JPEG
+\series default
+: für Fotos (wenn nicht anders vorhanden), 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+PDF
+\series default
+: für Vektorgrafiken (Illustrationen, Strichzeichnungen etc.).
+ 
+\end_layout
+
+\begin_layout Standard
+Bei Rasterbildern sollte wenn möglich PNG verwendet werden, weil die darin
+ enthaltenen Bilder verlustfrei komprimierzt sind und daher keine sichtaren
+ Kompressionsartefakte aufweisen.
+ Im Gegensatz dazu sollte man JPEG nur dann verwenden, wenn das Originalmaterial
+ (Foto) bereits in dieser Form vorliegt.
+\end_layout
+
+\begin_layout Subsection
+Wo liegen die Grafikdateien?
+\end_layout
+
+\begin_layout Standard
+Die Bilder werden üblicherweise in einem Unterverzeichnis (oder in mehreren
+ Unterverzeichnissen) abgelegt, im Fall dieses Dokuments in 
+\begin_inset Flex No-link URL
+status open
+
+\begin_layout Plain Layout
+images/
+\end_layout
+
+\end_inset
+
+.
+ Dazu dient die folgende Anweisung am Beginn des Hauptdokuments 
+\begin_inset Flex No-link URL
+status open
+
+\begin_layout Plain Layout
+DaBa.tex
+\end_layout
+
+\end_inset
+
+ (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+sa
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+Anhang 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:latex"
+
+\end_inset
+
+): 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+graphicspath{{images/}}!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Der (zum Hauptdokument relative) Pfad 
+\family typewriter
+graphicspath
+\family default
+ kann innerhalb des Dokuments jederzeit geändert werden, was durchaus nützlich
+ ist, wenn man 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+die Grafiken einzelner Kapitel getrennt in entsprechenden Verzeichnissen
+ ablegen möchte.
+ Die Größe der Abbildung im Druck kann durch Vorgabe einer bestimmten Breite
+ oder Höhe oder eines Skalierungsfaktors gesteuert werden, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\backslash
+zB}
+\end_layout
+
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+includegraphics[width=.85
+\backslash
+textwidth]{ibm-360-color}!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+includegraphics[scale=1.5]{ibm-360-color}!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Man beachte, dass dabei die Dateiendung nicht explizit angegeben werden
+ muss.
+ Das ist 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+va
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+dann praktisch, wenn man verschiedene Workflows mit jeweils unterschiedlichen
+ Dateitypen verwendet.
+\end_layout
+
+\begin_layout Subsection
+Grafiken einrahmen
+\end_layout
+
+\begin_layout Standard
+Mit dem Makro 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+FramePic{}!
+\end_layout
+
+\end_inset
+
+ (definiert in 
+\family typewriter
+hgb.sty
+\family default
+) kann man optional einen dünnen Rahmen rund um die Grafik erzeugen, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+FramePic{
+\backslash
+includegraphics[height=50mm]{ibm-360-color}}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Das wird man üblicherweise nur bei Rasterbildern tun, insbesondere wenn
+ sie zum Rand hin sehr hell sind und ohne Rahmen nicht vom Hintergrund abgrenzba
+r wären.
+\end_layout
+
+\begin_layout Subsection
+Rasterbilder (Pixelgrafiken)
+\end_layout
+
+\begin_layout Standard
+Generell sollte man Bilder bereits vorher so aufbereiten, dass sie später
+ beim Druck möglichst wenig an Qualität verlieren.
+ Es empfiehlt sich daher, die Bildgröße (Auflösung) bereits im Vorhinein
+ (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+ mit 
+\emph on
+Photoshop
+\emph default
+) richtig einzustellen.
+ Brauchbare Auflösungen bezogen auf die endgültige Bildgröße sind: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Farb- und Grauwertbilder:
+\series default
+ 150--300 dpi 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Binärbilder (Schwarz/Weiß):
+\series default
+ 300--600 dpi 
+\end_layout
+
+\begin_layout Standard
+Eine wesentlich höhere Auflösung macht aufgrund der beim Laserdruck notwendigen
+ Rasterung keinen Sinn, auch bei 1200 dpi-Druckern.
+ Speziell 
+\emph on
+Screen\SpecialChar \-
+shots
+\emph default
+ sollte man nicht zu klein darstellen, da sie sonst schlecht lesbar sind
+ (max.
+\begin_inset space \space{}
+\end_inset
+
+200 dpi, besser 150 dpi).
+ Dabei ist zu bedenken, dass die Arbeit auch als Kopie in allen Details
+ noch gut lesbar sein sollte.
+\end_layout
+
+\begin_layout Subsubsection
+JPEG-Problematik
+\end_layout
+
+\begin_layout Standard
+In der Regel sollte man Bilder, die für den Einsatz in Druckdokumenten gedacht
+ sind, nicht mit verlustbehafteten Kompressionsverfahren abspeichern.
+ Insbesondere sollte man die Verwendung von JPEG möglichst vermeiden, auch
+ wenn viele Dateien dadurch wesentlich kleiner werden.
+ Eine Ausnahme ist, wenn die Originaldaten nur in JPEG vorliegen und für
+ die Einbindung nicht bearbeitet oder verkleinert wurden.
+ Ansonsten sollte man immer PNG verwenden.
+\end_layout
+
+\begin_layout Standard
+Besonders gerne werden farbige 
+\series bold
+Screenshots
+\series default
+ einer JPEG-Kompression
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Das JPEG-Verfahren ist für natürliche Fotos konzipiert und dafür auch gut
+ geeignet, seine undifferenzierte Verwendung ist aber zu einer globalen
+ Plage geworden.
+\end_layout
+
+\end_inset
+
+ unterzogen, obwohl deren verheerende Folgen auch für jeden Laien sichtbar
+ sein sollten (Abb.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:jpeg-pfusch"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\size small
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Flex FramePic
+status open
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Graphics
+	filename images/screenshot-dirty.png
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+JPEG file
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Flex FramePic
+status open
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Graphics
+	filename images/screenshot-clean.png
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+PNG file
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+(a) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+(b) 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\size small
+Typischer JPEG-Pfusch.
+ Screenshots und ähnliche im Original verfügbare Rasterbilder sollten für
+ Druckdokumente 
+\emph on
+keinesfalls
+\emph default
+ mit JPEG komprimiert werden.
+ Das Ergebnis
+\begin_inset space ~
+\end_inset
+
+(a) sieht gegenüber dem unkomprimierten Original
+\begin_inset space ~
+\end_inset
+
+(b) nicht nur schmutzig aus, sondern wird im Druck auch schnell unleserlich.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:jpeg-pfusch"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Vektorgrafiken
+\end_layout
+
+\begin_layout Standard
+Für schematische Abbildungen (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+ Flussdiagramme, Entity-Relationship-Diagramme oder sonstige strukturelle
+ Darstellungen) sollte man unbedingt Vektorgrafiken (PDF) verwenden.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% (
+\backslash
+zB Abb.~
+\backslash
+ref{fig:latex-pdf-workflow}).
+\end_layout
+
+\end_inset
+
+Gerasterte Grafiken, wie man sie üblicherweise als GIF- oder PNG-Dateien
+ auf Webseiten findet, haben in einem Druckdokument nichts zu suchen, notfalls
+ muss man sie mit einem entsprechenden Werkzeug 
+\emph on
+neu
+\emph default
+ zeichnen (natürlich unter Angabe der ursprünglichen Quelle).
+\end_layout
+
+\begin_layout Standard
+In diesem Fall kommt als Datenformat nur PDF 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%(oder EPS im DVI-PS-Workflow) 
+\end_layout
+
+\end_inset
+
+in Frage, dieses bietet sich aber auch in anderen Umgebungen als universelles
+ Vektor-Format an.
+ Zur Erstellung von PDF-Vektorgrafiken benötigt man ein geeignetes Grafikprogram
+m, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\emph on
+Freehand
+\emph default
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%von 
+\backslash
+emph{Macromedia}
+\end_layout
+
+\end_inset
+
+oder 
+\emph on
+Illustrator
+\emph default
+ von 
+\emph on
+Adobe
+\emph default
+.
+ Manche gängige Grafikprogramme unterstützen allerdings keinen direkten
+ Export von PDF-Dateien oder erzeugen unsaubere Dateien.
+ Vor der Entscheidung für eine bestimmte Zeichensoftware sollte man das
+ im Zweifelsfall ausprobieren.
+ PDF kann im Notfall über einen entsprechenden Druckertreiber erzeugt werden.
+\end_layout
+
+\begin_layout Subsubsection
+Einbettung von Schriften
+\end_layout
+
+\begin_layout Standard
+Die Wiedergabe von Textelementen ist abhängig von der auf dem Computer (oder
+ Drucker) installierten Schriften und der Form der Schrifteinbettung im
+ Quelldokument.
+ Die korrekte Darstellung am Bildschirm eines Computers bedeutet nicht,
+ dass dasselbe Dokument auf einem anderen Computer oder Drucker genau so
+ dargestellt wird.
+ Dieser Umstand ist besonders wichtig, wenn Druckdokumente online zur Verfügung
+ gestellt werden.
+ Kontrollieren Sie daher genau, ob die innerhalb Ihrer Grafiken verwendeten
+ Schriften auch exakt wie beabsichtigt im Ausdruck aufscheinen.
+\end_layout
+
+\begin_layout Subsubsection
+Strichstärken -- 
+\emph on
+Hairlines
+\emph default
+ vermeiden!
+\end_layout
+
+\begin_layout Standard
+In Grafik-Programmen wie 
+\emph on
+Freehand
+\emph default
+ und 
+\emph on
+Illustrator
+\emph default
+, die sich im Wesentlichen an der 
+\emph on
+PostScript
+\emph default
+-Funktionalität orientieren, ist es möglich, Linien bzgl.
+\begin_inset space \space{}
+\end_inset
+
+ihrer Stärke als 
+\begin_inset Quotes gld
+\end_inset
+
+Hairline
+\begin_inset Quotes grd
+\end_inset
+
+ zu definieren.
+ Im zugehörigen 
+\emph on
+PostScript
+\emph default
+-Code wird dies als 
+\family typewriter
+linewidth
+\family default
+ mit dem Wert 
+\family typewriter
+0
+\family default
+ ausgedrückt und sollte am Ausgabegerät 
+\begin_inset Quotes gld
+\end_inset
+
+möglichst dünne
+\begin_inset Quotes grd
+\end_inset
+
+ Linien ergeben.
+ Das Ergebnis ist ausschließlich vom jeweiligen Drucker abhängig und somit
+ kaum verhersagbar.
+ 
+\series bold
+Fazit:
+\series default
+ Hairlines vermeiden und stattdessen immer konkrete Strichstärken (
+\begin_inset Formula $\geq\unit[0.25]{pt}\;0.25\,\mathrm{pt}$
+\end_inset
+
+) einstellen!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status collapsed
+
+\begin_layout Subsection
+Erzeugung von EPS-Dateien (nur im DVI-PS-Work\SpecialChar \-
+flow relevant)
+\end_layout
+
+\begin_layout Subsubsection
+EPS-Bilder 
+\end_layout
+
+\begin_layout Plain Layout
+Im DVI-PS-Workflow können -- wie oben erwähnt -- nur EPS-Grafi\SpecialChar \-
+ken eingebunden
+ werden.
+ Da EPS für 
+\emph on
+Photoshop
+\emph default
+ ein Standardformat ist, lässt sich damit besonders einfach arbeiten.
+ Dabei ist allerdings zu beachten, dass zur Verwendung in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ die Bilder 
+\emph on
+ohne
+\emph default
+ Voransicht (
+\emph on
+Preview
+\emph default
+) gespeichert werden müssen (Abb.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:photoshop-eps-screen"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/photoshop-eps-screen.png
+	scale 150
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Speichern von Bildern als EPS-Dateien in 
+\emph on
+Photoshop
+\emph default
+.
+ Dabei ist unbedingt zu beachten, dass ohne Preview (
+\emph on
+Preview-None
+\emph default
+) gespeichert wird.
+ Sowohl ASCII- wie auch Binärkodierung funktionieren mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+, die Anzeige der EPS-Grafiken im DVI-Viewer (mit 
+\emph on
+GhostScript
+\emph default
+) funktioniert aber nur bei ASCII-Kodierung!
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:photoshop-eps-screen"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Binärkodierte EPS-Dateien sind normalerweise kein Problem.
+ Nicht alle Bildbearbeitungsprogramme bieten allerdings die Möglichkeit,
+ direkt im EPS-Format zu exportieren.
+\end_layout
+
+\begin_layout Subsubsection
+EPS-Export aus 
+\emph on
+Adobe Illustrator
+\emph default
+ oder 
+\emph on
+Freehand
+\end_layout
+
+\begin_layout Plain Layout
+Auch mit professioneller Software ergeben sich in diesem Zusammenhang --
+ zum Teil wegen der Vielzahl an Einstellmöglichkeiten -- immer wieder Probleme.
+ Speziell daher zum Export von EPS-Grafiken aus 
+\emph on
+Freehand
+\emph default
+ einige Tips (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+sa
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+Abb.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:freehand-export-screen-setup"
+
+\end_inset
+
+): 
+\end_layout
+
+\begin_layout Itemize
+Exportieren Sie nur die ausgewählten Grafik-Elemente ("`Selected objects
+ only"').
+ 
+\end_layout
+
+\begin_layout Itemize
+Exportieren Sie 
+\emph on
+ohne
+\emph default
+ Vorschau ("`Preview None"').
+ 
+\end_layout
+
+\begin_layout Itemize
+Vermeiden Sie die Farbkonvertierung auf CMYK -- sie kann beim Druck zu störender
+ Rasterung und ungenügenden Schwarzwerten füh\SpecialChar \-
+ren.
+ 
+\end_layout
+
+\begin_layout Itemize
+Binden Sie die Schriften der Grafik in das EPS-Dokument ein ("`Include Fonts
+ in EPS"' im Setup-Menü).
+ Falls das nicht möglich ist (bestimmte Schriften sind aus rechtlichen Gründen
+ gesperrt), sollten alle Texte vor dem Export in Zeichenpfade aufgelöst
+ werden ("`Convert text to paths"').
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Ähnliches gilt auch für den EPS-Export aus 
+\emph on
+Adobe Illustrator
+\emph default
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename images/freehand-export-screen-setup.png
+	scale 150
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Exportieren von Vektor-Grafik als EPS-Datei in 
+\emph on
+Freehand
+\emph default
+.
+ Das kleinere Fenster zeigt das geöffnete Setup-Menü.
+ Wichtig ist, dass beim Export sicherheitshalber die Schriften in das EPS-Dokume
+nt eingebunden werden (
+\emph on
+Include Fonts in EPS
+\emph default
+)! Die Ausgabe in RGB-Farben widerspricht zwar der üblichen Konvention,
+ ist aber dennoch zu empfehlen, da bei CMYK-Konversion ungenügende Schwarzwerte
+ beim S/W-Druck auftreten können.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:freehand-export-screen-setup"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+tex
+\end_layout
+
+\end_inset
+
+-Schriften auch in Grafiken?
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:tex-schriften-in-grafiken"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Während man sich bei Abbildungen, die mit externen Grafik-Programmen erzeugt
+ werden, meist mit ähnlich aussehenden Schriften (wie 
+\emph on
+Times-Roman
+\emph default
+ oder 
+\emph on
+Garamond
+\emph default
+) abhilft, besteht bei Puristen oft der verständliche Wunsch, die 
+\emph on
+Computer-Modern
+\emph default
+ (CM) Schriftfamilie von 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+tex
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+/
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ auch innerhalb von eingebetteten Grafiken einzusetzen.
+\end_layout
+
+\begin_layout Subsubsection
+
+\emph on
+BaKoMa
+\emph default
+-Schriften (TrueType)
+\end_layout
+
+\begin_layout Standard
+Glücklicherweise stehen einige Portierungen von CM als 
+\emph on
+TrueType
+\emph default
+-Schriften zur Verfügung, die man auch in herkömmlichen DTP-Anwendungen
+ unter 
+\emph on
+Windows
+\emph default
+ und 
+\emph on
+Mac
+\begin_inset space ~
+\end_inset
+
+OS
+\emph default
+ verwenden kann.
+ Empfehlenswert ist 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+die 
+\emph on
+BaKoMa Fonts Collection
+\emph default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Von Basil K.
+\begin_inset space \space{}
+\end_inset
+
+Malyshev -- die BaKoMa-Fonts liegen dieser Vorlage bei, ansonsten findet
+ man sie 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+unter 
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+www.ctan.org/tex-archive/fonts/cm/ps-type1/bakoma/
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+, die neben den CM-Standardschriften auch die mathematischen Schriften der
+ AMS-Familie ent\SpecialChar \-
+hält und zudem kostenfrei ist.
+ Natürlich müssen die TrueType Schriften vor der Verwendung zunächst auf
+ dem eigenen PC installiert werden.
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Ein Beispiel für eine in 
+\emph on
+Freehand
+\emph default
+ erzeugte Grafik mit CM-Schriften findet sich in Abb.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:latex-pdf-workflow"
+
+\end_inset
+
+ (Seite 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "fig:latex-pdf-workflow"
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\emph on
+Latin Modern Roman
+\emph default
+ Fonts (OpenType)
+\end_layout
+
+\begin_layout Standard
+Eine Alternative dazu sind die "`LM-Roman"'
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.gust.org.pl/projects/e-foundry/latin-modern
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Open-Type Schriften, die speziell für die Verwendung im Umfeld von 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+entwickelt wurden.
+ Sie sind auch Teil der Mik
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+-Installation.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+C:/Program Files (x86)/MikTeX 2.9/fonts/opentype/public/lm/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Diese Schriften enthalten 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ua
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+Zeichen mit Umlauten und sind daher auch für deutsche Texte recht bequem
+ zu verwenden.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Subsubsection
+Für Gourmets: Ersetzung von Symbolen mit dem 
+\family typewriter
+psfrag
+\family default
+-Paket
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:psfrag"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Eine interessante Alternative zur Verwendung gesonderter Schriften ist die
+ Verwendung des 
+\family typewriter
+psfrag
+\family default
+-Paket, mit dem Zeichenketten in EPS-Dateien 
+\emph on
+nachträglich
+\emph default
+ durch beliebige 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-Elemente ersetzt werden können.
+ Das ist allerdings 
+\series bold
+nur im DVI-PS-Workflow
+\series default
+ möglich! Auf diesem Weg kann das Schriftbild in Abbildungen perfekt dem
+ übrigen Text angepasst werden, was besonders für Illustrationen und Diagramme
+ mit mathematischen Beschriftungen interessant ist.
+ Ein Beispiel dazu ist in Abb.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:psfrag-example"
+
+\end_inset
+
+ gezeigt, Details finden sich im zugehörigen 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-Code.
+\end_layout
+
+\begin_layout Plain Layout
+
+\family typewriter
+psfrag
+\family default
+ funktioniert allerdings nicht mit allen EPS-Dateien.
+ Weitgehend problemlos sind Dateien, die aus 
+\emph on
+Macromedia Freehand
+\emph default
+, 
+\emph on
+Adobe Illustrator
+\emph default
+ oder 
+\emph on
+Mathematica
+\emph default
+ exportiert wurden.
+ Schwierig\SpecialChar \-
+keiten gibt es hingegen erfahrungsgemäß mit 
+\emph on
+Microsoft Visio
+\emph default
+, 
+\emph on
+PowerPoint
+\emph default
+ und 
+\emph on
+Excel
+\emph default
+, aber auch mit Grafiken aus 
+\emph on
+Canvas
+\emph default
+.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Quote
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{sloppypar}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quote
+
+\series bold
+Achtung:
+\series default
+ Die Ersetzung mit 
+\family typewriter
+psfrag
+\family default
+ 
+\series bold
+funktioniert nicht
+\series default
+ mit 
+\family typewriter
+pdflatex
+\family default
+ (Ausgabeprofil 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!LaTeX => PDF!
+\end_layout
+
+\end_inset
+
+), da hier keine PostScript-Zwischendatei mehr erzeugt wird.
+ Um 
+\family typewriter
+psfrag
+\family default
+ zu verwenden, muss man zumindest beim finalen Durchlauf das Ausgabeprofil
+ auf 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!LaTeX => PS!
+\end_layout
+
+\end_inset
+
+ oder 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!LaTeX => PS => PDF!
+\end_layout
+
+\end_inset
+
+ ändern.
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{sloppypar}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+
+\size small
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Graphics
+	filename images/ellipse-parameters-1.pdf
+	width 45text%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{psfrags} %ACHTUNG: Ersetzung funktioniert NUR im klassischen DVI-PS-Workfl
+ow!
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+small
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+psfrag{xc}[Bl]{$x_c$}	% Bl..
+ align on baseline (vert.) and left (horiz.)
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+psfrag{yc}[Bl]{$y_c$}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+psfrag{p}[Bl]{$
+\backslash
+mathbf{p}=(u,v)$}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+psfrag{p}[Bl]{$
+\backslash
+boldsymbol{p}=(u,v)$}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+psfrag{a}[Bl]{$
+\backslash
+alpha$}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+psfrag{b}[Bl]{$
+\backslash
+beta$}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\backslash
+psfrag{w}[Bl]{$
+\backslash
+varphi$}
+\end_layout
+
+\begin_layout Plain Layout
+
+%verwendet die PNG-Screenshot im PDF-workflow, EPS-Version (Vektorgrafik)
+ im DVI-PS-Workflow:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/ellipse-parameters-2.png
+	width 45text%
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{psfrags}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+(a) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+(b) 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\size small
+Beispiel für die Textersetzung in EPS-Grafiken mit dem 
+\family typewriter
+psfrag
+\family default
+-Paket.
+ Original-Vektorgrafik, erstellt in Freehand (a); dieselbe Grafik mit Textelemen
+ten ersetzt durch mathematische Symbole oder Ausdrücke (b).
+ 
+\series bold
+Achtung:
+\series default
+ Die tatsächliche Ersetzung funktioniert nur bei Verarbeitung im klassischen
+ DVI-PS-Workflow -- im PDF-Workflow wird in (b) nur ein Screenshot angezeigt.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:psfrag-example"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+dieses Thema ist unter PDF-LaTeX kaum mehr relevant
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Probleme mit EPS-Dateien
+\end_layout
+
+\begin_layout Plain Layout
+Obwohl EPS im Grunde ein einfaches und wohldefiniertes Datenformat ist,
+ produzieren leider viele Programme unsauberen EPS-Code, der sich entweder
+ überhaupt nicht einbinden lässt oder später, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+ auf dem Drucker, zu Fehlern führt.
+ Typische Probleme sind etwa das Auftreten unbekannter PostScript-Befehle,
+ fehlende Schriftdefinitionen, falsch angegebene oder fehlende 
+\emph on
+Boun\SpecialChar \-
+ding-Box\SpecialChar \-
+es
+\emph default
+ und binär kodierte 
+\emph on
+Preview
+\emph default
+-Daten.
+\end_layout
+
+\begin_layout Subsubsection
+EPS-Dateien überprüfen
+\end_layout
+
+\begin_layout Plain Layout
+Einige dieser Probleme kann man bereits im Vorfeld erkennen, in dem man
+ die betroffenen EPS-Dateien einfach mit einem Texteditor, der auch große
+ Dateien darstellen kann (beispielsweise mit 
+\emph on
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+TeX
+\end_layout
+
+\end_inset
+
+nicCenter
+\emph default
+, 
+\emph on
+Ultra\SpecialChar \-
+Edit
+\emph default
+, 
+\emph on
+Win\SpecialChar \-
+Edt
+\emph default
+ oder 
+\emph on
+Emacs
+\emph default
+),
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Dazu zählt auch der in der Unix-Welt beliebte 
+\family typewriter
+vi
+\family default
+-Editor, in dem allerdings auch abgehärtete Benutzer ein gewisses masochistische
+s Element zu erkennen glauben.
+\end_layout
+
+\end_inset
+
+ öffnet.
+ Eine reguläre EPS-Datei muss jedenfalls mit der Zeichenfolge
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb|%!PS-Adobe|
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+beginnen, wie das Beispiel in Abb.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:eps-source"
+
+\end_inset
+
+ zeigt.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{GenericCode}
+\end_layout
+
+\begin_layout Plain Layout
+
+%!PS-Adobe-2.0 EPSF-1.2
+\end_layout
+
+\begin_layout Plain Layout
+
+%%Title: workflow.fh8
+\end_layout
+
+\begin_layout Plain Layout
+
+%%Creator: FreeHand 8.0
+\end_layout
+
+\begin_layout Plain Layout
+
+%%CreationDate: Mon Jul 16 20:04:10 2001
+\end_layout
+
+\begin_layout Plain Layout
+
+%%BoundingBox: 0 0 420 138
+\end_layout
+
+\begin_layout Plain Layout
+
+...
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+%%Trailer
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{GenericCode}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inhalt einer typischen EPS-Datei.
+ Wichtig für die Einbindung in 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+ ist v.a., dass keinerlei Zeichen 
+\emph on
+vor
+\emph default
+ dem 
+\begin_inset Quotes gld
+\end_inset
+
+
+\family typewriter
+%!
+\family default
+
+\begin_inset Quotes grd
+\end_inset
+
+ erscheinen und dass im Kopf ein korrekter Eintrag für die 
+\emph on
+Bounding Box
+\emph default
+ enthalten ist.
+ Die Maßeinheit für die Größe der 
+\emph on
+Bounding Box
+\emph default
+ ist übrigens 
+\begin_inset Formula $\frac{1}{72}$
+\end_inset
+
+ Zoll.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:eps-source"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Durch das Öffnen mit Adobe 
+\emph on
+Photoshop
+\emph default
+ (in den ein vollständiger 
+\emph on
+Post\SpecialChar \-
+Script
+\emph default
+-Interpreter eingebaut ist) lässt sich übrigens leicht feststellen, wie
+ eine EPS-Datei in einer beliebigen Auflösung "`rendert"'.
+ Probleme mit fehlenden Schriften können dabei allerdings unbemerkt bleiben,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+va
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+dann, wenn die ursprüngliche Grafik auf dem selben Computer erstellt wurde.
+\end_layout
+
+\begin_layout Subsubsection
+EPS-Grafiken über PDF generieren
+\end_layout
+
+\begin_layout Plain Layout
+Falls man Grafiken aus einer Applikation übernehmen möchte, die keine Möglichkei
+t zum EPS-Export anbietet (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\emph on
+PowerPoint
+\emph default
+) oder unbrauchbare EPS-Dateien erzeugt, kann man auch den Umweg über eine
+ PDF-Datei nehmen: 
+\end_layout
+
+\begin_layout Itemize
+Dazu erzeugt man zunächst mit Adobe 
+\emph on
+Distiller
+\emph default
+ (als virtueller Drucker) eine PDF-Datei.
+ 
+\end_layout
+
+\begin_layout Itemize
+Dann öffnet man die PDF-Datei mit 
+\emph on
+Acrobat
+\emph default
+, schneidet diese (mit dem 
+\emph on
+Crop Tool
+\emph default
+) auf das richtige Format und 
+\end_layout
+
+\begin_layout Itemize
+speichert schließlich die Datei (mit 
+\emph on
+Save As
+\emph default
+) im 
+\family typewriter
+eps
+\family default
+-Format, natürlich wiederum 
+\emph on
+ohne
+\emph default
+ Preview (in 
+\emph on
+Settings
+\emph default
+ einstellbar).
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Das ist zwar etwas mühsamer als auf dem direkten Weg, aber im Notfall meist
+ einfacher als ein Grafik ganz neu zu machen.
+ Eventuelle Probleme bei 
+\family typewriter
+psfrag
+\family default
+-Ersetzungen (siehe Abschn.
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:tex-schriften-in-grafiken"
+
+\end_inset
+
+) sind dabei allerdings nicht auszuschließen.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Abbildungen mit mehreren Elementen
+\end_layout
+
+\begin_layout Standard
+Werden mehrere Bilder oder Grafiken zu einer Abbildung zusammengefasst,
+ verwendet man üblicherweise eine gemeinsame Caption, wie in Abb.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Bearings"
+
+\end_inset
+
+ dargestellt.
+ Im Text könnte ein Verweis auf einen einzelnen Teil der Abbildung, etwa
+ das einreihige Rollenlager in Abb.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Bearings"
+
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+(c), so aussehen: 
+\end_layout
+
+\begin_layout Itemize
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!Abb.~
+\backslash
+ref{fig:Bearings}
+\backslash
+,(c)!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Für kompliziertere Abbildungen sollte man die Verwendung des 
+\family typewriter
+subfigure
+\family default
+-Pakets 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cochran95"
+
+\end_inset
+
+ in Betracht ziehen.
+\end_layout
+
+\begin_layout Subsection
+Quellenangaben in Captions
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:QuellenangabenInCaptions"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wenn Bilder, Grafiken oder Tabellen aus anderen Quellen verwendet werden,
+ dann muss ihre Herkunft in jedem Fall klar ersichtlich gemacht werden,
+ und zwar am besten direkt in der Caption.
+ Verwendet man beispielsweise eine Grafik aus einem Buch oder einer sonstigen
+ zitierfähigen Publikation, dann sollte man diese in das Literaturverzeichnis
+ aufnehmen und wie üblich mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+cite{..}!
+\end_layout
+
+\end_inset
+
+ zitieren, wie in Abb.
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Bearings"
+
+\end_inset
+
+ demonstriert.
+ Weitere Details zu dieser Art von Quellenangaben finden sich in Kap.
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cha:Literatur"
+
+\end_inset
+
+ (insbes.
+\begin_inset space \space{}
+\end_inset
+
+Abschnitt 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:KategorieOnline"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\backslash
+small
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+tabcolsep}{0mm}  % alle Spaltenränder auf 0mm
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="none" valignment="top" special="@{\hspace{12mm}}c">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/overhang-mounting.png
+	lyxscale 20
+	width 45text%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/straddle-mounting.png
+	lyxscale 20
+	width 45text%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(a) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(b) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[4pt]%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ball-bearing-1.png
+	lyxscale 20
+	width 45text%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ball-bearing-2.png
+	lyxscale 20
+	width 45text%
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(c) 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(d) 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\size small
+very special table settings:
+\end_layout
+
+\begin_layout Plain Layout
+mittlerer Abstand = 12mm
+\end_layout
+
+\begin_layout Plain Layout
+vertical extra spacing (4 points)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diverse Maschinenelemente als Beispiel für eine Abbildung mit mehreren Elementen.
+ Overhang Mounting (a), Straddle Mounting (b), einreihiges Rollenlager (c),
+ Schmierung von Rollenlagern (d).
+ Die Abbildung verwendet im oberen Teile eine 
+\begin_inset Formula $2\times2$
+\end_inset
+
+ Tabelle (
+\family typewriter
+tabular
+\family default
+), in der die Breite der Spaltenränder gesondert spezifiziert ist (Details
+ finden sich im Quelltext).
+ Bildquelle
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Faires34"
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Bearings"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tabellen
+\end_layout
+
+\begin_layout Standard
+Tabellen werden häufig eingesetzt um numerische Zusammenhänge, Testergebnisse
+ etc.
+\begin_inset space \space{}
+\end_inset
+
+in übersichtlicher Form darzustellen.
+ Ein einfaches Beispiel ist Tab.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:processors"
+
+\end_inset
+
+, der 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-Quelltext dazu findet sich in Prog.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prog:processors-source"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Prozessor-Familien im Überblick.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:processors"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+tabcolsep}{5mm}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% separator between columns
+\end_layout
+
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\arraystretch}{1.25}
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% vertical stretch factor (Standard = 1.0)
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="right" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+PowerPC
+\emph default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Pentium
+\emph default
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Athlon
+\emph default
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Manufacturer 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Motorola 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Intel 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+AMD 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Speed 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+high 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+medium 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+high 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="right" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Price 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+high 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+high 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+medium 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{program}
+\end_layout
+
+\begin_layout Plain Layout
+
+% place caption consistently either at the top or bottom:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{
+\backslash
+latex
+\backslash
+ Quelltext zu Tab.~
+\backslash
+ref{tab:processors}.
+\end_layout
+
+\begin_layout Plain Layout
+
+Die Erzeugung des dargestellten Listings selbst ist in Abschn.
+\backslash
+ 
+\backslash
+ref{sec:programmtexte} beschrieben.}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "prog:processors-source"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{LaTeXCode}[numbers=none]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{table}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+caption{Prozessor-Familien im Überblick.}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+label{tab:processors}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+setlength{
+\backslash
+tabcolsep}{5mm}	% separator between columns
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+def
+\backslash
+arraystretch{1.25}		% vertical stretch factor
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+begin{tabular}{|r||c|c|c|} 
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+		& 
+\backslash
+emph{PowerPC} & 
+\backslash
+emph{Pentium} & 
+\backslash
+emph{Athlon} 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+		Manufacturer & Motorola & Intel & AMD 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+		Speed & high & medium & high   
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+		Price & high & high   & medium 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+hline
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+end{tabular}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{table}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{LaTeXCode}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{program}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Manchmal ist es notwendig, in Tabellen relativ viel Text in engen Spalten
+ unter zu bringen, wie in Tab.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:synthesis-techniques"
+
+\end_inset
+
+.
+ In diesem Fall ist es sinnvoll, auf den Blocksatz zu verzichten und gleichzeit
+ die strengen Abteilungsregeln zu lockern.
+ Details dazu finden sich im zugehörigen 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-Quelltext.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+%-------------------------------------------------------------------------------
+-
+\end_layout
+
+\begin_layout Plain Layout
+% Table with narrow columns
+\end_layout
+
+\begin_layout Plain Layout
+%-------------------------------------------------------------------------------
+-
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Beispiel für eine Tabelle mit mehrzeiligem Text in engen Spalten.
+ Hier werden die Zeilen für den Blocksatz zu kurz, daher wird linksbündig
+ gesetzt (im 
+\begin_inset Quotes gld
+\end_inset
+
+Flattersatz
+\begin_inset Quotes grd
+\end_inset
+
+).
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:synthesis-techniques"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset FormulaMacro
+\newcommand{\rr}{\rightskip=0pt plus1em \spaceskip=.3333em \xspaceskip=.5em\relax}
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+tabcolsep}{1ex}
+\end_layout
+
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\arraystretch}{1.20}
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+tabcolsep}{1ex}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="none" valignment="top" width="20text%">
+<column alignment="center" valignment="top">
+<column alignment="none" valignment="top" width="30text%">
+<column alignment="none" valignment="top" width="20text%">
+<row>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Method
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Implem.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Features
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="none" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none" special="c">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\emph on
+Status
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rr
+\end_layout
+
+\end_inset
+
+ polygon shading
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SW/HW 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rr
+\end_layout
+
+\end_inset
+
+ flat-shaded polygons
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rr
+\end_layout
+
+\end_inset
+
+ flat shading with z-buffer
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SW/HW 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rr
+\end_layout
+
+\end_inset
+
+ depth values
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rr
+\end_layout
+
+\end_inset
+
+ goraud shading with z-buffer
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SW/HW 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rr
+\end_layout
+
+\end_inset
+
+ smooth shading, simple fog, point light sources
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rr
+\end_layout
+
+\end_inset
+
+ SGI entry models
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rr
+\end_layout
+
+\end_inset
+
+ phong shading with z-buffer
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SW/HW 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rr
+\end_layout
+
+\end_inset
+
+ highlights
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rr
+\end_layout
+
+\end_inset
+
+ texture mapping with z-buffer
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SW/HW 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rr
+\end_layout
+
+\end_inset
+
+ surface textures, simple shadows
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+rr
+\end_layout
+
+\end_inset
+
+ SGI high end, flight simulators
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="none" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+%-------------------------------------------------------------------------------
+-
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Programmtexte
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:programmtexte"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Einbindung von Programmtexten (source code) ist eine häufige Notwendigkeit,
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+va
+\end_layout
+
+\end_inset
+
+ natürlich bei Arbeiten im Bereich der Informatik.
+\end_layout
+
+\begin_layout Subsection
+Formatierung von Programmcode
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:FormatierungVonProgrammcode"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es gibt für 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+spezielle Pakete zur Darstellung von Programmen, die 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+ua
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+auch die automatische Nummerierung der Zeilen vornehmen, insbesondere das
+ 
+\family typewriter
+listings
+\family default
+-Package.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Flex Flex:URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.ctan.org/tex-archive/macros/latex/contrib/listings/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ Damit sind auch die in Tabelle
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:CodeUmgebungen"
+
+\end_inset
+
+ aufgelisteten Code-Umgebungen realisiert.
+ 
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+In 
+\begin_inset Flex No-link URL
+status open
+
+\begin_layout Plain Layout
+hgb.sty
+\end_layout
+
+\end_inset
+
+ vordefinierte Code-Umgebungen.
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:CodeUmgebungen"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C (ANSI): 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+begin{CCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!...!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+end{CCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+C++ (ISO): 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+begin{CppCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!...!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+end{CppCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Java: 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+begin{JavaCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!...!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+end{JavaCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JavaScript: 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+begin{JsCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!...!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+end{JsCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PHP: 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+begin{PhpCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!...!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+end{PhpCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+HTML: 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+begin{HtmlCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!...!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+end{HtmlCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CSS: 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+begin{CssCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!...!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+end{CssCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+XML: 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+begin{XmlCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!...!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+end{XmlCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+: 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+begin{LaTeXCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!...!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+end{LaTeXCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Generisch: 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+begin{GenericCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!...!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="none" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+end{GenericCode}!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Die Verwendung ist äußerst einfach, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+für Quellcode in der Programmiersprache C schreibt man 
+\end_layout
+
+\begin_layout Verbatim
+
+\backslash
+begin{CCode}
+\end_layout
+
+\begin_layout Verbatim
+    ...
+ 
+\end_layout
+
+\begin_layout Verbatim
+
+\backslash
+end{CCode}
+\end_layout
+
+\begin_layout Standard
+Der Quellcode innerhalb dieser Umgebungen wird in der jeweiligen Programmierspra
+che interpretiert, wobei Kommentare erhalten bleiben.
+ Diese Umgebungen können sowohl alleinstehend (im Fließtext) oder innerhalb
+ von Float-Umgebungen (insbes.
+\begin_inset space \space{}
+\end_inset
+
+
+\family typewriter
+program
+\family default
+) verwendet werden.
+ Im ersten Fall wird der Quelltext auch über Seitengrenzen umgebrochen.
+ Mit 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!/+!
+\end_layout
+
+\end_inset
+
+ ...
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!+/!
+\end_layout
+
+\end_inset
+
+ ist eine Escape-Möglichkeit nach 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+vorgesehen, die 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+va
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+zum Setzen von Labels für Verweise auf einzelne Programmzeilen nützlich
+ ist, 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+zB
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+mit 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!/+
+\backslash
+label{ExampleCodeLabel}+/!
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Ein Beispiel mit Java ist in Prog.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prog:CodeExample"
+
+\end_inset
+
+ gezeigt, wobei der oben angeführte Label in Zeile 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "ExampleCodeLabel"
+
+\end_inset
+
+ steht.
+ Man beachte, dass innerhalb der Kommentare auch mathematischer Text (wie
+ etwa in Zeile 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "MathInCode"
+
+\end_inset
+
+ von Prog.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prog:CodeExample"
+
+\end_inset
+
+) stehen kann.
+\end_layout
+
+\begin_layout Subsubsection
+Nummerierung der Code-Zeilen
+\end_layout
+
+\begin_layout Standard
+Alle in Tabelle
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:CodeUmgebungen"
+
+\end_inset
+
+ angeführten Code-Umgebungen können mit optionalen Argumenten verwendet
+ werden, die insbesondere zur Steuerung der Zeilennummerierung hilfreich.
+ Im Normalfall (also ohne zusätzliche Angabe) mit 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+begin{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+\emph on
+some
+\emph default
+Code
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!} ...
+ !
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+werden alle Code-Zeilen (einschließlich der Leerzeilen) bei 1 beginnend
+ und fortlaufend nummeriert.
+ Bei aufeinanderfolgenden Codesegmenten ist es oft hilfreich, die Nummerierung
+ aus dem vorherigen Abschnitt kontinuierlich weiter laufen zu lassen, ermöglicht
+ durch die Angabe des optionalen Arguments 
+\family typewriter
+firstnumber=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+optbreaknh
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+last
+\family default
+: 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+begin{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+\emph on
+some
+\emph default
+Code
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}[firstnumber=last] ...
+ !
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Um die Nummerierung der Codezeilen gänzlich zu unterbinden genügt die Angabe
+ des optionalen Arguments 
+\family typewriter
+numbers=
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+optbreaknh
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+none
+\family default
+: 
+\end_layout
+
+\begin_layout Quote
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!
+\backslash
+begin{!
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+\emph on
+some
+\emph default
+Code
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+verb!}[numbers=none] ...
+ !
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+In diesem Fall ist natürlich die Verwendung von Zeilenlabels im Code nicht
+ sinnvoll.
+\end_layout
+
+\begin_layout Subsection
+Platzierung von Programmcode
+\end_layout
+
+\begin_layout Standard
+Da Quelltexte sehr umfangreich werden können, ist diese Aufgabe nicht immer
+ leicht zu lösen.
+ Abhängig vom Umfang und vom Bezug zum Haupttext gibt es grundsätzlich drei
+ Möglichkeiten zur Einbindung von Programmtext: 
+\end_layout
+
+\begin_layout Itemize
+a) im laufenden Text für kurze Programmstücke, 
+\end_layout
+
+\begin_layout Itemize
+b) als Float-Element (
+\family typewriter
+program
+\family default
+) für mittlere Programmtexte bis max.
+\begin_inset space \space{}
+\end_inset
+
+eine Seite oder 
+\end_layout
+
+\begin_layout Itemize
+c) im Anhang (für lange Programmtexte).
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Programmtext im laufenden Text
+\end_layout
+
+\begin_layout Standard
+Kurze Codesequenzen kann man ohne weiteres im laufenden Text einbetten,
+ sofern sie an den gegebenen Stellen von unmittelbarer Bedeutung sind.
+ Die folgende (rudimentäre) Java-Methode 
+\family typewriter
+extractEmail
+\family default
+ sucht nach einer E-Mail Adresse in der Zeichenkette 
+\family typewriter
+line
+\family default
+: 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{JavaCode}
+\end_layout
+
+\end_inset
+
+[numbers=none] static String extractEmail(String line) 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+ line = line.trim(); // find the first blank int i = line.indexOf(' '); if
+ (i > 0) return line.substring(i).trim(); else return null; 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{JavaCode}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Dieses Codestück wurde mit 
+\end_layout
+
+\begin_layout Verbatim
+
+\backslash
+begin{JavaCode}[numbers=none]
+\end_layout
+
+\begin_layout Verbatim
+static String extractEmail(String line) {
+\end_layout
+
+\begin_layout Verbatim
+    line = line.trim(); // find the first blank
+\end_layout
+
+\begin_layout Verbatim
+    ...
+\end_layout
+
+\begin_layout Verbatim
+}
+\end_layout
+
+\begin_layout Verbatim
+
+\backslash
+end{JavaCode}
+\end_layout
+
+\begin_layout Standard
+erstellt (siehe Abschn.
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:FormatierungVonProgrammcode"
+
+\end_inset
+
+).
+ In-line Programmstücke sollten maximal einige Zeilen lang sein und nach
+ Möglichkeit nicht durch Seitenumbrüche geteilt werden.
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%Um auch längere Programmzeilen unterzubringen, empfiehlt es sich, dafür
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%eine entsprechend kleine Schriftgröße zu wählen (als Standardgröße ist
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+texttt{footnotesize} eingestellt).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Programmtexte als Float-Elemente
+\end_layout
+
+\begin_layout Standard
+Sind längere Codesequenzen notwendig, die in unmittelbarer Nähe des laufenden
+ Texts stehen müssen, sollte man diese genauso wie andere Abbildungen als
+ Float-Elemente behandeln.
+ Diese Programmtexte sollten den Umfang von einer Seite nicht übersteigen.
+ Im Notfall kann man auch bis zu zwei Seiten in aufeinanderfolgende Abbildungen
+ packen, jeweils mit eigener Caption.
+ In 
+\family typewriter
+hgb.sty
+\family default
+ ist eine neue Float-Umgebung 
+\family typewriter
+program
+\family default
+ definiert, die analog zu 
+\family typewriter
+table
+\family default
+ verwendet wird: 
+\end_layout
+
+\begin_layout Verbatim
+
+\backslash
+begin{program}
+\end_layout
+
+\begin_layout Verbatim
+
+\backslash
+caption{Der Titel zu diesem Programmstück.}
+\end_layout
+
+\begin_layout Verbatim
+
+\backslash
+label{prog:xyz}
+\end_layout
+
+\begin_layout Verbatim
+
+\backslash
+begin{JavaCode}
+\end_layout
+
+\begin_layout Verbatim
+  class IrgendWas {
+\end_layout
+
+\begin_layout Verbatim
+    ...
+\end_layout
+
+\begin_layout Verbatim
+  }
+\end_layout
+
+\begin_layout Verbatim
+
+\backslash
+end{JavaCode}
+\end_layout
+
+\begin_layout Verbatim
+
+\backslash
+end{program}
+\end_layout
+
+\begin_layout Standard
+Wenn man möchte, kann man in diesem Fall die Caption auch unten anbringen
+ (jedenfalls aber konsistent und nicht gemischt).
+ Natürlich darf man auch hier nicht mit einer linearen Abfolge im fertigen
+ Druckbild rechnen, daher sind Wendungen wie "`...
+ im folgenden Programmstück ..."' zu vermeiden und entsprechende Verweise einzusetz
+en.
+ Beispiele dafür sind die Programme 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prog:processors-source"
+
+\end_inset
+
+ und 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "prog:CodeExample"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{program}
+\end_layout
+
+\begin_layout Plain Layout
+
+% place caption consistently either at the top or bottom:
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Beispiel für die Auflistung von Programmcode als Float-Element.}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "prog:CodeExample"
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{JavaCode}
+\end_layout
+
+\begin_layout Plain Layout
+
+import ij.ImagePlus;
+\end_layout
+
+\begin_layout Plain Layout
+
+import ij.plugin.filter.PlugInFilter;
+\end_layout
+
+\begin_layout Plain Layout
+
+import ij.process.ImageProcessor;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+public class My_Inverter implements PlugInFilter {
+\end_layout
+
+\begin_layout Plain Layout
+
+	int agent_velocity;
+\end_layout
+
+\begin_layout Plain Layout
+
+  String title = ""; // just to test printing of double quotes
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	public int setup (String arg, ImagePlus im) {
+\end_layout
+
+\begin_layout Plain Layout
+
+		return DOES_8G;	// this plugin accepts 8-bit grayscale images 
+\backslash
+label{pr:IjSamplePlugin10}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	public void run (ImageProcessor ip) {
+\end_layout
+
+\begin_layout Plain Layout
+
+		int w = ip.getWidth();	/+
+\backslash
+label{ExampleCodeLabel}+/
+\end_layout
+
+\begin_layout Plain Layout
+
+		int h = ip.getHeight(); 
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\end_layout
+
+\begin_layout Plain Layout
+
+		/* iterate over all image coordinates */
+\end_layout
+
+\begin_layout Plain Layout
+
+		for (int u = 0; u < w; u++) { 
+\end_layout
+
+\begin_layout Plain Layout
+
+			for (int v = 0; v < h; v++) {
+\end_layout
+
+\begin_layout Plain Layout
+
+				int p = ip.getPixel(u, v); 
+\end_layout
+
+\begin_layout Plain Layout
+
+				ip.putPixel(u, v, 255-p); // invert: $I'(u,v) 
+\backslash
+leftarrow 255 - I(u,v)$
+\backslash
+label{MathInCode}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\end_layout
+
+\begin_layout Plain Layout
+
+} // end of class {
+\backslash
+tt My
+\backslash
+_Inverter}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{JavaCode}
+\end_layout
+
+\begin_layout Plain Layout
+
+%
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{program}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Programmtext im Anhang
+\end_layout
+
+\begin_layout Standard
+Für längere Programmtexte, speziell wenn sie vollständige Implementierungen
+ umfassen und im aktuellen Kontext nicht unmittelbar relevant sind, muss
+ man zur Ablage in einem getrennten Anhang am Ende des Dokuments greifen.
+ Für Hinweise auf bestimmte Details kann man entweder kurze Ausschnitte
+ in den laufenden Text stellen oder mit entsprechenden Seitenverweisen arbeiten.
+ Ein solches Beispiel ist der 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+latex
+\end_layout
+
+\end_inset
+
+-Quellcode in Anhang 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "app:latex"
+
+\end_inset
+
+ (Seite 
+\begin_inset CommandInset ref
+LatexCommand pageref
+reference "app:latex"
+
+\end_inset
+
+).
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Grundsätzlich ist zu überlegen, ob die gedruckte Einbindung der gesamten
+ Programmtexte einer Implementierung für den Leser überhaupt sinnvoll ist,
+ oder ob man diese nicht besser elektronisch (auf CD-ROM) beifügt und nur
+ exemplarisch beschreibt.
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \end_body

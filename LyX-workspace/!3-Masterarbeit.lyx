@@ -9,11 +9,8 @@
 \end_preamble
 \options master
 \use_default_options true
-\begin_modules
-hgb
-\end_modules
 \maintain_unincluded_children false
-\language german
+\language ngerman
 \language_package default
 \inputencoding utf8
 \fontencoding global
@@ -28,7 +25,7 @@ hgb
 \font_sf_scale 100
 \font_tt_scale 100
 \graphics default
-\default_output_format default
+\default_output_format pdf2
 \output_sync 1
 \bibtex_command biber
 \index_command texindy

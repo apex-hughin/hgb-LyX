@@ -6,7 +6,7 @@
 \use_default_options true
 \master !3-Masterarbeit.lyx
 \maintain_unincluded_children false
-\language german
+\language ngerman
 \language_package default
 \inputencoding utf8
 \fontencoding global
@@ -76,6 +76,7 @@ Zum Arbeiten mit
 status open
 
 \begin_layout Plain Layout
+
 
 \backslash
 
@@ -390,7 +391,7 @@ status collapsed
 
 entwickelt.
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Dieses abschließende Textelement wurde übrigens zur Ermöglichung eines Zeilenumb
@@ -549,15 +550,18 @@ latex
 \end_layout
 
 \begin_layout Itemize
-Texteditor oder Autorenumgebung (Frontend) 
+Texteditor oder Autorenumgebung (Frontend)
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
-%
+% 
 \backslash
-item PostScript/PDF-Software 
+item PostScript/PDF-Software
 \end_layout
 
 \end_inset
@@ -571,9 +575,6 @@ Sämtliche Komponenten sind kostenlos und für alle gängigen Plattformen verfü
 
 \begin_layout Subsubsection
 Windows
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Windows"
@@ -941,9 +942,6 @@ Mac
 \end_inset
 
 OS
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:MacOs"
@@ -1136,68 +1134,102 @@ X übrigens nicht extra installiert werden.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ALT:
+\end_layout
+
+\begin_layout Plain Layout
+Bewährte und weit verbreitete Frontends für den Mac sind 
+\emph on
+MacTeX
+\emph default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "www.tug.org/mactex"
+
+\end_inset
+
+ -- enthält eine komplette und fertig konfigurierte LaTeX-Installation 
+\end_layout
+
+\begin_layout Plain Layout
+für Mac
+\begin_inset space ~
+\end_inset
+
+OS (ca.
+\begin_inset space \space{}
+\end_inset
+
+1.15 GB download).
+\end_layout
+
+\end_inset
+
+ und 
+\emph on
+TeXShop
+\emph default
+,
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+target "www.uoregon.edu/~koch/texshop/"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ das üblicherweise zusammen mit der TeX-Distribution 
+\emph on
+TeX Live
+\emph default
+ verwendet wird.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Weit verbreitet ist auch der 
+\emph on
+TeXworks
+\emph default
+ Editor, der ebenfalls im Mac
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
 
-%ALT:
+TeX
 \end_layout
+
+\end_inset
+
+ Package enthalten ist und auch MiK
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
 
-%Bewährte und weit verbreitete Frontends für den Mac sind 
-\backslash
-emph{MacTeX}%
+TeX
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-%
-\backslash
-footnote{
-\backslash
-url{www.tug.org/mactex} -- enthält eine komplette und fertig konfigurierte
- LaTeX-Installation 
-\end_layout
-
-\begin_layout Plain Layout
-
-%für Mac~OS (ca.
-\backslash
- 1.15 GB download).}
-\end_layout
-
-\begin_layout Plain Layout
-
-%und 
-\backslash
-emph{TeXShop},%
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\backslash
-footnote{
-\backslash
-url{www.uoregon.edu/~koch/texshop/}}
-\end_layout
-
-\begin_layout Plain Layout
-
-%das üblicherweise zusammen mit der TeX-Distribution 
-\backslash
-emph{TeX Live} verwendet wird.
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-%Weit verbreitet ist auch der 
-\backslash
-emph{TeXworks} Editor, der ebenfalls im MacTeX Package enthalten ist und
- auch MiKTeX unter Windows beigefügt ist.
+ unter Windows beigefügt ist.
 \end_layout
 
 \end_inset
@@ -1264,6 +1296,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
+
 http://www.lyx.org/
 \end_layout
 
@@ -1342,9 +1375,6 @@ latex
 
 \begin_layout Subsection
 Literatur
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:literatur"
@@ -1388,30 +1418,7 @@ zB
 \end_layout
 
 \begin_layout Itemize
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\backslash
-rm
-\end_layout
-
-\end_inset
-
 LaTeX2e
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
 \emph on
 -Kurzbeschreibung
 \emph default
@@ -1434,31 +1441,7 @@ key "Schmidt01"
 \emph on
 The Not So Short Introduction to 
 \emph default
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\backslash
-rm
-\end_layout
-
-\end_inset
-
-LaTeX2e
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- von Oetiker et al.
+LaTeX2e von Oetiker et al.
 \begin_inset space \space{}
 \end_inset
 
@@ -1495,31 +1478,7 @@ latex
 \emph on
 A Guide to 
 \emph default
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\backslash
-rm
-\end_layout
-
-\end_inset
-
-LaTeX2e
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- von H.
+LaTeX2e von H.
 \begin_inset space ~
 \end_inset
 
@@ -1567,30 +1526,8 @@ ua
 \end_inset
 
  im Rahmen des 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- Comprehensive 
+\emph on
+Comprehensive 
 \begin_inset ERT
 status collapsed
 
@@ -1602,16 +1539,7 @@ TeX
 \end_inset
 
  Archive Network
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
+\emph default
  (CTAN) auf 
 \end_layout
 
@@ -1710,8 +1638,6 @@ status collapsed
 
 {
 \backslash
-rm 
-\backslash
 latex}
 \end_layout
 
@@ -1732,8 +1658,9 @@ status collapsed
 
 \begin_layout Plain Layout
 
+{
 \backslash
-latex{}
+latex}
 \end_layout
 
 \end_inset
@@ -1754,6 +1681,27 @@ key "Braams2008"
 \end_inset
 
 ,
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% 
+\backslash
+texttt{german}, 
+\backslash
+texttt{ngerman} 
+\backslash
+cite{Raichle98},
+\end_layout
+
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 
@@ -1911,9 +1859,10 @@ latex
 
 \begin_layout Plain Layout
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
+
 
 \backslash
 textrm{
@@ -1923,9 +1872,10 @@ textrm{
 
 Roman
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
+
 }
 \end_layout
 
@@ -1953,6 +1903,7 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
+
 
 \backslash
 verb!
@@ -2000,6 +1951,7 @@ status collapsed
 
 \begin_layout Plain Layout
 
+
 \backslash
 verb!
 \backslash
@@ -2045,6 +1997,7 @@ Typewriter
 status collapsed
 
 \begin_layout Plain Layout
+
 
 \backslash
 verb!
@@ -2240,8 +2193,6 @@ textit{Variable}!
  
 \shape italic
 Variable
-\shape default
- 
 \end_layout
 
 \end_deeper
@@ -2552,11 +2503,34 @@ emph{auch} hier?}!
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textrm{
+\end_layout
+
+\end_inset
+
 Du 
 \emph on
 auch
 \emph default
- hier? 
+ hier?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2604,15 +2578,34 @@ emph{auch} hier?}!
 \begin_inset Text
 
 \begin_layout Plain Layout
+\begin_inset ERT
+status open
 
-\shape italic
+\begin_layout Plain Layout
+
+
+\backslash
+textit{
+\end_layout
+
+\end_inset
+
 Du 
 \emph on
 auch
 \emph default
  hier?
-\shape default
- 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2663,12 +2656,30 @@ emph{auch} hier?}!
 
 \shape slanted
 Du 
-\emph on
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{
+\end_layout
+
+\end_inset
+
 auch
-\emph default
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  hier?
-\shape default
- 
 \end_layout
 
 \end_inset
@@ -2719,12 +2730,30 @@ emph{auch} hier?}!
 
 \series bold
 Du 
-\emph on
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{
+\end_layout
+
+\end_inset
+
 auch
-\emph default
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  hier?
-\series default
- 
 \end_layout
 
 \end_inset
@@ -2775,12 +2804,30 @@ emph{auch} hier?}!
 
 \family typewriter
 Du 
-\emph on
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+emph{
+\end_layout
+
+\end_inset
+
 auch
-\emph default
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
  hier?
-\family default
- 
 \end_layout
 
 \end_inset
@@ -2883,31 +2930,9 @@ status collapsed
 
 \begin_layout Plain Layout
 
-{
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
 
 \backslash
-latex
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
+latex{}
 \end_layout
 
 \end_inset
@@ -2958,20 +2983,6 @@ fboxsep}{2mm}
 \begin_inset Box Boxed
 position "c"
 hor_pos "c"
-has_inner_box 0
-inner_pos "c"
-use_parbox 0
-use_makebox 0
-width ""
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-\begin_inset Box Frameless
-position "c"
-hor_pos "c"
 has_inner_box 1
 inner_pos "c"
 use_parbox 0
@@ -2983,7 +2994,7 @@ height_special "totalheight"
 status open
 
 \begin_layout Plain Layout
- Besonders die Verwendung von 
+Besonders die Verwendung von 
 \family typewriter
 
 \backslash
@@ -2995,29 +3006,7 @@ status open
 \family typewriter
 
 \backslash
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
 newline
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
 \family default
  Anweisungen zur Absatztrennung ist ein häufig zu beobachtender 
 \series bold
@@ -3032,29 +3021,7 @@ nichts
 \family typewriter
 
 \backslash
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-paragraph
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-{}
+paragraph{}
 \family default
  -- sie ist in 
 \begin_inset ERT
@@ -3091,11 +3058,6 @@ su
 
 \end_inset
 
-
-\end_layout
-
-\end_inset
-
  
 \end_layout
 
@@ -3106,31 +3068,9 @@ status collapsed
 
 \begin_layout Plain Layout
 
-{
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
 
 \backslash
-latex
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
+latex{}
 \end_layout
 
 \end_inset
@@ -3800,8 +3740,21 @@ status collapsed
 
 \backslash
 underline{
-\backslash
-texttt{:}}
+\end_layout
+
+\end_inset
+
+
+\family typewriter
+:
+\family default
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
 \end_layout
 
 \end_inset
@@ -3840,7 +3793,6 @@ sind -- ähnlich wie in HTML -- drei Arten von formatierten Listen verfügbar:
 \end_layout
 
 \begin_layout Verbatim
-
     
 \backslash
 begin{itemize}     ...
@@ -3850,7 +3802,6 @@ end{itemize}
 \end_layout
 
 \begin_layout Verbatim
-
     
 \backslash
 begin{enumerate}   ...
@@ -3860,7 +3811,6 @@ end{enumerate}
 \end_layout
 
 \begin_layout Verbatim
-
     
 \backslash
 begin{description} ...
@@ -4010,39 +3960,31 @@ reference "tab:synthesis-techniques"
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
+\begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-
-%Bei Diplomarbeiten und Dissertationen wird in der Erstellungsphase
-\end_layout
+Bei Diplomarbeiten und Dissertationen wird in der Erstellungsphase bisweilen
+ ein gegenüber dem Buchsatz vergrößerter Zeilenabstand (
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
 
-%bisweilen ein gegenüber dem Buchsatz vergrößerter Zeilenabstand (
+
 \backslash
 zB
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
 
-%$1
-\backslash
-fraction1/2$
-\backslash
-,-fach) verwendet, um das Korrekturlesen zu
-\end_layout
+ 
+\begin_inset Formula $1\nicefrac{1}{2}$
+\end_inset
 
-\begin_layout Plain Layout
-
-%erleichtern.
- In der endgültigen Version sollte jedoch -- wie in
-\end_layout
-
-\begin_layout Plain Layout
-
-%diesem Dokument -- ein einfacher Zeilenabstand verwendet werden.
+-fach) verwendet, um das Korrekturlesen zu erleichtern.
+ In der endgültigen Version sollte jedoch -- wie in diesem Dokument -- ein
+ einfacher Zeilenabstand verwendet werden.
 \end_layout
 
 \end_inset
@@ -4200,7 +4142,7 @@ Inhaltsverzeichnis
 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "cha:Schluss"
+reference "chap:Schluss"
 
 \end_inset
 
@@ -4208,7 +4150,6 @@ reference "cha:Schluss"
 \end_layout
 
 \begin_layout Quote
-
 \begin_inset ERT
 status open
 
@@ -4888,7 +4829,7 @@ label{fig:Screen-1}!
 \end_inset
 
 .
- Mit den Anweisungen 
+ Mit den Anweisungen
 \end_layout
 
 \begin_layout Quote
@@ -4997,21 +4938,10 @@ verb!}!
 \begin_layout Standard
 kann an beliebiger Stelle im Dokument die zu 
 \family typewriter
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- key
+\emph on
+key
 \family default
+\emph default
  gehörige Nummer bzw.
 \begin_inset space \space{}
 \end_inset
@@ -5437,80 +5367,57 @@ status collapsed
 \begin_layout Plain Layout
 
 {
+\backslash
+verb*! -- !}
 \end_layout
 
 \end_inset
 
+).
+ Dieser wird auch für die Angabe von Zahlenintervallen (Seiten 12--19) benutzt.
+\end_layout
 
+\begin_layout Enumerate
+In 
+\emph on
+englischen
+\emph default
+ Texten verwendet man einen noch längeren Gedankenstrich
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Geviertstrich (
+\emph on
+Em Dash
+\emph default
+).
+\end_layout
+
+\end_inset
+
+ ohne zusätzliche Leerzeichen---as we should be knowing by now (in 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
 
 
-\backslash
-verb*! -- !}).
- Dieser wird auch für die Angabe von
-\end_layout
-
-\begin_layout Plain Layout
-
-Zahlenintervallen (Seiten 12--19) benutzt.
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-%
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-item In 
-\backslash
-emph{englischen} Texten verwendet man einen noch längeren
-\end_layout
-
-\begin_layout Plain Layout
-
-Gedankenstrich
-\backslash
-footnote{Geviertstrich (
-\backslash
-emph{Em Dash}).} 
-\backslash
-emph{ohne}
-\end_layout
-
-\begin_layout Plain Layout
-
-zusätzliche Leerzeichen---
-\backslash
-emph{as we should be knowing by now}
-\end_layout
-
-\begin_layout Plain Layout
-
-(in 
 \backslash
 latex
-\backslash
- mit {
-\backslash
-verb*
 \end_layout
 
 \end_inset
 
-!---!
+ mit 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
 
-}
+{
+\backslash
+verb*!---!}
 \end_layout
 
 \end_inset
@@ -5620,12 +5527,10 @@ verb!%!
 \end_layout
 
 \begin_layout Verbatim
-
 In Österreich isst man sonntags Schnitzel.%
 \end_layout
 
 \begin_layout Verbatim
-
 
 \backslash
 footnote{Was die allgemein gute Kondition erklärt.}
@@ -5680,11 +5585,11 @@ end{sloppypar}
 \end_layout
 
 \begin_layout Quote
-
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
+
 
 \backslash
 begin{verbatim}
@@ -5762,7 +5667,6 @@ blöcke in einem Stück auszublenden:
 \end_layout
 
 \begin_layout Quote
-
 \begin_inset ERT
 status open
 
@@ -5812,9 +5716,6 @@ end{verbatim}
 
 \begin_layout Subsection
 Anführungszeichen
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:anfuehrungszeichen"
@@ -5868,7 +5769,7 @@ verb!``English''!
 \end_inset
 
 
-\lang german
+\lang ngerman
 
 \begin_inset Newline newline
 \end_inset
@@ -5966,7 +5867,7 @@ grq!
 
 \end_inset
 
- (German left/right quote): 
+ (German left/right quote):
 \end_layout
 
 \begin_layout Quote
@@ -6017,6 +5918,7 @@ status open
 
 \begin_layout Plain Layout
 
+
 \backslash
 glq{}
 \end_layout
@@ -6029,6 +5931,7 @@ status open
 
 \begin_layout Plain Layout
 
+
 \backslash
 grq{}
 \end_layout
@@ -6040,9 +5943,6 @@ grq{}
 
 \begin_layout Section
 Abteilen
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:layout-abteilen"
@@ -6201,7 +6101,6 @@ dazu veranlassen, in einzelnen Absätzen etwas weniger pingelig zu formatieren.
 \end_layout
 
 \begin_layout Quote
-
 \begin_inset ERT
 status open
 
@@ -6274,68 +6173,53 @@ Diesem Dokument angeschlossen sind zwei Dateien, die beide zum Erstellen
 \end_layout
 
 \begin_layout Description
-\begin_inset ERT
-status collapsed
+\begin_inset Flex No-link URL
+status open
 
 \begin_layout Plain Layout
-
-
-\backslash
-nolinkurl{hgbthesis.cls} (class file):
+hgbthesis.cls
 \end_layout
 
 \end_inset
 
- definiert die Dokumentenstruktur, Layout und den gesamten Vorspann des
- Dokuments (Titelseite etc.).
+
+\begin_inset space ~
+\end_inset
+
+(class
+\begin_inset space ~
+\end_inset
+
+file): definiert die Dokumentenstruktur, Layout und den gesamten Vorspann
+ des Dokuments (Titelseite etc.).
  
 \end_layout
 
 \begin_layout Description
-\begin_inset ERT
-status collapsed
+\begin_inset Flex No-link URL
+status open
 
 \begin_layout Plain Layout
-
-
-\backslash
-nolinkurl{hgb.sty} (style file):
+hgb.sty
 \end_layout
 
 \end_inset
 
- enthält nützliche Definitionen.
+
+\begin_inset space ~
+\end_inset
+
+(style
+\begin_inset space ~
+\end_inset
+
+file): enthält nützliche Definitionen.
  Diese Datei wird von 
-\begin_inset ERT
-status collapsed
+\begin_inset Flex No-link URL
+status open
 
 \begin_layout Plain Layout
-
-
-\backslash
-nolinkurl
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
 hgbthesis.cls
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
 \end_layout
 
 \end_inset
@@ -6370,7 +6254,7 @@ verb!.tex!
 
 \end_inset
 
-) Dokumente dieser Klasse beginnen mit der Anweisung 
+) Dokumente dieser Klasse beginnen mit der Anweisung
 \end_layout
 
 \begin_layout Itemize
@@ -6385,7 +6269,7 @@ status collapsed
 
  
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -6416,13 +6300,9 @@ Dabei sind die möglichen Optionen für
 \family typewriter
 \emph on
 type
-\family default
-\emph default
- 
 \end_layout
 
 \begin_layout Itemize
- 
 \begin_inset ERT
 status collapsed
 
@@ -6439,11 +6319,10 @@ verb!master!
 \emph on
 default
 \emph default
-) 
+)
 \end_layout
 
 \begin_layout Itemize
- 
 \begin_inset ERT
 status collapsed
 
@@ -6456,7 +6335,7 @@ verb!diplom!
 
 \end_inset
 
- (Diplomarbeit) 
+ (Diplomarbeit)
 \end_layout
 
 \begin_layout Itemize
@@ -6472,11 +6351,10 @@ verb!bachelor!
 
 \end_inset
 
- (Bachelorarbeit) 
+ (Bachelorarbeit)
 \end_layout
 
 \begin_layout Itemize
- 
 \begin_inset ERT
 status collapsed
 
@@ -6489,7 +6367,7 @@ verb!praktikum!
 
 \end_inset
 
- (Praktikumsbericht) 
+ (Praktikumsbericht)
 \end_layout
 
 \begin_layout Standard
@@ -6500,11 +6378,10 @@ language
 \family default
 \emph default
  kann die Hauptsprache des Dokuments spezifiziert werden, die möglichen
- Werte dafür sind 
+ Werte dafür sind
 \end_layout
 
 \begin_layout Itemize
- 
 \begin_inset ERT
 status collapsed
 
@@ -6521,11 +6398,10 @@ verb!german!
 \emph on
 default
 \emph default
-) 
+)
 \end_layout
 
 \begin_layout Itemize
- 
 \begin_inset ERT
 status collapsed
 
@@ -6538,7 +6414,7 @@ verb!english!
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -6591,7 +6467,7 @@ reference "tab:TitelElemente"
 \series bold
 alle
 \series default
- Arten von Arbeiten erforderlich: 
+ Arten von Arbeiten erforderlich:
 \end_layout
 
 \begin_layout Itemize
@@ -6609,6 +6485,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
+
 %
 \end_layout
 
@@ -6635,21 +6512,10 @@ title{!
 
 
 \family typewriter
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- Titel der Arbeit
+\emph on
+Titel der Arbeit
 \family default
+\emph default
 
 \begin_inset ERT
 status collapsed
@@ -6663,7 +6529,7 @@ verb!}!
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -6684,21 +6550,10 @@ author{!
 
 
 \family typewriter
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- Autor
+\emph on
+Autor
 \family default
+\emph default
 
 \begin_inset ERT
 status collapsed
@@ -6712,7 +6567,7 @@ verb!}!
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -6733,21 +6588,10 @@ studiengang{!
 
 
 \family typewriter
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- Studiengang
+\emph on
+Studiengang
 \family default
+\emph default
 
 \begin_inset ERT
 status collapsed
@@ -6761,7 +6605,7 @@ verb!}!
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -6782,21 +6626,10 @@ studienort{!
 
 
 \family typewriter
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- Studienort
+\emph on
+Studienort
 \family default
+\emph default
 
 \begin_inset ERT
 status collapsed
@@ -6810,7 +6643,7 @@ verb!}!
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -6831,21 +6664,10 @@ abgabedatum{!
 
 
 \family typewriter
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- yyyy
+\emph on
+yyyy
 \family default
+\emph default
 
 \begin_inset ERT
 status collapsed
@@ -6861,21 +6683,10 @@ verb!}{!
 
 
 \family typewriter
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- mm
+\emph on
+mm
 \family default
+\emph default
 
 \begin_inset ERT
 status collapsed
@@ -6891,21 +6702,10 @@ verb!}{!
 
 
 \family typewriter
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- dd
+\emph on
+dd
 \family default
+\emph default
 
 \begin_inset ERT
 status collapsed
@@ -6919,7 +6719,7 @@ verb!}!
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -6947,6 +6747,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
+
 %
 \end_layout
 
@@ -6973,21 +6774,10 @@ nummer{!
 
 
 \family typewriter
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- laufende Nummer der Arbeit
+\emph on
+laufende Nummer der Arbeit
 \family default
+\emph default
 
 \begin_inset ERT
 status collapsed
@@ -7034,7 +6824,7 @@ zB
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -7055,21 +6845,10 @@ gegenstand{!
 
 
 \family typewriter
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- Gegenstand oder Projektlehrveranstaltung
+\emph on
+Gegenstand oder Projektlehrveranstaltung
 \family default
+\emph default
 
 \begin_inset ERT
 status collapsed
@@ -7083,7 +6862,7 @@ verb!}!
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -7104,21 +6883,10 @@ semester{!
 
 
 \family typewriter
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- Semester der Lehrveranstaltung
+\emph on
+Semester der Lehrveranstaltung
 \family default
+\emph default
 
 \begin_inset ERT
 status collapsed
@@ -7132,7 +6900,7 @@ verb!}!
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -7153,21 +6921,10 @@ betreuer{!
 
 
 \family typewriter
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- Name
+\emph on
+Name
 \family default
+\emph default
 
 \begin_inset ERT
 status collapsed
@@ -7200,7 +6957,7 @@ betreuerin{..}!
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -7210,7 +6967,6 @@ Für
 Praktikumsberichte
 \series default
  werden zusätzlich zu den Basisangaben folgende Elemente berücksichtigt:
- 
 \end_layout
 
 \begin_layout Itemize
@@ -7228,6 +6984,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
+
 %
 \end_layout
 
@@ -7254,21 +7011,10 @@ nummer{!
 
 
 \family typewriter
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- laufende Nummer der Arbeit
+\emph on
+laufende Nummer der Arbeit
 \family default
+\emph default
 
 \begin_inset ERT
 status collapsed
@@ -7357,21 +7103,10 @@ betreuer{!
 
 
 \family typewriter
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- Betreuer im Unternehmen
+\emph on
+Betreuer im Unternehmen
 \family default
+\emph default
 
 \begin_inset ERT
 status collapsed
@@ -7404,7 +7139,7 @@ betreuerin{..}!
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -7425,21 +7160,10 @@ firma{!
 
 
 \family typewriter
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- name und Adresse der Firma
+\emph on
+Name und Adresse der Firma
 \family default
+\emph default
 
 \begin_inset ERT
 status collapsed
@@ -7453,7 +7177,7 @@ verb!}!
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -7474,21 +7198,10 @@ firmenTel{!
 
 
 \family typewriter
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- Telefonnummer der Firma
+\emph on
+Telefonnummer der Firma
 \family default
+\emph default
 
 \begin_inset ERT
 status collapsed
@@ -7502,7 +7215,7 @@ verb!}!
 
 \end_inset
 
- 
+
 \begin_inset Newline newline
 \end_inset
 
@@ -7523,21 +7236,10 @@ firmenUrl{!
 
 
 \family typewriter
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
-\backslash
-em
-\end_layout
-
-\end_inset
-
- Web-Site der Firma
+\emph on
+Web-Site der Firma
 \family default
+\emph default
 
 \begin_inset ERT
 status collapsed
@@ -7551,7 +7253,7 @@ verb!}!
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Standard
@@ -7586,6 +7288,7 @@ name "tab:TitelElemente"
 status collapsed
 
 \begin_layout Plain Layout
+
 
 \backslash
 small{
@@ -8481,6 +8184,7 @@ firmenUrl!
 status collapsed
 
 \begin_layout Plain Layout
+
 }
 \end_layout
 
@@ -8801,6 +8505,7 @@ status collapsed
 
 \begin_layout Plain Layout
 
+
 \backslash
 normalfont
 \end_layout
@@ -8998,30 +8703,8 @@ status collapsed
 \begin_layout Plain Layout
 
 {
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
 \backslash
-bzw
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
+bzw}
 \end_layout
 
 \end_inset
@@ -10424,31 +10107,9 @@ status collapsed
 
 \begin_layout Plain Layout
 
-{
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
 
 \backslash
-latex
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
+latex{}
 \end_layout
 
 \end_inset
@@ -10924,30 +10585,8 @@ status collapsed
 \begin_layout Plain Layout
 
 {
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
 \backslash
-euro
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
+euro}
 \end_layout
 
 \end_inset
@@ -11291,6 +10930,7 @@ verbatim
 status collapsed
 
 \begin_layout Plain Layout
+
 }
 \end_layout
 
@@ -11372,12 +11012,10 @@ begin{scriptsize}
 \end_layout
 
 \begin_layout Verbatim
-
 ...
 \end_layout
 
 \begin_layout Verbatim
-
 Overfull 
 \backslash
 hbox (14.43593pt too wide) in paragraph at lines 105--109
@@ -11385,24 +11023,20 @@ hbox (14.43593pt too wide) in paragraph at lines 105--109
 
 \begin_layout Verbatim
 
-
 \backslash
 OT1/cmr/m/n/10.95 F[]ur die Ein-bin-dung von Gra-phi-ken in L[]T[]X wird
  die V
 \end_layout
 
 \begin_layout Verbatim
-
 er-wen-dung des Standard-
 \end_layout
 
 \begin_layout Verbatim
-
 [10] [11]
 \end_layout
 
 \begin_layout Verbatim
-
 Overfull 
 \backslash
 hbox (5.01222pt too wide) in paragraph at lines 148--154
@@ -11410,13 +11044,11 @@ hbox (5.01222pt too wide) in paragraph at lines 148--154
 
 \begin_layout Verbatim
 
-
 \backslash
 OT1/cmr/m/n/10.95 wen-di-gen Ras-te-rung kei-nen Sinn, auch bei 1200 dpi-Druck
 \end_layout
 
 \begin_layout Verbatim
-
 ern.
  Spe-zi-ell 
 \backslash
@@ -11424,7 +11056,6 @@ OT1/cmr/m/it/10.95 Screen-
 \end_layout
 
 \begin_layout Verbatim
-
 ...
 \end_layout
 
@@ -11441,7 +11072,11 @@ end{scriptsize}
 
 \end_inset
 
- 
+
+\end_layout
+
+\begin_layout Standard
+
 \emph on
 Errors
 \emph default
