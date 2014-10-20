@@ -9,36 +9,6 @@ Format 48
 
 Requires hgb
 
-Requires cmap
-Requires inputenc
-Requires lmodern
-Requires fontenc
-Requires ifthen
-Requires babel
-Requires datetime
-Requires graphicx
-Requires url
-Requires verbatim
-Requires moreverb
-Requires float
-Requires caption
-Requires exscale
-Requires upquote
-Requires amsmath
-Requires amsfonts
-Requires amsbsy
-Requires xspace
-Requires algorithm
-Requires algorithmicx
-Requires algpseudocode
-Requires pseudocode
-Requires color
-Requires listingsutf8
-Requires hyperref
-Requires hypcap
-Requires ifpdf
-Requires enumitem
-
 Provides cmap            1
 Provides inputenc        1
 Provides lmodern         1
@@ -96,23 +66,34 @@ Style Deutsch
 End
 
 Style "File List"
-  Category   "Hagenberg"
-  LatexType  Item_Environment
-  LatexName   FileList
-  ItemCommand fitem
-  LabelType    No_Label
-  LabelString   "File list"
-  EndLabelType No_Label
-  Argument 1
-    Mandatory   1
-    LabelString   "Path"
-    Tooltip   "The path of the files listed below."
+  Category         "Hagenberg"
+  LatexType        Item_Environment
+  LatexName        FileList
+  ItemCommand      fitem
+  LabelType        No_Label
+  LabelString      "File list"
+  EndLabelType     No_Label
+  Argument         1
+    Mandatory      1
+    LabelString    "Path"
+    Tooltip        "The path of the files listed below."
   EndArgument
-  Argument item:1
-    Mandatory   1
-    LabelString   "File"
-    Tooltip   "The file name."
+  Argument         item:1
+    Mandatory      1
+    LabelString    "File"
+    Tooltip        "The file name."
   EndArgument
+End
+
+InsetLayout "Flex:FramePic"
+  Category         "Hagenberg"
+  LyxType          custom
+  Decoration       Classic
+  LabelType        Static
+  LabelString      FramePic
+  LatexType        Command
+  LatexName        FramePic
+  ResetsFont true
 End
 
 Style "No Widows"

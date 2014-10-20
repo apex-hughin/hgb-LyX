@@ -5,12 +5,13 @@
 
 Format 48
 
+Input book.layout
+
 Sides    1
 
 ClassOptions
   FontSize "11"
   PageStyle "plain|fancy"
-  Other "a4paper,oneside"
 End
 
 ProvidesModule hgb
@@ -132,9 +133,6 @@ Style Chapter_(frontmatter)
 	ResetArgs       1
 End
 
-Input stdclass.inc
-Input numreport.inc
-
 Style Bibliography
 	TopSep		4
 	Category    BackMatter
@@ -148,6 +146,26 @@ End
 Input hgb.module
 Input hgbheadings.module
 Input hgbbib.module
+
+# provided by hyperref:
+InsetLayout "Flex:No-link URL"
+  LatexType	Command
+  LatexName	nolinkurl
+  LyxType	charstyle
+  Decoration	Conglomerate
+  LabelString	"no-link URL"
+  Font
+    Family	Typewriter
+  EndFont
+  LabelFont
+    Size	small
+  EndFont
+End
+
+# quick fix for a LyX issue (LyX expects one 'Flex:' prefix more than it should):
+InsetLayout "Flex:Flex:URL"
+  CopyStyle     "Flex:URL"
+End
 
 NoStyle SetupData
 NoStyle  Abstract

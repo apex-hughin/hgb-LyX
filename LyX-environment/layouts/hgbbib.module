@@ -8,7 +8,7 @@
 
 # Hugo Hinterberger 2013
 
-Format 48
+Format 49
 
 Requires hgbbib
 Requires biblatex
@@ -70,13 +70,6 @@ CiteFormat default
 	online {%author%[[%author%. ]]} {%year%[[%year%. ]]} URL: %url%
 End
 
-InsetLayout "Flex:Bibliography File"
-	LyxType			custom
-	LatexType		command
-	LatexName		AddBibFile
-	LabelString	"Bibliography File: "
-End
-
 Style "Bibliography Hyphenation"
 	Margin					First_Dynamic
 	LatexType				Environment
@@ -90,14 +83,23 @@ Style "Bibliography Hyphenation"
 	LabelBottomSep	0
 End
 
+# Make AddBibFile not available in LyX since biblatex requires that bibliographic resources are loaded in the preamble and
+# LyX Insets are not available in the preamble (AddToPreamble does not allow dynamic content from arguments to insets)
+#InsetLayout "Flex:Bibliography File"
+#	LyxType			custom
+#	LatexType		command
+#	LatexName		AddBibFile
+#	LabelString	"Bibliography File: "
+#End
+
 InsetLayout "Flex:Make Bibliography"
-	LyxType			custom
-	LatexType		command
-	LatexName		MakeBibliography
-	LabelString	"Bibliography"
+	LyxType					custom
+	LatexType				command
+	LatexName				MakeBibliography
+	LabelString			"Bibliography"
 	Argument 1
-		Mandatory		0
-		Labelstring	"Optional argument: "
-		Tooltip 		"Do not split the bibliography into categories (set to 'nosplit')."
+		Mandatory			0
+		Labelstring		"Optional argument: "
+		Tooltip 			"Do not split the bibliography into categories (set to 'nosplit')."
 	EndArgument
 End
