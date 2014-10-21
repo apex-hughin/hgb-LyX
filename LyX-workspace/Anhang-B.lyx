@@ -116,20 +116,22 @@ Achtung:
  Die folgende Auflistung soll nur den Gebrauch dieser Vorlage erleichtern.
  Es ist bei einer Diplom- oder Bachelorarbeit 
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
 
 \backslash
 ia
-\backslash
- 
 \end_layout
 
 \end_inset
 
- 
+
+\begin_inset space \space{}
+\end_inset
+
+
 \emph on
 nicht
 \emph default
@@ -147,128 +149,42 @@ status open
 
 \end_inset
 
-
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-images/
-\end_layout
-
-\end_inset
-
-
+Images/
 \end_layout
 
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 !2-Praktikumsbericht.lyx
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 !3-Masterarbeit.bib
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 !3-Masterarbeit.lyx
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 0-1-Vorwort.lyx
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 0-2-Kurzfassung.lyx
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 0-3-Abstract.lyx
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 1-Einleitung.lyx
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 2-Diplomschrift.lyx
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 3-
 \begin_inset ERT
 status collapsed
@@ -283,139 +199,44 @@ LaTeX
 .lyx
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 4-Abbildungen.lyx
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 5-Mathematik.lyx
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 6-Literatur.lyx
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 7-Drucken.lyx
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 8-Schluss.lyx
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 Anhang-A.lyx
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 Anhang-B.lyx
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 Anhang-C.lyx
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 Anhang-D.lyx
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 messbox.tex
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -442,56 +263,19 @@ status collapsed
 
 \end_inset
 
-
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 hgbthesis.cls
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 hgb.sty
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 hgbheadings.sty
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 hgbbib.sty
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -518,56 +302,19 @@ status collapsed
 
 \end_inset
 
-
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 hgbthesis.layout
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 hgb.module
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 hgbheadings.module
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout File List
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
 hgbbib.module
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body
