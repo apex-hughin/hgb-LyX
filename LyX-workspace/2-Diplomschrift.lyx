@@ -55,8 +55,8 @@
 \end_index
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation skip
-\defskip smallskip
+\paragraph_separation indent
+\paragraph_indentation default
 \quotes_language german
 \papercolumns 1
 \papersides 1
@@ -270,7 +270,7 @@ Diese Vorlage ist zunächst darauf abgestellt, dass die Diplomschrift in
  die Diplomschrift zu besseren Nutzbarkeit in englischer Sprache verfasst
  wird, und viele Hochschulen
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Die FH Hagenberg macht hier keine Ausnahme.
@@ -321,7 +321,15 @@ Media Technology and Design
 \begin_layout Standard
 Beachten sollte man allerdings, dass das Schreiben dadurch nicht einfacher
  wird, auch wenn einem Worte und Sätze im Englischen scheinbar leichter
- "`aus der Feder"' fließen.
+ 
+\begin_inset Quotes gld
+\end_inset
+
+aus der Feder
+\begin_inset Quotes grd
+\end_inset
+
+ fließen.
  Gerade im Bereich der Informatik erscheint durch die Dominanz englischer
  Fachausdrücke das Schreiben im Deutschen mühsam und das Ausweichen ins
  Englische daher besonders attraktiv.

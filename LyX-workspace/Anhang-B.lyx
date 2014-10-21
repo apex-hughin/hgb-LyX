@@ -55,8 +55,8 @@
 \end_index
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation skip
-\defskip smallskip
+\paragraph_separation indent
+\paragraph_indentation default
 \quotes_language german
 \papercolumns 1
 \papersides 1
@@ -119,6 +119,7 @@ Achtung:
 status open
 
 \begin_layout Plain Layout
+
 
 \backslash
 ia
@@ -273,6 +274,7 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
+
 LaTeX
 \end_layout
 
@@ -429,6 +431,7 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
+
 ~
 \end_layout
 
@@ -504,6 +507,7 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
+
 ~
 \end_layout
 

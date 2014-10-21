@@ -70,8 +70,8 @@ End
 \end_index
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation skip
-\defskip smallskip
+\paragraph_separation indent
+\paragraph_indentation default
 \quotes_language german
 \papercolumns 1
 \papersides 1
@@ -98,6 +98,7 @@ This should be a 1-page (maximum) summary of your work in English.
 status collapsed
 
 \begin_layout Plain Layout
+
 
 \backslash
 par
@@ -139,7 +140,7 @@ proof reading
 \end_layout
 
 \begin_layout Standard
-Dir richtige Übersetzung für 
+Die richtige Übersetzung für 
 \begin_inset Quotes gld
 \end_inset
 
@@ -217,6 +218,7 @@ status open
 
 \begin_layout Plain Layout
 
+
 \backslash
 latex
 \end_layout
@@ -231,7 +233,8 @@ latex
  von Deutsch auf Englisch umgeschaltet werden, um die richtige Form der
  Silbentrennung zu erhalten, die richtigen Anführungszeichen muss man allerdings
  selbst setzen (s.
- dazu die Abschn 
+ dazu die Abschn.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:sprachumschaltung"

@@ -9,6 +9,14 @@
 \end_preamble
 \options master
 \use_default_options true
+\begin_includeonly
+0-1-Vorwort.lyx
+0-2-Kurzfassung.lyx
+0-3-Abstract.lyx
+1-Einleitung.lyx
+2-Diplomschrift.lyx
+3-LaTeX.lyx
+\end_includeonly
 \maintain_unincluded_children false
 \language ngerman
 \language_package default
@@ -137,7 +145,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-03
+10
 \end_layout
 
 \end_inset
@@ -147,7 +155,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-07
+21
 \end_layout
 
 \end_inset

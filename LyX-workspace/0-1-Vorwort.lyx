@@ -55,8 +55,8 @@
 \end_index
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation skip
-\defskip smallskip
+\paragraph_separation indent
+\paragraph_indentation default
 \quotes_language german
 \papercolumns 1
 \papersides 1
@@ -536,6 +536,7 @@ Austria
 \end_layout
 
 \begin_layout Standard
+\noindent
 Übrigens, hier im Vorwort (das bei Diplomarbeiten üblich, bei Bachelorarbeiten
  aber entbehrlich ist) kann man kurz auf die Entstehung des Dokuments eingehen.
  Hier ist auch der Platz für allfällige Danksagungen (

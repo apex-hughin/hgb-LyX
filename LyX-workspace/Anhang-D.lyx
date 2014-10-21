@@ -55,8 +55,8 @@
 \end_index
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation skip
-\defskip smallskip
+\paragraph_separation indent
+\paragraph_indentation default
 \quotes_language german
 \papercolumns 1
 \papersides 1
@@ -92,6 +92,7 @@ Hauptdatei
 status open
 
 \begin_layout Plain Layout
+
 
 \backslash
 begin{footnotesize}

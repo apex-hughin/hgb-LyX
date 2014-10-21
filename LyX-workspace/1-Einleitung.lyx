@@ -55,8 +55,8 @@
 \end_index
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation skip
-\defskip smallskip
+\paragraph_separation indent
+\paragraph_indentation default
 \quotes_language german
 \papercolumns 1
 \papersides 1
@@ -210,30 +210,8 @@ status collapsed
 \begin_layout Plain Layout
 
 {
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-
 \backslash
-
-\end_layout
-
-\end_inset
-
-latex
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
+latex}
 \end_layout
 
 \end_inset
