@@ -104,6 +104,8 @@ Style "File List"
   LatexType        Item_Environment
   LatexName        FileList
   ItemCommand      fitem
+  LeftDelim        {
+  RightDelim       }
   LabelType        No_Label
   LabelString      "File list"
   EndLabelType     No_Label
@@ -111,11 +113,6 @@ Style "File List"
     Mandatory      1
     LabelString    "Path"
     Tooltip        "The path of the files listed below."
-  EndArgument
-  Argument         item:1
-    Mandatory      1
-    LabelString    "File"
-    Tooltip        "The file name."
   EndArgument
 End
 
