@@ -39,11 +39,45 @@ Provides hypcap          1
 Provides ifpdf           1
 Provides enumitem        1
 
+# macros provided by included packages:
+InsetLayout "Flex:Sloppypar"
+  LyxType          custom
+  Decoration       Classic
+  LabelType        Static
+  LabelString      "sloppypar"
+  LatexType        environment
+  LatexName        sloppypar
+End
+
+InsetLayout "Flex:Verb (!)"
+  LyxType          charstyle
+  LabelString      "verbatim"
+  LatexType        Command
+  LatexName        verb
+  ResetFont        1
+  Argument         1
+    LabelString    "Verbatim Content (!)"
+    AutoInsert     1
+    LeftDelim      !
+    RightDelim     !
+  EndArgument
+End
+
+InsetLayout "Flex:Verbatim"
+  LyxType          custom
+  Decorartion      Classic
+  LabelType        Static
+  LabelString      "verbatim environment"
+  LatexType        environment
+  LatexName        verbatim
+End
+
+# macros defined in hgb.sty:
 Style English
+  Category         "Hagenberg"
   Margin           First_Dynamic
   LatexType        Environment
   LatexName        english
-  Category         Hagenberg
   InTitle          false
   ParIndent        ""
   LabelType        Above
@@ -53,10 +87,10 @@ Style English
 End
 
 Style Deutsch
+  Category         "Hagenberg"
   Margin           First_Dynamic
   LatexType        Environment
   LatexName        german
-  Category         Hagenberg
   InTitle          false
   ParIndent        ""
   LabelType        Above
@@ -85,33 +119,20 @@ Style "File List"
   EndArgument
 End
 
+Style "No Widows"
+  Category         "Hagenberg"
+  LatexType        Environment
+  LatexName        nowidows
+  InTitle          false
+End
+
 InsetLayout "Flex:FramePic"
   Category         "Hagenberg"
   LyxType          custom
   Decoration       Classic
   LabelType        Static
-  LabelString      FramePic
+  LabelString      "FramePic"
   LatexType        Command
   LatexName        FramePic
   ResetsFont true
-End
-
-InsetLayout "Flex:verb (!)"
-  LabelString	"verbatim"
-  LyxType	charstyle
-  LatexType	Command
-  LatexName	verb
-  ResetFont	1
-  Argument 1
-    LabelString	"Verbatim Content (!)"
-    AutoInsert	1
-    LeftDelim	!
-    RightDelim	!
-  EndArgument
-End
-
-Style "No Widows"
-  LatexType        Environment
-  LatexName        nowidows
-  InTitle          false
 End
