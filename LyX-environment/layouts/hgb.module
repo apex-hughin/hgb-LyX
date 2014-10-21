@@ -96,6 +96,20 @@ InsetLayout "Flex:FramePic"
   ResetsFont true
 End
 
+InsetLayout "Flex:verb (!)"
+  LabelString	"verbatim"
+  LyxType	charstyle
+  LatexType	Command
+  LatexName	verb
+  ResetFont	1
+  Argument 1
+    LabelString	"Verbatim Content (!)"
+    AutoInsert	1
+    LeftDelim	!
+    RightDelim	!
+  EndArgument
+End
+
 Style "No Widows"
   LatexType        Environment
   LatexName        nowidows
