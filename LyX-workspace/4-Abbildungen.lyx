@@ -5641,19 +5641,16 @@ für Quellcode in der Programmiersprache C schreibt man
 
 \begin_layout Verbatim
 
-
 \backslash
 begin{CCode}
 \end_layout
 
 \begin_layout Verbatim
-
     ...
  
 \end_layout
 
 \begin_layout Verbatim
-
 
 \backslash
 end{CCode}
@@ -5949,10 +5946,7 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\family typewriter
 {
-\family default
-
 \backslash
 optbreaknh}
 \end_layout
@@ -6016,7 +6010,7 @@ Platzierung von Programmcode
 Da Quelltexte sehr umfangreich werden können, ist diese Aufgabe nicht immer
  leicht zu lösen.
  Abhängig vom Umfang und vom Bezug zum Haupttext gibt es grundsätzlich drei
- Möglichkeiten zur Einbindung von Programmtext: 
+ Möglichkeiten zur Einbindung von Programmtext:
 \end_layout
 
 \begin_layout Itemize
@@ -6029,7 +6023,7 @@ a)
 
 \end_inset
 
-im laufenden Text für kurze Programmstücke, 
+im laufenden Text für kurze Programmstücke,
 \end_layout
 
 \begin_layout Itemize
@@ -6050,7 +6044,7 @@ program
 \begin_inset space \space{}
 \end_inset
 
-eine Seite oder 
+eine Seite oder
 \end_layout
 
 \begin_layout Itemize
@@ -6155,33 +6149,27 @@ Dieses Codestück wurde mit
 
 \begin_layout Verbatim
 
-
 \backslash
 begin{JavaCode}[numbers=none]
 \end_layout
 
 \begin_layout Verbatim
-
 static String extractEmail(String line) {
 \end_layout
 
 \begin_layout Verbatim
-
     line = line.trim(); // find the first blank
 \end_layout
 
 \begin_layout Verbatim
-
     ...
 \end_layout
 
 \begin_layout Verbatim
-
 }
 \end_layout
 
 \begin_layout Verbatim
-
 
 \backslash
 end{JavaCode}
@@ -6251,13 +6239,11 @@ table
 
 \begin_layout Verbatim
 
-
 \backslash
 begin{program}
 \end_layout
 
 \begin_layout Verbatim
-
 
 \backslash
 caption{Der Titel zu diesem Programmstück.}
@@ -6265,42 +6251,35 @@ caption{Der Titel zu diesem Programmstück.}
 
 \begin_layout Verbatim
 
-
 \backslash
 label{prog:xyz}
 \end_layout
 
 \begin_layout Verbatim
 
-
 \backslash
 begin{JavaCode}
 \end_layout
 
 \begin_layout Verbatim
-
   class IrgendWas {
 \end_layout
 
 \begin_layout Verbatim
-
     ...
 \end_layout
 
 \begin_layout Verbatim
-
   }
 \end_layout
 
 \begin_layout Verbatim
-
 
 \backslash
 end{JavaCode}
 \end_layout
 
 \begin_layout Verbatim
-
 
 \backslash
 end{program}
