@@ -5,7 +5,8 @@
 \textclass hgbthesis
 \begin_preamble
 %\graphicspath{{images/}} % wo liegen die Bilder? 
-\addbibresource{D:/Workspace/hgb-LyX/LyX-workspace/!3-Masterarbeit.bib}      % Angabe der BibTeX-Datei, % utf8-change
+\addbibresource{!3-Masterarbeit.bib} % requires BIBINPUTS environment variable to be set
+%\addbibresource{D:/Workspace/hgb-LyX/LyX-workspace/!3-Masterarbeit.bib}      % Angabe der BibTeX-Datei, % utf8-change
 \end_preamble
 \options master
 \use_default_options true
